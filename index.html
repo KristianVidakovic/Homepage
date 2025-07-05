@@ -152,27 +152,12 @@
             width: 100%;
         }
 
-        /* Full Page Sections */
-        .hero,
-        .ai-features,
-        .industries,
-        .ultra-instinct-section,
-        .development-section,
-        .tech-stack-section,
-        .about-section,
-        .vision-section,
-        .partners,
-        .contact-cta {
+        /* Hero Section */
+        .hero {
             min-height: 100vh;
             display: flex;
             align-items: center;
             position: relative;
-            padding: 80px 2rem 2rem;
-            overflow-y: auto;
-        }
-
-        /* Hero Section */
-        .hero {
             padding-top: 80px;
         }
 
@@ -284,9 +269,9 @@
 
         /* AI Features Section */
         .ai-features {
+            padding: 6rem 2rem;
             background: var(--dark-bg);
-            flex-direction: column;
-            justify-content: center;
+            position: relative;
         }
 
         .section-header {
@@ -377,9 +362,8 @@
 
         /* Industries Section */
         .industries {
+            padding: 6rem 2rem;
             background: var(--darker-bg);
-            flex-direction: column;
-            justify-content: center;
         }
 
         .industry-showcase {
@@ -425,9 +409,8 @@
 
         /* Ultra Instinct Section */
         .ultra-instinct-section {
+            padding: 6rem 2rem;
             background: var(--dark-bg);
-            flex-direction: column;
-            justify-content: center;
         }
 
         .ultra-content {
@@ -499,9 +482,8 @@
 
         /* Development Section */
         .development-section {
+            padding: 6rem 2rem;
             background: var(--darker-bg);
-            flex-direction: column;
-            justify-content: center;
         }
 
         .development-grid {
@@ -551,9 +533,8 @@
 
         /* Technology Stack */
         .tech-stack-section {
+            padding: 6rem 2rem;
             background: var(--dark-bg);
-            flex-direction: column;
-            justify-content: center;
         }
 
         .tech-grid {
@@ -582,9 +563,8 @@
 
         /* About Section */
         .about-section {
+            padding: 6rem 2rem;
             background: var(--darker-bg);
-            flex-direction: column;
-            justify-content: center;
         }
 
         .founders-grid {
@@ -681,10 +661,10 @@
 
         /* Vision Section - Professional Redesign */
         .vision-section {
+            padding: 8rem 2rem;
             background: linear-gradient(135deg, var(--dark-bg) 0%, rgba(74, 144, 226, 0.02) 100%);
+            position: relative;
             overflow: hidden;
-            flex-direction: column;
-            justify-content: center;
         }
 
         .vision-section::before {
@@ -842,9 +822,8 @@
 
         /* Partner Section */
         .partners {
+            padding: 6rem 2rem;
             background: var(--dark-bg);
-            flex-direction: column;
-            justify-content: center;
         }
 
         .partner-content {
@@ -962,10 +941,9 @@
 
         /* Contact CTA */
         .contact-cta {
+            padding: 6rem 2rem;
             background: var(--gradient-blue);
             text-align: center;
-            flex-direction: column;
-            justify-content: center;
         }
 
         .contact-cta h2 {
@@ -1707,8 +1685,7 @@
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.style.opacity = '0';
-                    entry.target.style.transform = '
-                        translateY(30px)';
+                    entry.target.style.transform = 'translateY(30px)';
                     
                     setTimeout(() => {
                         entry.target.style.transition = 'all 0.6s ease';
