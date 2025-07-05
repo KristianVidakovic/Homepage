@@ -246,7 +246,7 @@
         }
 
         .ai-brain-animation {
-            width: 600px;
+            width: 800px;
             height: 600px;
             position: relative;
             display: flex;
@@ -259,6 +259,7 @@
             height: 100%;
             filter: drop-shadow(0 0 50px rgba(74, 144, 226, 0.5));
             animation: float 6s ease-in-out infinite;
+            object-fit: contain;
         }
 
         @keyframes float {
@@ -342,7 +343,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-bottom: 2rem;
+            margin: 0 auto 2rem;
             font-size: 2rem;
         }
 
@@ -461,115 +462,133 @@
             color: #000;
         }
 
-        /* Software Preview Section */
-        .software-preview {
+        /* Ultra Instinct Section */
+        .ultra-instinct-section {
             padding: 6rem 2rem;
             background: var(--darker-bg);
         }
 
-        .preview-grid {
+        .ultra-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .ultra-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            margin-top: 3rem;
+        }
+
+        .ultra-features {
+            background: var(--card-bg);
+            border-radius: 20px;
+            padding: 3rem;
+            border: 1px solid rgba(74, 144, 226, 0.2);
+        }
+
+        .ultra-features h3 {
+            font-size: 2rem;
+            color: var(--primary-blue);
+            margin-bottom: 2rem;
+        }
+
+        .ultra-feature-item {
+            margin-bottom: 2rem;
+            padding-left: 2rem;
+            position: relative;
+        }
+
+        .ultra-feature-item::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: var(--primary-blue);
+            font-size: 1.5rem;
+        }
+
+        .ultra-feature-item h4 {
+            color: var(--text-light);
+            margin-bottom: 0.5rem;
+            font-size: 1.25rem;
+        }
+
+        .ultra-feature-item p {
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+
+        .ultra-visual {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .ai-diagram {
+            width: 100%;
+            max-width: 500px;
+            background: var(--card-bg);
+            border-radius: 20px;
+            padding: 3rem;
+            border: 1px solid rgba(74, 144, 226, 0.2);
+            text-align: center;
+        }
+
+        /* Development Section */
+        .development-section {
+            padding: 6rem 2rem;
+            background: var(--dark-bg);
+        }
+
+        .development-grid {
             max-width: 1400px;
             margin: 3rem auto;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-            gap: 3rem;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
         }
 
-        .preview-card {
-            background: var(--card-bg);
+        .dev-card {
+            background: linear-gradient(135deg, rgba(155, 89, 182, 0.1) 0%, rgba(74, 144, 226, 0.1) 100%);
             border-radius: 20px;
-            overflow: hidden;
-            border: 1px solid rgba(74, 144, 226, 0.2);
+            padding: 2.5rem;
+            border: 1px solid rgba(155, 89, 182, 0.3);
             transition: all 0.3s ease;
         }
 
-        .preview-card:hover {
+        .dev-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 30px 60px rgba(74, 144, 226, 0.3);
+            box-shadow: 0 20px 40px rgba(155, 89, 182, 0.2);
+            border-color: #9b59b6;
         }
 
-        .preview-header {
-            background: linear-gradient(135deg, rgba(74, 144, 226, 0.2) 0%, rgba(155, 89, 182, 0.2) 100%);
-            padding: 1.5rem;
-            border-bottom: 1px solid rgba(74, 144, 226, 0.2);
-        }
-
-        .preview-header h3 {
-            color: var(--text-light);
+        .dev-card h3 {
+            color: #9b59b6;
             font-size: 1.5rem;
-            margin-bottom: 0.5rem;
+            margin-bottom: 1rem;
         }
 
-        .preview-badge {
+        .dev-card .status {
             display: inline-block;
-            background: rgba(0, 255, 225, 0.2);
-            color: #00ffe1;
+            background: rgba(155, 89, 182, 0.2);
+            color: #9b59b6;
             padding: 0.25rem 0.75rem;
             border-radius: 15px;
             font-size: 0.875rem;
             font-weight: 600;
+            margin-bottom: 1rem;
         }
 
-        .preview-content {
-            padding: 2rem;
-        }
-
-        .mock-dashboard {
-            background: rgba(0, 0, 0, 0.3);
-            border-radius: 10px;
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .stat-row {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 1rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .stat-box {
-            background: rgba(74, 144, 226, 0.1);
-            padding: 1rem;
-            border-radius: 8px;
-            text-align: center;
-        }
-
-        .stat-value {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: var(--primary-blue);
-        }
-
-        .stat-label {
-            font-size: 0.875rem;
+        .dev-card p {
             color: var(--text-muted);
-            margin-top: 0.25rem;
-        }
-
-        .progress-bar {
-            background: rgba(74, 144, 226, 0.1);
-            height: 8px;
-            border-radius: 4px;
-            overflow: hidden;
-            margin: 1rem 0;
-        }
-
-        .progress-fill {
-            height: 100%;
-            background: var(--gradient-blue);
-            border-radius: 4px;
-            animation: progressAnimation 2s ease-out;
-        }
-
-        @keyframes progressAnimation {
-            from { width: 0; }
+            line-height: 1.6;
         }
 
         /* About Section */
         .about-section {
             padding: 6rem 2rem;
-            background: var(--dark-bg);
+            background: var(--darker-bg);
         }
 
         .founders-grid {
@@ -689,7 +708,7 @@
         /* Technology Stack */
         .tech-stack-section {
             padding: 6rem 2rem;
-            background: var(--darker-bg);
+            background: var(--dark-bg);
         }
 
         .tech-grid {
@@ -806,6 +825,10 @@
             .industry-showcase {
                 grid-template-columns: repeat(2, 1fr);
             }
+            
+            .ai-brain-animation {
+                width: 600px;
+            }
         }
 
         @media (max-width: 768px) {
@@ -845,7 +868,11 @@
                 text-align: center;
             }
 
-            .preview-grid {
+            .ultra-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .development-grid {
                 grid-template-columns: 1fr;
             }
         }
@@ -907,8 +934,8 @@
                 <li><a href="#solutions">Lösungen</a></li>
                 <li><a href="#industries">Branchen</a></li>
                 <li><a href="#partners">Partner</a></li>
-                <li><a href="#software">Software</a></li>
-                <li><a href="#technology">Technologie</a></li>
+                <li><a href="#ultra-instinct">Ultra Instinct</a></li>
+                <li><a href="#development">Entwicklung</a></li>
                 <li><a href="#contact">Kontakt</a></li>
             </ul>
         </div>
@@ -937,7 +964,7 @@
             </div>
             <div class="hero-visual">
                 <div class="ai-brain-animation">
-                    <img src="FullLogo_Transparent.png" alt="Instinct Systems AI" class="brain-large" style="width: 100%; height: auto; max-width: 600px;">
+                    <img src="FullLogo_Transparent.png" alt="Instinct Systems AI" class="brain-large">
                 </div>
             </div>
         </div>
@@ -953,9 +980,9 @@
         <div class="features-grid">
             <div class="feature-card">
                 <div class="feature-icon">🛒</div>
-                <h3>Intelligente Bestandsführung</h3>
+                <h3>Intelligente Bestellmengenoptimierung</h3>
                 <p>KI-gestützte Bestellmengenoptimierung reduziert Überbestände und Out-of-Stock 
-                   Situationen um bis zu 80%.</p>
+                   Situationen durch präzise Vorhersagen.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon">📈</div>
@@ -1059,104 +1086,98 @@
         </div>
     </section>
 
-    <!-- Software Preview Section -->
-    <section class="software-preview" id="software">
+    <!-- Ultra Instinct Section -->
+    <section class="ultra-instinct-section" id="ultra-instinct">
         <div class="section-header">
-            <h2>Ultra Instinct AI im Einsatz</h2>
-            <p>Einblicke in unsere revolutionäre KI-Software</p>
+            <h2>Ultra Instinct - Unsere KI-Lösung</h2>
+            <p>Das Herzstück unserer Technologie: Ein selbstlernendes System für perfekte Prognosen</p>
         </div>
-        <div class="preview-grid">
-            <div class="preview-card">
-                <div class="preview-header">
-                    <h3>UI ENGINE Dashboard</h3>
-                    <span class="preview-badge">Live bei Migros</span>
-                </div>
-                <div class="preview-content">
-                    <div class="mock-dashboard">
-                        <div class="stat-row">
-                            <div class="stat-box">
-                                <div class="stat-value">95.8%</div>
-                                <div class="stat-label">Prognosegenauigkeit</div>
-                            </div>
-                            <div class="stat-box">
-                                <div class="stat-value">-47%</div>
-                                <div class="stat-label">Abschriften</div>
-                            </div>
-                            <div class="stat-box">
-                                <div class="stat-value">+23%</div>
-                                <div class="stat-label">Verfügbarkeit</div>
-                            </div>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress-fill" style="width: 87%;"></div>
-                        </div>
-                        <p style="color: var(--text-muted); font-size: 0.875rem; margin-top: 1rem;">
-                            KI-Analyse: 847 Artikel optimiert • 52 Filialen aktiv
-                        </p>
+        <div class="ultra-content">
+            <div class="ultra-grid">
+                <div class="ultra-features">
+                    <h3>Was Ultra Instinct kann</h3>
+                    <div class="ultra-feature-item">
+                        <h4>Intelligente Algorithmen</h4>
+                        <p>Selbstlernende KI-Modelle mit Isolation Forest und K-Means Clustering für präzise Mustererkennung</p>
                     </div>
-                    <p style="margin-top: 1.5rem;">
-                        Vollautomatische Bestellmengenoptimierung mit Machine Learning. 
-                        Berücksichtigt Saisonalität, Wetter, Events und lokale Besonderheiten.
-                    </p>
+                    <div class="ultra-feature-item">
+                        <h4>Machine Learning Engine</h4>
+                        <p>Deep Learning analysiert Millionen von Datenpunkten und lernt kontinuierlich aus neuen Verkaufsmustern</p>
+                    </div>
+                    <div class="ultra-feature-item">
+                        <h4>Out-of-Stock Erkennung</h4>
+                        <p>Automatische Identifikation kritischer Bestände bevor Lücken entstehen</p>
+                    </div>
+                    <div class="ultra-feature-item">
+                        <h4>Präzise Mengenprognose</h4>
+                        <p>Berechnet die optimale Bestellmenge für jede Aktion unter Berücksichtigung aller relevanten Faktoren</p>
+                    </div>
+                    <div class="ultra-feature-item">
+                        <h4>Automatische Mengensteuerung</h4>
+                        <p>Erstellt vollautomatisch die perfekte Verteilung pro Filiale und Tag basierend auf historischen Daten</p>
+                    </div>
+                </div>
+                <div class="ultra-visual">
+                    <div class="ai-diagram">
+                        <div style="font-size: 4rem; margin-bottom: 2rem;">🧠</div>
+                        <h3 style="color: var(--primary-blue); margin-bottom: 1rem;">Neural Network</h3>
+                        <p style="color: var(--text-muted); margin-bottom: 2rem;">Kontinuierliches Lernen aus Verkaufsdaten</p>
+                        <div style="display: flex; justify-content: space-around; margin-top: 2rem;">
+                            <div>
+                                <div style="font-size: 2rem; color: var(--primary-blue);">95%</div>
+                                <div style="font-size: 0.875rem; color: var(--text-muted);">Genauigkeit</div>
+                            </div>
+                            <div>
+                                <div style="font-size: 2rem; color: var(--primary-blue);">24/7</div>
+                                <div style="font-size: 0.875rem; color: var(--text-muted);">Aktiv</div>
+                            </div>
+                            <div>
+                                <div style="font-size: 2rem; color: var(--primary-blue);">∞</div>
+                                <div style="font-size: 0.875rem; color: var(--text-muted);">Lernend</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <div class="preview-card">
-                <div class="preview-header">
-                    <h3>Mengensteuerung</h3>
-                    <span class="preview-badge">Aktionsplanung</span>
-                </div>
-                <div class="preview-content">
-                    <div class="mock-dashboard">
-                        <div style="background: rgba(155, 89, 182, 0.1); padding: 1rem; border-radius: 8px; margin-bottom: 1rem;">
-                            <div style="color: #9b59b6; font-weight: 600; margin-bottom: 0.5rem;">Aktuelle Aktion</div>
-                            <div style="color: var(--text-light);">Oster-Promotion 2025</div>
-                        </div>
-                        <div class="stat-row">
-                            <div class="stat-box">
-                                <div class="stat-value" style="color: #9b59b6;">1,247</div>
-                                <div class="stat-label">Paletten</div>
-                            </div>
-                            <div class="stat-box">
-                                <div class="stat-value" style="color: #9b59b6;">52</div>
-                                <div class="stat-label">Filialen</div>
-                            </div>
-                            <div class="stat-box">
-                                <div class="stat-value" style="color: #9b59b6;">3</div>
-                                <div class="stat-label">Liefertage</div>
-                            </div>
-                        </div>
-                    </div>
-                    <p style="margin-top: 1.5rem;">
-                        Intelligente Verteilung von Aktionsware basierend auf Filialleistung 
-                        und historischen Daten. Reduziert Retouren um bis zu 60%.
-                    </p>
-                </div>
+    <!-- Development Section -->
+    <section class="development-section" id="development">
+        <div class="section-header">
+            <h2>Aktuelle Entwicklungen</h2>
+            <p>Wir arbeiten kontinuierlich an neuen KI-Lösungen für den Einzelhandel</p>
+        </div>
+        <div class="development-grid">
+            <div class="dev-card">
+                <h3>Analysis Instinct</h3>
+                <span class="status">In Entwicklung</span>
+                <p>KI-Analysemodul für kontinuierlichen Vergleich von Prognose und IST-Werten mit automatischer Modellanpassung</p>
             </div>
-
-            <div class="preview-card">
-                <div class="preview-header">
-                    <h3>ML-Training</h3>
-                    <span class="preview-badge">Selbstlernend</span>
-                </div>
-                <div class="preview-content">
-                    <div class="mock-dashboard">
-                        <div style="text-align: center; padding: 2rem 0;">
-                            <div style="font-size: 3rem; margin-bottom: 1rem;">🧠</div>
-                            <div style="color: var(--text-light); font-weight: 600;">Neural Network Active</div>
-                            <div class="progress-bar" style="margin: 1rem 0;">
-                                <div class="progress-fill" style="width: 73%; background: linear-gradient(45deg, #9b59b6, #00ffe1);"></div>
-                            </div>
-                            <div style="color: var(--text-muted); font-size: 0.875rem;">
-                                Training: 73% • 2.4M Datenpunkte verarbeitet
-                            </div>
-                        </div>
-                    </div>
-                    <p style="margin-top: 1.5rem;">
-                        Kontinuierliches Machine Learning verbessert die Prognosequalität 
-                        automatisch. Anomalieerkennung filtert Sondereffekte heraus.
-                    </p>
-                </div>
+            <div class="dev-card">
+                <h3>Action Instinct</h3>
+                <span class="status">Konzeptphase</span>
+                <p>Vollautomatische Aktionsflächenplanung mit intelligenter Platzierung basierend auf Verkaufspotenzial</p>
+            </div>
+            <div class="dev-card">
+                <h3>Staff Instinct</h3>
+                <span class="status">Planung</span>
+                <p>KI-basierte Personalplanung für optimale Mitarbeiterauslastung und Kostenkontrolle</p>
+            </div>
+            <div class="dev-card">
+                <h3>Stock Instinct</h3>
+                <span class="status">Design</span>
+                <p>Dynamische Mindestbestandsberechnung zur Vermeidung von Überbeständen und Out-of-Stock</p>
+            </div>
+            <div class="dev-card">
+                <h3>Portfolio Instinct</h3>
+                <span class="status">Forschung</span>
+                <p>ML-basierte Sortimentsanalyse für optimale Produktauswahl und Listungsentscheidungen</p>
+            </div>
+            <div class="dev-card">
+                <h3>Connect Instinct</h3>
+                <span class="status">Vision</span>
+                <p>Intelligente Kommunikationsplattform für optimalen Informationsfluss zwischen allen Ebenen</p>
             </div>
         </div>
     </section>
@@ -1230,7 +1251,7 @@
             <h3>Unsere Vision</h3>
             <p>Wir schaffen eine Zukunft, in der künstliche Intelligenz nahtlos in alle Einzelhandelsprozesse 
                integriert ist. Mitarbeiter werden von repetitiven Aufgaben befreit und können sich auf 
-               Kreativität, Kundenservice und strategische Entscheidungen konzentrieren.</p>
+               ihre Kernaufgaben konzentrieren - Kreativität, Kundenservice und strategische Entscheidungen.</p>
         </div>
     </section>
 
@@ -1257,7 +1278,7 @@
     <!-- Contact CTA -->
     <section class="contact-cta" id="contact">
         <h2>Bereit für die Retail-Revolution?</h2>
-        <p>Steigern Sie Ihre Effizienz um bis zu 80% mit unseren KI-Lösungen.</p>
+        <p>Steigern Sie Ihre Effizienz mit unseren KI-Lösungen.</p>
         <a href="mailto:info@instinct-systems.ai" class="btn">
             Demo vereinbaren
             <span>→</span>
@@ -1356,7 +1377,7 @@
         }, observerOptions);
 
         // Observe all cards and sections
-        document.querySelectorAll('.feature-card, .industry-item, .tech-item, .founder-card, .preview-card').forEach(el => {
+        document.querySelectorAll('.feature-card, .industry-item, .tech-item, .founder-card, .dev-card').forEach(el => {
             observer.observe(el);
         });
 
