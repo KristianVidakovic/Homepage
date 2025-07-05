@@ -155,7 +155,7 @@
         /* Vision Section */
         .vision-section {
             padding: 6rem 2rem;
-            background: linear-gradient(135deg, var(--dark-bg) 0%, rgba(74, 144, 226, 0.05) 100%);
+            background: linear-gradient(135deg, var(--darker-bg) 0%, rgba(74, 144, 226, 0.05) 100%);
             position: relative;
             overflow: hidden;
         }
@@ -811,7 +811,7 @@
         /* About Section */
         .about-section {
             padding: 6rem 2rem;
-            background: var(--darker-bg);
+            background: var(--dark-bg);
         }
 
         .founders-grid {
@@ -904,28 +904,6 @@
             position: absolute;
             left: 0;
             color: var(--primary-blue);
-        }
-
-        .vision-statement {
-            max-width: 1000px;
-            margin: 4rem auto 0;
-            text-align: center;
-            background: rgba(74, 144, 226, 0.05);
-            border: 1px solid rgba(74, 144, 226, 0.2);
-            padding: 3rem;
-            border-radius: 20px;
-        }
-
-        .vision-statement h3 {
-            font-size: 2rem;
-            margin-bottom: 1.5rem;
-            color: var(--primary-blue);
-        }
-
-        .vision-statement p {
-            font-size: 1.25rem;
-            line-height: 1.8;
-            color: var(--text-light);
         }
 
         /* Technology Stack */
@@ -1189,6 +1167,73 @@
             <div class="hero-visual">
                 <div class="ai-brain-animation">
                     <img src="FullLogo_Transparent.png" alt="Instinct Systems AI" class="brain-large">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="section-header">
+            <h2>Die Köpfe hinter der Innovation</h2>
+            <p>Zwei Visionäre mit über 35 Jahren kombinierter Expertise vereinen Retail-Know-how mit modernster Technologie.</p>
+        </div>
+        <div class="founders-grid">
+            <div class="founder-card">
+                <div class="founder-image-placeholder">
+                    <div class="image-circle">
+                        <span>Foto<br>einfügen</span>
+                    </div>
+                </div>
+                <h3>Kristian V.</h3>
+                <h4>Co-CEO & Chief Business Officer</h4>
+                <div class="founder-info">
+                    <p><strong>Ausbildung:</strong></p>
+                    <ul>
+                        <li>Detailhandelsfachmann EFZ</li>
+                        <li>Detailhandelsspezialist FA</li>
+                        <li>Marketing Manager HF</li>
+                    </ul>
+                    <p><strong>Erfahrung:</strong></p>
+                    <ul>
+                        <li>20 Jahre im Verkauf und Einkauf Supermarkt</li>
+                        <li>Entwicklung des Ultra Instinct Konzepts</li>
+                        <li>Expertise in Category Management & Aktionsplanung</li>
+                    </ul>
+                    <p><strong>Verantwortungsbereiche:</strong></p>
+                    <ul>
+                        <li>Geschäftsstrategie & Kundenbeziehungen</li>
+                        <li>Produktmanagement & Marketing</li>
+                        <li>Finanzen & Controlling</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="founder-card">
+                <div class="founder-image-placeholder">
+                    <div class="image-circle">
+                        <span>Foto<br>einfügen</span>
+                    </div>
+                </div>
+                <h3>Philip T.</h3>
+                <h4>Co-CEO & Chief Technology Officer</h4>
+                <div class="founder-info">
+                    <p><strong>Ausbildung:</strong></p>
+                    <ul>
+                        <li>Master in Computer Science</li>
+                        <li>Spezialisierung in KI & Machine Learning</li>
+                    </ul>
+                    <p><strong>Erfahrung:</strong></p>
+                    <ul>
+                        <li>15 Jahre Softwareentwicklung</li>
+                        <li>8 Jahre Fokus auf KI/ML</li>
+                        <li>3 Patente im Bereich Predictive Analytics</li>
+                    </ul>
+                    <p><strong>Verantwortungsbereiche:</strong></p>
+                    <ul>
+                        <li>Technologie & Entwicklung</li>
+                        <li>IT-Infrastruktur & Security</li>
+                        <li>KI-Modelle & Datenmanagement</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -1552,12 +1597,6 @@
                 </div>
             </div>
         </div>
-        <div class="vision-statement">
-            <h3>Unsere Vision</h3>
-            <p>Wir schaffen eine Zukunft, in der künstliche Intelligenz nahtlos in alle Einzelhandelsprozesse 
-               integriert ist. Mitarbeiter werden von repetitiven Aufgaben befreit und können sich auf 
-               ihre Kernaufgaben konzentrieren.</p>
-        </div>
     </section>
 
     <!-- Technology Stack -->
@@ -1682,7 +1721,7 @@
         }, observerOptions);
 
         // Observe all cards and sections
-        document.querySelectorAll('.feature-card, .industry-item, .tech-item, .founder-card, .dev-card').forEach(el => {
+        document.querySelectorAll('.feature-card, .industry-item, .tech-item, .founder-card, .dev-card, .vision-pillar').forEach(el => {
             observer.observe(el);
         });
 
