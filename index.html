@@ -152,6 +152,163 @@
             width: 100%;
         }
 
+        /* Vision Section */
+        .vision-section {
+            padding: 6rem 2rem;
+            background: linear-gradient(135deg, var(--dark-bg) 0%, rgba(74, 144, 226, 0.05) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .vision-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .vision-container {
+            position: relative;
+        }
+
+        .ai-visual {
+            position: relative;
+            background: var(--card-bg);
+            border-radius: 30px;
+            padding: 4rem;
+            margin-bottom: 3rem;
+            border: 1px solid rgba(74, 144, 226, 0.2);
+            overflow: hidden;
+        }
+
+        .neural-grid {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.1;
+        }
+
+        .neural-node {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: var(--primary-blue);
+            border-radius: 50%;
+            animation: neural-pulse 4s ease-in-out infinite;
+        }
+
+        @keyframes neural-pulse {
+            0%, 100% { 
+                transform: scale(1);
+                opacity: 0.3;
+            }
+            50% { 
+                transform: scale(1.5);
+                opacity: 0.8;
+            }
+        }
+
+        .neural-connection {
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--primary-blue), transparent);
+            top: 50%;
+            left: 0;
+            animation: neural-flow 3s linear infinite;
+        }
+
+        @keyframes neural-flow {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+
+        .vision-text-overlay {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+        }
+
+        .vision-text-overlay h3 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            background: var(--gradient-blue);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .vision-text-overlay p {
+            font-size: 1.5rem;
+            color: var(--text-light);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .vision-pillars {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .vision-pillar {
+            background: rgba(74, 144, 226, 0.05);
+            border-radius: 20px;
+            padding: 2.5rem;
+            text-align: center;
+            border: 1px solid rgba(74, 144, 226, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .vision-pillar:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary-blue);
+            box-shadow: 0 20px 40px rgba(74, 144, 226, 0.2);
+        }
+
+        .pillar-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .vision-pillar h4 {
+            color: var(--primary-blue);
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .vision-pillar p {
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+
+        .vision-quote {
+            background: var(--card-bg);
+            border-radius: 20px;
+            padding: 3rem;
+            border-left: 4px solid var(--primary-blue);
+            position: relative;
+        }
+
+        .vision-quote blockquote {
+            font-size: 1.25rem;
+            line-height: 1.8;
+            color: var(--text-light);
+            font-style: italic;
+            margin: 0;
+        }
+
+        .vision-quote::before {
+            content: '"';
+            position: absolute;
+            top: 1rem;
+            left: 2rem;
+            font-size: 4rem;
+            color: var(--primary-blue);
+            opacity: 0.3;
+        }
+
         /* Hero Section */
         .hero {
             min-height: 100vh;
@@ -610,7 +767,7 @@
             max-width: 1400px;
             margin: 3rem auto;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(3, 1fr);
             gap: 2rem;
         }
 
@@ -620,6 +777,7 @@
             padding: 2.5rem;
             border: 1px solid rgba(155, 89, 182, 0.3);
             transition: all 0.3s ease;
+            text-align: center;
         }
 
         .dev-card:hover {
@@ -996,6 +1154,7 @@
             </div>
             <ul class="nav-links">
                 <li><a href="#about">Über uns</a></li>
+                <li><a href="#vision">Vision</a></li>
                 <li><a href="#solutions">Lösungen</a></li>
                 <li><a href="#industries">Branchen</a></li>
                 <li><a href="#partners">Partner</a></li>
@@ -1030,6 +1189,57 @@
             <div class="hero-visual">
                 <div class="ai-brain-animation">
                     <img src="FullLogo_Transparent.png" alt="Instinct Systems AI" class="brain-large">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision Section -->
+    <section class="vision-section" id="vision">
+        <div class="section-header">
+            <h2>Unsere Vision</h2>
+            <p>Die Zukunft des Einzelhandels gestalten</p>
+        </div>
+        <div class="vision-content">
+            <div class="vision-container">
+                <div class="ai-visual">
+                    <div class="neural-grid">
+                        <div class="neural-node" style="top: 20%; left: 15%; animation-delay: 0s;"></div>
+                        <div class="neural-node" style="top: 30%; left: 70%; animation-delay: 0.3s;"></div>
+                        <div class="neural-node" style="top: 50%; left: 40%; animation-delay: 0.6s;"></div>
+                        <div class="neural-node" style="top: 70%; left: 25%; animation-delay: 0.9s;"></div>
+                        <div class="neural-node" style="top: 60%; left: 80%; animation-delay: 1.2s;"></div>
+                        <div class="neural-connection"></div>
+                        <div class="neural-connection" style="transform: rotate(45deg);"></div>
+                        <div class="neural-connection" style="transform: rotate(-45deg);"></div>
+                    </div>
+                    <div class="vision-text-overlay">
+                        <h3>Künstliche Intelligenz nahtlos integriert</h3>
+                        <p>Wir schaffen eine Zukunft, in der KI jeden Einzelhandelsprozess revolutioniert</p>
+                    </div>
+                </div>
+                <div class="vision-pillars">
+                    <div class="vision-pillar">
+                        <div class="pillar-icon">🤖</div>
+                        <h4>Automatisierung</h4>
+                        <p>Von repetitiven Aufgaben befreit</p>
+                    </div>
+                    <div class="vision-pillar">
+                        <div class="pillar-icon">🎯</div>
+                        <h4>Fokussierung</h4>
+                        <p>Konzentration auf Kernaufgaben</p>
+                    </div>
+                    <div class="vision-pillar">
+                        <div class="pillar-icon">🚀</div>
+                        <h4>Innovation</h4>
+                        <p>Fortschritt durch Technologie</p>
+                    </div>
+                </div>
+                <div class="vision-quote">
+                    <blockquote>
+                        "Mitarbeiter werden von repetitiven Aufgaben befreit und können sich auf ihre Kernaufgaben konzentrieren - 
+                        während KI die Effizienz maximiert und neue Möglichkeiten eröffnet."
+                    </blockquote>
                 </div>
             </div>
         </div>
