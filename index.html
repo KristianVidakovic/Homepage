@@ -152,163 +152,6 @@
             width: 100%;
         }
 
-        /* Vision Section */
-        .vision-section {
-            padding: 6rem 2rem;
-            background: linear-gradient(135deg, var(--dark-bg) 0%, rgba(74, 144, 226, 0.05) 100%);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .vision-content {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .vision-container {
-            position: relative;
-        }
-
-        .ai-visual {
-            position: relative;
-            background: var(--card-bg);
-            border-radius: 30px;
-            padding: 4rem;
-            margin-bottom: 3rem;
-            border: 1px solid rgba(74, 144, 226, 0.2);
-            overflow: hidden;
-        }
-
-        .neural-grid {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            opacity: 0.1;
-        }
-
-        .neural-node {
-            position: absolute;
-            width: 20px;
-            height: 20px;
-            background: var(--primary-blue);
-            border-radius: 50%;
-            animation: neural-pulse 4s ease-in-out infinite;
-        }
-
-        @keyframes neural-pulse {
-            0%, 100% { 
-                transform: scale(1);
-                opacity: 0.3;
-            }
-            50% { 
-                transform: scale(1.5);
-                opacity: 0.8;
-            }
-        }
-
-        .neural-connection {
-            position: absolute;
-            width: 100%;
-            height: 1px;
-            background: linear-gradient(90deg, transparent, var(--primary-blue), transparent);
-            top: 50%;
-            left: 0;
-            animation: neural-flow 3s linear infinite;
-        }
-
-        @keyframes neural-flow {
-            0% { transform: translateX(-100%); }
-            100% { transform: translateX(100%); }
-        }
-
-        .vision-text-overlay {
-            position: relative;
-            z-index: 2;
-            text-align: center;
-        }
-
-        .vision-text-overlay h3 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            background: var(--gradient-blue);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .vision-text-overlay p {
-            font-size: 1.5rem;
-            color: var(--text-light);
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .vision-pillars {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 2rem;
-            margin-bottom: 3rem;
-        }
-
-        .vision-pillar {
-            background: rgba(74, 144, 226, 0.05);
-            border-radius: 20px;
-            padding: 2.5rem;
-            text-align: center;
-            border: 1px solid rgba(74, 144, 226, 0.2);
-            transition: all 0.3s ease;
-        }
-
-        .vision-pillar:hover {
-            transform: translateY(-10px);
-            border-color: var(--primary-blue);
-            box-shadow: 0 20px 40px rgba(74, 144, 226, 0.2);
-        }
-
-        .pillar-icon {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-
-        .vision-pillar h4 {
-            color: var(--primary-blue);
-            font-size: 1.5rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .vision-pillar p {
-            color: var(--text-muted);
-            line-height: 1.6;
-        }
-
-        .vision-quote {
-            background: var(--card-bg);
-            border-radius: 20px;
-            padding: 3rem;
-            border-left: 4px solid var(--primary-blue);
-            position: relative;
-        }
-
-        .vision-quote blockquote {
-            font-size: 1.25rem;
-            line-height: 1.8;
-            color: var(--text-light);
-            font-style: italic;
-            margin: 0;
-        }
-
-        .vision-quote::before {
-            content: '"';
-            position: absolute;
-            top: 1rem;
-            left: 2rem;
-            font-size: 4rem;
-            color: var(--primary-blue);
-            opacity: 0.3;
-        }
-
         /* Hero Section */
         .hero {
             min-height: 100vh;
@@ -564,130 +407,10 @@
             filter: grayscale(0%);
         }
 
-        /* Partner Section */
-        .partners {
-            padding: 6rem 2rem;
-            background: var(--dark-bg);
-        }
-
-        .partner-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .partner-logo {
-            margin: 3rem 0;
-            padding: 3rem;
-            background: var(--card-bg);
-            border-radius: 20px;
-            border: 1px solid rgba(74, 144, 226, 0.2);
-            display: inline-block;
-        }
-
-        .partner-logo h3 {
-            font-size: 2.5rem;
-            color: var(--primary-blue);
-            margin-bottom: 1rem;
-        }
-
-        .partner-info {
-            font-size: 1.25rem;
-            color: var(--text-light);
-            margin-bottom: 1rem;
-        }
-
-        .partner-status {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            margin-top: 1.5rem;
-        }
-
-        .status-badge {
-            display: inline-block;
-            padding: 0.5rem 1.5rem;
-            border-radius: 25px;
-            font-weight: 600;
-        }
-
-        /* Partner Section Enhanced */
-        .partner-metrics {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 2rem;
-            margin: 2rem 0;
-            padding: 2rem 0;
-            border-top: 1px solid rgba(74, 144, 226, 0.2);
-            border-bottom: 1px solid rgba(74, 144, 226, 0.2);
-        }
-
-        .metric-item {
-            text-align: center;
-        }
-
-        .metric-value {
-            font-size: 2.5rem;
-            font-weight: bold;
-            background: var(--gradient-blue);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .metric-label {
-            color: var(--text-muted);
-            font-size: 0.875rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-top: 0.5rem;
-        }
-
-        .partnership-benefits {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 2rem;
-            margin-top: 3rem;
-            max-width: 1000px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .benefit-item {
-            text-align: center;
-            padding: 2rem;
-            background: rgba(74, 144, 226, 0.05);
-            border-radius: 15px;
-            border: 1px solid rgba(74, 144, 226, 0.2);
-            transition: all 0.3s ease;
-        }
-
-        .benefit-item:hover {
-            transform: translateY(-5px);
-            border-color: var(--primary-blue);
-            box-shadow: 0 10px 30px rgba(74, 144, 226, 0.2);
-        }
-
-        .benefit-item h4 {
-            color: var(--primary-blue);
-            margin-bottom: 1rem;
-            font-size: 1.25rem;
-        }
-
-        .pilot-badge {
-            background: linear-gradient(45deg, #00ffe1, #0099cc);
-            color: #000;
-        }
-
-        .investor-badge {
-            background: linear-gradient(45deg, #f39c12, #f1c40f);
-            color: #000;
-        }
-
         /* Ultra Instinct Section */
         .ultra-instinct-section {
             padding: 6rem 2rem;
-            background: var(--darker-bg);
+            background: var(--dark-bg);
         }
 
         .ultra-content {
@@ -760,7 +483,7 @@
         /* Development Section */
         .development-section {
             padding: 6rem 2rem;
-            background: var(--dark-bg);
+            background: var(--darker-bg);
         }
 
         .development-grid {
@@ -806,6 +529,36 @@
         .dev-card p {
             color: var(--text-muted);
             line-height: 1.6;
+        }
+
+        /* Technology Stack */
+        .tech-stack-section {
+            padding: 6rem 2rem;
+            background: var(--dark-bg);
+        }
+
+        .tech-grid {
+            max-width: 1200px;
+            margin: 3rem auto 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+        }
+
+        .tech-item {
+            background: rgba(74, 144, 226, 0.05);
+            border: 1px solid rgba(74, 144, 226, 0.2);
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .tech-item:hover {
+            background: rgba(74, 144, 226, 0.2);
+            border-color: var(--primary-blue);
+            transform: translateY(-5px);
         }
 
         /* About Section */
@@ -906,56 +659,284 @@
             color: var(--primary-blue);
         }
 
-        .vision-statement {
-            max-width: 1000px;
-            margin: 4rem auto 0;
-            text-align: center;
-            background: rgba(74, 144, 226, 0.05);
-            border: 1px solid rgba(74, 144, 226, 0.2);
-            padding: 3rem;
-            border-radius: 20px;
+        /* Vision Section - Professional Redesign */
+        .vision-section {
+            padding: 8rem 2rem;
+            background: linear-gradient(135deg, var(--dark-bg) 0%, rgba(74, 144, 226, 0.02) 100%);
+            position: relative;
+            overflow: hidden;
         }
 
-        .vision-statement h3 {
-            font-size: 2rem;
-            margin-bottom: 1.5rem;
+        .vision-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -30%;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(74, 144, 226, 0.1) 0%, transparent 70%);
+            animation: vision-glow 20s ease-in-out infinite;
+        }
+
+        @keyframes vision-glow {
+            0%, 100% { opacity: 0.3; transform: scale(1); }
+            50% { opacity: 0.6; transform: scale(1.2); }
+        }
+
+        .vision-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .vision-main {
+            text-align: center;
+            margin-bottom: 5rem;
+        }
+
+        .vision-main h2 {
+            font-size: 3.5rem;
+            margin-bottom: 2rem;
+            font-weight: 800;
+            letter-spacing: -1px;
+            background: var(--gradient-blue);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .vision-statement-box {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(74, 144, 226, 0.05);
+            border: 1px solid rgba(74, 144, 226, 0.2);
+            border-radius: 25px;
+            padding: 3rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .vision-statement-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--gradient-blue);
+        }
+
+        .vision-text {
+            font-size: 1.5rem;
+            line-height: 1.8;
+            color: var(--text-light);
+            font-weight: 300;
+        }
+
+        .vision-metrics {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3rem;
+            margin-top: 5rem;
+        }
+
+        .vision-metric {
+            text-align: center;
+        }
+
+        .metric-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 1.5rem;
+            background: var(--gradient-blue);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            color: white;
+            box-shadow: 0 10px 30px rgba(74, 144, 226, 0.3);
+        }
+
+        .metric-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-light);
+            margin-bottom: 0.5rem;
+        }
+
+        .metric-description {
+            color: var(--text-muted);
+            font-size: 1.125rem;
+            line-height: 1.6;
+        }
+
+        .vision-impact {
+            margin-top: 5rem;
+            background: var(--card-bg);
+            border-radius: 25px;
+            padding: 4rem;
+            border: 1px solid rgba(74, 144, 226, 0.1);
+        }
+
+        .vision-impact h3 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 3rem;
             color: var(--primary-blue);
         }
 
-        .vision-statement p {
-            font-size: 1.25rem;
-            line-height: 1.8;
-            color: var(--text-light);
+        .impact-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 3rem;
         }
 
-        /* Technology Stack */
-        .tech-stack-section {
+        .impact-item {
+            display: flex;
+            gap: 1.5rem;
+            align-items: start;
+        }
+
+        .impact-number {
+            font-size: 3rem;
+            font-weight: 800;
+            background: var(--gradient-blue);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1;
+        }
+
+        .impact-content h4 {
+            font-size: 1.5rem;
+            color: var(--text-light);
+            margin-bottom: 0.5rem;
+        }
+
+        .impact-content p {
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+
+        /* Partner Section */
+        .partners {
             padding: 6rem 2rem;
             background: var(--dark-bg);
         }
 
-        .tech-grid {
+        .partner-content {
             max-width: 1200px;
-            margin: 3rem auto 0;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 2rem;
-            justify-content: center;
+            margin: 0 auto;
+            text-align: center;
         }
 
-        .tech-item {
-            background: rgba(74, 144, 226, 0.05);
+        .partner-logo {
+            margin: 3rem 0;
+            padding: 3rem;
+            background: var(--card-bg);
+            border-radius: 20px;
             border: 1px solid rgba(74, 144, 226, 0.2);
-            padding: 1rem 2rem;
-            border-radius: 50px;
+            display: inline-block;
+        }
+
+        .partner-logo h3 {
+            font-size: 2.5rem;
+            color: var(--primary-blue);
+            margin-bottom: 1rem;
+        }
+
+        .partner-info {
+            font-size: 1.25rem;
+            color: var(--text-light);
+            margin-bottom: 1rem;
+        }
+
+        .partner-status {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 1.5rem;
+        }
+
+        .status-badge {
+            display: inline-block;
+            padding: 0.5rem 1.5rem;
+            border-radius: 25px;
             font-weight: 600;
+        }
+
+        .partner-metrics {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin: 2rem 0;
+            padding: 2rem 0;
+            border-top: 1px solid rgba(74, 144, 226, 0.2);
+            border-bottom: 1px solid rgba(74, 144, 226, 0.2);
+        }
+
+        .metric-item {
+            text-align: center;
+        }
+
+        .metric-value {
+            font-size: 2.5rem;
+            font-weight: bold;
+            background: var(--gradient-blue);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .metric-label {
+            color: var(--text-muted);
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 0.5rem;
+        }
+
+        .partnership-benefits {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .benefit-item {
+            text-align: center;
+            padding: 2rem;
+            background: rgba(74, 144, 226, 0.05);
+            border-radius: 15px;
+            border: 1px solid rgba(74, 144, 226, 0.2);
             transition: all 0.3s ease;
         }
 
-        .tech-item:hover {
-            background: rgba(74, 144, 226, 0.2);
-            border-color: var(--primary-blue);
+        .benefit-item:hover {
             transform: translateY(-5px);
+            border-color: var(--primary-blue);
+            box-shadow: 0 10px 30px rgba(74, 144, 226, 0.2);
+        }
+
+        .benefit-item h4 {
+            color: var(--primary-blue);
+            margin-bottom: 1rem;
+            font-size: 1.25rem;
+        }
+
+        .pilot-badge {
+            background: linear-gradient(45deg, #00ffe1, #0099cc);
+            color: #000;
+        }
+
+        .investor-badge {
+            background: linear-gradient(45deg, #f39c12, #f1c40f);
+            color: #000;
         }
 
         /* Contact CTA */
@@ -1052,6 +1033,15 @@
             .ai-brain-animation {
                 width: 600px;
             }
+
+            .vision-metrics {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .impact-grid {
+                grid-template-columns: 1fr;
+            }
         }
 
         @media (max-width: 768px) {
@@ -1097,6 +1087,14 @@
 
             .development-grid {
                 grid-template-columns: 1fr;
+            }
+
+            .vision-main h2 {
+                font-size: 2.5rem;
+            }
+
+            .vision-text {
+                font-size: 1.25rem;
             }
         }
 
@@ -1153,19 +1151,21 @@
                 <div class="company-name">INSTINCT SYSTEMS<span class="ai">AI</span></div>
             </div>
             <ul class="nav-links">
-                <li><a href="#about">Über uns</a></li>
-                <li><a href="#vision">Vision</a></li>
+                <li><a href="#home">Start</a></li>
                 <li><a href="#solutions">Lösungen</a></li>
                 <li><a href="#industries">Branchen</a></li>
-                <li><a href="#partners">Partner</a></li>
                 <li><a href="#ultra-instinct">Ultra Instinct</a></li>
-                <li><a href="#development">Produktportfolio</a></li>
+                <li><a href="#development">Portfolio</a></li>
+                <li><a href="#technology">Technologie</a></li>
+                <li><a href="#about">Team</a></li>
+                <li><a href="#vision">Vision</a></li>
+                <li><a href="#partners">Partner</a></li>
                 <li><a href="#contact">Kontakt</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- 1. Hero Section -->
     <section class="hero" id="home">
         <div class="hero-content">
             <div class="hero-text">
@@ -1194,58 +1194,7 @@
         </div>
     </section>
 
-    <!-- Vision Section -->
-    <section class="vision-section" id="vision">
-        <div class="section-header">
-            <h2>Unsere Vision</h2>
-            <p>Die Zukunft des Einzelhandels gestalten</p>
-        </div>
-        <div class="vision-content">
-            <div class="vision-container">
-                <div class="ai-visual">
-                    <div class="neural-grid">
-                        <div class="neural-node" style="top: 20%; left: 15%; animation-delay: 0s;"></div>
-                        <div class="neural-node" style="top: 30%; left: 70%; animation-delay: 0.3s;"></div>
-                        <div class="neural-node" style="top: 50%; left: 40%; animation-delay: 0.6s;"></div>
-                        <div class="neural-node" style="top: 70%; left: 25%; animation-delay: 0.9s;"></div>
-                        <div class="neural-node" style="top: 60%; left: 80%; animation-delay: 1.2s;"></div>
-                        <div class="neural-connection"></div>
-                        <div class="neural-connection" style="transform: rotate(45deg);"></div>
-                        <div class="neural-connection" style="transform: rotate(-45deg);"></div>
-                    </div>
-                    <div class="vision-text-overlay">
-                        <h3>Künstliche Intelligenz nahtlos integriert</h3>
-                        <p>Wir schaffen eine Zukunft, in der KI jeden Einzelhandelsprozess revolutioniert</p>
-                    </div>
-                </div>
-                <div class="vision-pillars">
-                    <div class="vision-pillar">
-                        <div class="pillar-icon">🤖</div>
-                        <h4>Automatisierung</h4>
-                        <p>Von repetitiven Aufgaben befreit</p>
-                    </div>
-                    <div class="vision-pillar">
-                        <div class="pillar-icon">🎯</div>
-                        <h4>Fokussierung</h4>
-                        <p>Konzentration auf Kernaufgaben</p>
-                    </div>
-                    <div class="vision-pillar">
-                        <div class="pillar-icon">🚀</div>
-                        <h4>Innovation</h4>
-                        <p>Fortschritt durch Technologie</p>
-                    </div>
-                </div>
-                <div class="vision-quote">
-                    <blockquote>
-                        "Mitarbeiter werden von repetitiven Aufgaben befreit und können sich auf ihre Kernaufgaben konzentrieren - 
-                        während KI die Effizienz maximiert und neue Möglichkeiten eröffnet."
-                    </blockquote>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- AI Features Section -->
+    <!-- 2. Intelligente Lösungen für den Einzelhandel -->
     <section class="ai-features" id="solutions">
         <div class="section-header">
             <h2>Intelligente Lösungen für den Einzelhandel</h2>
@@ -1292,7 +1241,7 @@
         </div>
     </section>
 
-    <!-- Industries Section -->
+    <!-- 3. Für jeden Einzelhandelsbereich -->
     <section class="industries" id="industries">
         <div class="section-header">
             <h2>Für jeden Einzelhandelsbereich</h2>
@@ -1334,64 +1283,7 @@
         </div>
     </section>
 
-    <!-- Partner Section -->
-    <section class="partners" id="partners">
-        <div class="section-header">
-            <h2>Unser Partner & Investor</h2>
-            <p>Gemeinsam gestalten wir die Zukunft des Einzelhandels</p>
-        </div>
-        <div class="partner-content">
-            <div class="partner-logo">
-                <h3>Migros Ostschweiz</h3>
-                <p class="partner-info">Führender Einzelhändler in der Ostschweiz</p>
-                <div class="partner-metrics">
-                    <div class="metric-item">
-                        <div class="metric-value">600+</div>
-                        <div class="metric-label">Filialen</div>
-                    </div>
-                    <div class="metric-item">
-                        <div class="metric-value">52</div>
-                        <div class="metric-label">Aktive Filialen mit UI</div>
-                    </div>
-                    <div class="metric-item">
-                        <div class="metric-value">1000+</div>
-                        <div class="metric-label">Stunden/Woche gespart</div>
-                    </div>
-                </div>
-                <div class="partner-status">
-                    <div class="status-badge pilot-badge">
-                        Ultra Instinct AI im produktiven Einsatz
-                    </div>
-                    <div class="status-badge investor-badge">
-                        Strategischer Teilhaber & Investor
-                    </div>
-                </div>
-            </div>
-            <div class="partner-description">
-                <p style="font-size: 1.25rem; color: var(--text-light); max-width: 800px; margin: 2rem auto; line-height: 1.8;">
-                    Die Migros Ostschweiz ist nicht nur unser Pilotkunde, sondern auch strategischer Teilhaber 
-                    und Investor. Durch diese einzigartige Partnerschaft entwickeln wir gemeinsam die Zukunft 
-                    des intelligenten Einzelhandels.
-                </p>
-                <div class="partnership-benefits">
-                    <div class="benefit-item">
-                        <h4>Technologieführerschaft</h4>
-                        <p>Erste Schweizer Retail-Kette mit vollständiger KI-Integration</p>
-                    </div>
-                    <div class="benefit-item">
-                        <h4>Messbare Erfolge</h4>
-                        <p>Nachweisbare Effizienzsteigerung und Kosteneinsparungen</p>
-                    </div>
-                    <div class="benefit-item">
-                        <h4>Gemeinsame Innovation</h4>
-                        <p>Co-Development neuer KI-Lösungen für den Einzelhandel</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Ultra Instinct Section -->
+    <!-- 4. Ultra Instinct - Unsere KI-Lösung -->
     <section class="ultra-instinct-section" id="ultra-instinct">
         <div class="section-header">
             <h2>Ultra Instinct - Unsere KI-Lösung</h2>
@@ -1447,7 +1339,7 @@
         </div>
     </section>
 
-    <!-- Development Section -->
+    <!-- 5. Produktportfolio & Roadmap -->
     <section class="development-section" id="development">
         <div class="section-header">
             <h2>Produktportfolio & Roadmap</h2>
@@ -1487,7 +1379,27 @@
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- 6. Modernste Technologie -->
+    <section class="tech-stack-section" id="technology">
+        <div class="section-header">
+            <h2>Modernste Technologie</h2>
+            <p>Wir nutzen führende KI-Frameworks und Cloud-Technologien für maximale Performance.</p>
+        </div>
+        <div class="tech-grid">
+            <div class="tech-item">TensorFlow</div>
+            <div class="tech-item">PyTorch</div>
+            <div class="tech-item">Machine Learning</div>
+            <div class="tech-item">Deep Learning</div>
+            <div class="tech-item">Natural Language Processing</div>
+            <div class="tech-item">Computer Vision</div>
+            <div class="tech-item">Cloud Native</div>
+            <div class="tech-item">Kubernetes</div>
+            <div class="tech-item">Real-time Analytics</div>
+            <div class="tech-item">API-First</div>
+        </div>
+    </section>
+
+    <!-- 7. Die Köpfe hinter der Innovation -->
     <section class="about-section" id="about">
         <div class="section-header">
             <h2>Die Köpfe hinter der Innovation</h2>
@@ -1552,35 +1464,140 @@
                 </div>
             </div>
         </div>
-        <div class="vision-statement">
-            <h3>Unsere Vision</h3>
-            <p>Wir schaffen eine Zukunft, in der künstliche Intelligenz nahtlos in alle Einzelhandelsprozesse 
-               integriert ist. Mitarbeiter werden von repetitiven Aufgaben befreit und können sich auf 
-               ihre Kernaufgaben konzentrieren.</p>
+    </section>
+
+    <!-- 8. Vision - Professional Redesign -->
+    <section class="vision-section" id="vision">
+        <div class="vision-content">
+            <div class="vision-main">
+                <h2>Unsere Vision für die Zukunft</h2>
+                <div class="vision-statement-box">
+                    <p class="vision-text">
+                        Wir schaffen eine Zukunft, in der künstliche Intelligenz nahtlos in alle Einzelhandelsprozesse 
+                        integriert ist. Mitarbeiter werden von repetitiven Aufgaben befreit und können sich auf 
+                        ihre Kernaufgaben konzentrieren.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="vision-metrics">
+                <div class="vision-metric">
+                    <div class="metric-icon">🎯</div>
+                    <div class="metric-title">Fokussierung</div>
+                    <div class="metric-description">
+                        Mitarbeiter konzentrieren sich auf wertschöpfende Tätigkeiten statt auf repetitive Prozesse
+                    </div>
+                </div>
+                <div class="vision-metric">
+                    <div class="metric-icon">⚡</div>
+                    <div class="metric-title">Effizienz</div>
+                    <div class="metric-description">
+                        KI-gestützte Automatisierung steigert die Produktivität um bis zu 300%
+                    </div>
+                </div>
+                <div class="vision-metric">
+                    <div class="metric-icon">🚀</div>
+                    <div class="metric-title">Innovation</div>
+                    <div class="metric-description">
+                        Kontinuierliche Weiterentwicklung durch selbstlernende Systeme
+                    </div>
+                </div>
+            </div>
+
+            <div class="vision-impact">
+                <h3>Unser Impact bis 2030</h3>
+                <div class="impact-grid">
+                    <div class="impact-item">
+                        <div class="impact-number">01</div>
+                        <div class="impact-content">
+                            <h4>Marktführerschaft</h4>
+                            <p>Führender KI-Anbieter für den europäischen Einzelhandel</p>
+                        </div>
+                    </div>
+                    <div class="impact-item">
+                        <div class="impact-number">02</div>
+                        <div class="impact-content">
+                            <h4>Flächendeckende Integration</h4>
+                            <p>KI-Lösungen in über 10.000 Filialen im aktiven Einsatz</p>
+                        </div>
+                    </div>
+                    <div class="impact-item">
+                        <div class="impact-number">03</div>
+                        <div class="impact-content">
+                            <h4>Nachhaltige Transformation</h4>
+                            <p>30% weniger Lebensmittelverschwendung durch präzise Prognosen</p>
+                        </div>
+                    </div>
+                    <div class="impact-item">
+                        <div class="impact-number">04</div>
+                        <div class="impact-content">
+                            <h4>Wirtschaftlicher Impact</h4>
+                            <p>Über 1 Milliarde CHF eingespartes Kapital für unsere Kunden</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Technology Stack -->
-    <section class="tech-stack-section" id="technology">
+    <!-- 9. Partner -->
+    <section class="partners" id="partners">
         <div class="section-header">
-            <h2>Modernste Technologie</h2>
-            <p>Wir nutzen führende KI-Frameworks und Cloud-Technologien für maximale Performance.</p>
+            <h2>Unser Partner & Investor</h2>
+            <p>Gemeinsam gestalten wir die Zukunft des Einzelhandels</p>
         </div>
-        <div class="tech-grid">
-            <div class="tech-item">TensorFlow</div>
-            <div class="tech-item">PyTorch</div>
-            <div class="tech-item">Machine Learning</div>
-            <div class="tech-item">Deep Learning</div>
-            <div class="tech-item">Natural Language Processing</div>
-            <div class="tech-item">Computer Vision</div>
-            <div class="tech-item">Cloud Native</div>
-            <div class="tech-item">Kubernetes</div>
-            <div class="tech-item">Real-time Analytics</div>
-            <div class="tech-item">API-First</div>
+        <div class="partner-content">
+            <div class="partner-logo">
+                <h3>Migros Ostschweiz</h3>
+                <p class="partner-info">Führender Einzelhändler in der Ostschweiz</p>
+                <div class="partner-metrics">
+                    <div class="metric-item">
+                        <div class="metric-value">600+</div>
+                        <div class="metric-label">Filialen</div>
+                    </div>
+                    <div class="metric-item">
+                        <div class="metric-value">52</div>
+                        <div class="metric-label">Aktive Filialen mit UI</div>
+                    </div>
+                    <div class="metric-item">
+                        <div class="metric-value">1000+</div>
+                        <div class="metric-label">Stunden/Woche gespart</div>
+                    </div>
+                </div>
+                <div class="partner-status">
+                    <div class="status-badge pilot-badge">
+                        Ultra Instinct AI im produktiven Einsatz
+                    </div>
+                    <div class="status-badge investor-badge">
+                        Strategischer Teilhaber & Investor
+                    </div>
+                </div>
+            </div>
+            <div class="partner-description">
+                <p style="font-size: 1.25rem; color: var(--text-light); max-width: 800px; margin: 2rem auto; line-height: 1.8;">
+                    Die Migros Ostschweiz ist nicht nur unser Pilotkunde, sondern auch strategischer Teilhaber 
+                    und Investor. Durch diese einzigartige Partnerschaft entwickeln wir gemeinsam die Zukunft 
+                    des intelligenten Einzelhandels.
+                </p>
+                <div class="partnership-benefits">
+                    <div class="benefit-item">
+                        <h4>Technologieführerschaft</h4>
+                        <p>Erste Schweizer Retail-Kette mit vollständiger KI-Integration</p>
+                    </div>
+                    <div class="benefit-item">
+                        <h4>Messbare Erfolge</h4>
+                        <p>Nachweisbare Effizienzsteigerung und Kosteneinsparungen</p>
+                    </div>
+                    <div class="benefit-item">
+                        <h4>Gemeinsame Innovation</h4>
+                        <p>Co-Development neuer KI-Lösungen für den Einzelhandel</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Contact CTA -->
+    <!-- 10. Contact CTA -->
     <section class="contact-cta" id="contact">
         <h2>Bereit für die Retail-Revolution?</h2>
         <p>Steigern Sie Ihre Effizienz mit unseren KI-Lösungen.</p>
@@ -1682,7 +1699,7 @@
         }, observerOptions);
 
         // Observe all cards and sections
-        document.querySelectorAll('.feature-card, .industry-item, .tech-item, .founder-card, .dev-card').forEach(el => {
+        document.querySelectorAll('.feature-card, .industry-item, .tech-item, .founder-card, .dev-card, .vision-metric, .impact-item').forEach(el => {
             observer.observe(el);
         });
 
@@ -1693,6 +1710,19 @@
             if (parallax) {
                 parallax.style.transform = `translateY(${scrolled * 0.5}px)`;
             }
+        });
+
+        // Vision section animation
+        const visionObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animated');
+                }
+            });
+        }, { threshold: 0.3 });
+
+        document.querySelectorAll('.vision-metric, .impact-item').forEach(el => {
+            visionObserver.observe(el);
         });
     </script>
 </body>
