@@ -172,7 +172,7 @@
         }
 
         .hero-text h1 {
-            font-size: clamp(2.5rem, 5vw, 4.5rem);
+            font-size: clamp(2rem, 4vw, 3.5rem);
             font-weight: 800;
             line-height: 1.1;
             margin-bottom: 1.5rem;
@@ -246,7 +246,7 @@
         }
 
         .ai-brain-animation {
-            width: 800px;
+            width: 600px;
             height: 600px;
             position: relative;
             display: flex;
@@ -351,11 +351,13 @@
             font-size: 1.75rem;
             margin-bottom: 1rem;
             color: var(--text-light);
+            text-align: center;
         }
 
         .feature-card p {
             color: var(--text-muted);
             line-height: 1.8;
+            text-align: center;
         }
 
         /* Industries Section */
@@ -450,6 +452,69 @@
             padding: 0.5rem 1.5rem;
             border-radius: 25px;
             font-weight: 600;
+        }
+
+        /* Partner Section Enhanced */
+        .partner-metrics {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin: 2rem 0;
+            padding: 2rem 0;
+            border-top: 1px solid rgba(74, 144, 226, 0.2);
+            border-bottom: 1px solid rgba(74, 144, 226, 0.2);
+        }
+
+        .metric-item {
+            text-align: center;
+        }
+
+        .metric-value {
+            font-size: 2.5rem;
+            font-weight: bold;
+            background: var(--gradient-blue);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .metric-label {
+            color: var(--text-muted);
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 0.5rem;
+        }
+
+        .partnership-benefits {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .benefit-item {
+            text-align: center;
+            padding: 2rem;
+            background: rgba(74, 144, 226, 0.05);
+            border-radius: 15px;
+            border: 1px solid rgba(74, 144, 226, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .benefit-item:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary-blue);
+            box-shadow: 0 10px 30px rgba(74, 144, 226, 0.2);
+        }
+
+        .benefit-item h4 {
+            color: var(--primary-blue);
+            margin-bottom: 1rem;
+            font-size: 1.25rem;
         }
 
         .pilot-badge {
@@ -935,7 +1000,7 @@
                 <li><a href="#industries">Branchen</a></li>
                 <li><a href="#partners">Partner</a></li>
                 <li><a href="#ultra-instinct">Ultra Instinct</a></li>
-                <li><a href="#development">Entwicklung</a></li>
+                <li><a href="#development">Produktportfolio</a></li>
                 <li><a href="#contact">Kontakt</a></li>
             </ul>
         </div>
@@ -1069,20 +1134,50 @@
             <div class="partner-logo">
                 <h3>Migros Ostschweiz</h3>
                 <p class="partner-info">Führender Einzelhändler in der Ostschweiz</p>
+                <div class="partner-metrics">
+                    <div class="metric-item">
+                        <div class="metric-value">600+</div>
+                        <div class="metric-label">Filialen</div>
+                    </div>
+                    <div class="metric-item">
+                        <div class="metric-value">52</div>
+                        <div class="metric-label">Aktive Filialen mit UI</div>
+                    </div>
+                    <div class="metric-item">
+                        <div class="metric-value">1000+</div>
+                        <div class="metric-label">Stunden/Woche gespart</div>
+                    </div>
+                </div>
                 <div class="partner-status">
                     <div class="status-badge pilot-badge">
-                        🚀 Ultra Instinct AI im Einsatz
+                        Ultra Instinct AI im produktiven Einsatz
                     </div>
                     <div class="status-badge investor-badge">
-                        💎 Strategischer Teilhaber
+                        Strategischer Teilhaber & Investor
                     </div>
                 </div>
             </div>
-            <p style="font-size: 1.125rem; color: var(--text-muted); max-width: 800px; margin: 2rem auto;">
-                Die Migros Ostschweiz ist nicht nur unser Pilotkunde, sondern auch strategischer Teilhaber 
-                und Investor. Gemeinsam entwickeln wir die Zukunft des intelligenten Einzelhandels. 
-                Die Ultra Instinct AI Software ist bereits erfolgreich im produktiven Einsatz.
-            </p>
+            <div class="partner-description">
+                <p style="font-size: 1.25rem; color: var(--text-light); max-width: 800px; margin: 2rem auto; line-height: 1.8;">
+                    Die Migros Ostschweiz ist nicht nur unser Pilotkunde, sondern auch strategischer Teilhaber 
+                    und Investor. Durch diese einzigartige Partnerschaft entwickeln wir gemeinsam die Zukunft 
+                    des intelligenten Einzelhandels.
+                </p>
+                <div class="partnership-benefits">
+                    <div class="benefit-item">
+                        <h4>Technologieführerschaft</h4>
+                        <p>Erste Schweizer Retail-Kette mit vollständiger KI-Integration</p>
+                    </div>
+                    <div class="benefit-item">
+                        <h4>Messbare Erfolge</h4>
+                        <p>Nachweisbare Effizienzsteigerung und Kosteneinsparungen</p>
+                    </div>
+                    <div class="benefit-item">
+                        <h4>Gemeinsame Innovation</h4>
+                        <p>Co-Development neuer KI-Lösungen für den Einzelhandel</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -1145,8 +1240,8 @@
     <!-- Development Section -->
     <section class="development-section" id="development">
         <div class="section-header">
-            <h2>Aktuelle Entwicklungen</h2>
-            <p>Wir arbeiten kontinuierlich an neuen KI-Lösungen für den Einzelhandel</p>
+            <h2>Produktportfolio & Roadmap</h2>
+            <p>Unser wachsendes Portfolio an KI-Lösungen für den Einzelhandel</p>
         </div>
         <div class="development-grid">
             <div class="dev-card">
@@ -1251,7 +1346,7 @@
             <h3>Unsere Vision</h3>
             <p>Wir schaffen eine Zukunft, in der künstliche Intelligenz nahtlos in alle Einzelhandelsprozesse 
                integriert ist. Mitarbeiter werden von repetitiven Aufgaben befreit und können sich auf 
-               ihre Kernaufgaben konzentrieren - Kreativität, Kundenservice und strategische Entscheidungen.</p>
+               ihre Kernaufgaben konzentrieren.</p>
         </div>
     </section>
 
