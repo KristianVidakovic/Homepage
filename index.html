@@ -257,7 +257,6 @@
         .brain-large {
             width: 100%;
             height: 100%;
-            fill: var(--primary-blue);
             filter: drop-shadow(0 0 50px rgba(74, 144, 226, 0.5));
             animation: float 6s ease-in-out infinite;
         }
@@ -379,6 +378,10 @@
             border-radius: 15px;
             text-align: center;
             transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
 
         .industry-item:hover {
@@ -392,6 +395,9 @@
             margin-bottom: 1rem;
             filter: grayscale(100%);
             transition: filter 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .industry-item:hover .industry-icon {
@@ -431,20 +437,139 @@
             margin-bottom: 1rem;
         }
 
-        .pilot-badge {
+        .partner-status {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 1.5rem;
+        }
+
+        .status-badge {
             display: inline-block;
-            background: var(--gradient-blue);
-            color: white;
             padding: 0.5rem 1.5rem;
             border-radius: 25px;
             font-weight: 600;
-            margin-top: 1rem;
+        }
+
+        .pilot-badge {
+            background: linear-gradient(45deg, #00ffe1, #0099cc);
+            color: #000;
+        }
+
+        .investor-badge {
+            background: linear-gradient(45deg, #f39c12, #f1c40f);
+            color: #000;
+        }
+
+        /* Software Preview Section */
+        .software-preview {
+            padding: 6rem 2rem;
+            background: var(--darker-bg);
+        }
+
+        .preview-grid {
+            max-width: 1400px;
+            margin: 3rem auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 3rem;
+        }
+
+        .preview-card {
+            background: var(--card-bg);
+            border-radius: 20px;
+            overflow: hidden;
+            border: 1px solid rgba(74, 144, 226, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .preview-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 30px 60px rgba(74, 144, 226, 0.3);
+        }
+
+        .preview-header {
+            background: linear-gradient(135deg, rgba(74, 144, 226, 0.2) 0%, rgba(155, 89, 182, 0.2) 100%);
+            padding: 1.5rem;
+            border-bottom: 1px solid rgba(74, 144, 226, 0.2);
+        }
+
+        .preview-header h3 {
+            color: var(--text-light);
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .preview-badge {
+            display: inline-block;
+            background: rgba(0, 255, 225, 0.2);
+            color: #00ffe1;
+            padding: 0.25rem 0.75rem;
+            border-radius: 15px;
+            font-size: 0.875rem;
+            font-weight: 600;
+        }
+
+        .preview-content {
+            padding: 2rem;
+        }
+
+        .mock-dashboard {
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .stat-row {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .stat-box {
+            background: rgba(74, 144, 226, 0.1);
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-blue);
+        }
+
+        .stat-label {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+            margin-top: 0.25rem;
+        }
+
+        .progress-bar {
+            background: rgba(74, 144, 226, 0.1);
+            height: 8px;
+            border-radius: 4px;
+            overflow: hidden;
+            margin: 1rem 0;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: var(--gradient-blue);
+            border-radius: 4px;
+            animation: progressAnimation 2s ease-out;
+        }
+
+        @keyframes progressAnimation {
+            from { width: 0; }
         }
 
         /* About Section */
         .about-section {
             padding: 6rem 2rem;
-            background: var(--darker-bg);
+            background: var(--dark-bg);
         }
 
         .founders-grid {
@@ -564,7 +689,7 @@
         /* Technology Stack */
         .tech-stack-section {
             padding: 6rem 2rem;
-            background: var(--dark-bg);
+            background: var(--darker-bg);
         }
 
         .tech-grid {
@@ -719,6 +844,10 @@
                 grid-template-columns: 1fr;
                 text-align: center;
             }
+
+            .preview-grid {
+                grid-template-columns: 1fr;
+            }
         }
 
         /* Loading Animation */
@@ -744,7 +873,6 @@
         .loader-brain {
             width: 100px;
             height: 100px;
-            fill: var(--primary-blue);
             animation: loader-pulse 1.5s ease-in-out infinite;
         }
 
@@ -757,10 +885,7 @@
 <body>
     <!-- Loading Screen -->
     <div class="loader" id="loader">
-        <svg class="loader-brain" viewBox="0 0 100 100">
-            <path d="M50 10 C30 10 20 25 20 40 C20 60 30 80 50 80 C70 80 80 60 80 40 C80 25 70 10 50 10 Z M50 10 L50 80 M20 40 C35 40 35 50 50 50 C65 50 65 40 80 40" 
-                  stroke="currentColor" stroke-width="2" fill="none"/>
-        </svg>
+        <img src="IconOnly.png" alt="Loading" class="loader-brain">
     </div>
 
     <!-- Background Animation -->
@@ -773,10 +898,7 @@
         <div class="nav-container">
             <div class="logo-container">
                 <div class="logo-brain">
-                    <svg class="brain-icon" viewBox="0 0 100 100">
-                        <path d="M50 10 C30 10 20 25 20 40 C20 60 30 80 50 80 C70 80 80 60 80 40 C80 25 70 10 50 10 Z M50 10 L50 80 M20 40 C35 40 35 50 50 50 C65 50 65 40 80 40" 
-                              stroke="currentColor" stroke-width="2" fill="none"/>
-                    </svg>
+                    <img src="IconOnly.png" alt="Logo" class="brain-icon" style="width: 100%; height: 100%;">
                 </div>
                 <div class="company-name">INSTINCT SYSTEMS<span class="ai">AI</span></div>
             </div>
@@ -785,6 +907,7 @@
                 <li><a href="#solutions">Lösungen</a></li>
                 <li><a href="#industries">Branchen</a></li>
                 <li><a href="#partners">Partner</a></li>
+                <li><a href="#software">Software</a></li>
                 <li><a href="#technology">Technologie</a></li>
                 <li><a href="#contact">Kontakt</a></li>
             </ul>
@@ -912,21 +1035,130 @@
     <!-- Partner Section -->
     <section class="partners" id="partners">
         <div class="section-header">
-            <h2>Unser Partner</h2>
+            <h2>Unser Partner & Investor</h2>
             <p>Gemeinsam gestalten wir die Zukunft des Einzelhandels</p>
         </div>
         <div class="partner-content">
             <div class="partner-logo">
                 <h3>Migros Ostschweiz</h3>
                 <p class="partner-info">Führender Einzelhändler in der Ostschweiz</p>
-                <div class="pilot-badge">
-                    🚀 Ultra Instinct AI im Pilotbetrieb
+                <div class="partner-status">
+                    <div class="status-badge pilot-badge">
+                        🚀 Ultra Instinct AI im Einsatz
+                    </div>
+                    <div class="status-badge investor-badge">
+                        💎 Strategischer Teilhaber
+                    </div>
                 </div>
             </div>
             <p style="font-size: 1.125rem; color: var(--text-muted); max-width: 800px; margin: 2rem auto;">
-                Die Migros Ostschweiz setzt als Innovationsführer bereits heute auf unsere KI-Lösung Ultra Instinct. 
-                Im laufenden Pilotbetrieb werden bereits über 1'000 Arbeitsstunden pro Woche eingespart.
+                Die Migros Ostschweiz ist nicht nur unser Pilotkunde, sondern auch strategischer Teilhaber 
+                und Investor. Gemeinsam entwickeln wir die Zukunft des intelligenten Einzelhandels. 
+                Die Ultra Instinct AI Software ist bereits erfolgreich im produktiven Einsatz und 
+                spart über 1'000 Arbeitsstunden pro Woche.
             </p>
+        </div>
+    </section>
+
+    <!-- Software Preview Section -->
+    <section class="software-preview" id="software">
+        <div class="section-header">
+            <h2>Ultra Instinct AI im Einsatz</h2>
+            <p>Einblicke in unsere revolutionäre KI-Software</p>
+        </div>
+        <div class="preview-grid">
+            <div class="preview-card">
+                <div class="preview-header">
+                    <h3>UI ENGINE Dashboard</h3>
+                    <span class="preview-badge">Live bei Migros</span>
+                </div>
+                <div class="preview-content">
+                    <div class="mock-dashboard">
+                        <div class="stat-row">
+                            <div class="stat-box">
+                                <div class="stat-value">95.8%</div>
+                                <div class="stat-label">Prognosegenauigkeit</div>
+                            </div>
+                            <div class="stat-box">
+                                <div class="stat-value">-47%</div>
+                                <div class="stat-label">Abschriften</div>
+                            </div>
+                            <div class="stat-box">
+                                <div class="stat-value">+23%</div>
+                                <div class="stat-label">Verfügbarkeit</div>
+                            </div>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 87%;"></div>
+                        </div>
+                        <p style="color: var(--text-muted); font-size: 0.875rem; margin-top: 1rem;">
+                            KI-Analyse: 847 Artikel optimiert • 52 Filialen aktiv
+                        </p>
+                    </div>
+                    <p style="margin-top: 1.5rem;">
+                        Vollautomatische Bestellmengenoptimierung mit Machine Learning. 
+                        Berücksichtigt Saisonalität, Wetter, Events und lokale Besonderheiten.
+                    </p>
+                </div>
+            </div>
+
+            <div class="preview-card">
+                <div class="preview-header">
+                    <h3>Mengensteuerung</h3>
+                    <span class="preview-badge">Aktionsplanung</span>
+                </div>
+                <div class="preview-content">
+                    <div class="mock-dashboard">
+                        <div style="background: rgba(155, 89, 182, 0.1); padding: 1rem; border-radius: 8px; margin-bottom: 1rem;">
+                            <div style="color: #9b59b6; font-weight: 600; margin-bottom: 0.5rem;">Aktuelle Aktion</div>
+                            <div style="color: var(--text-light);">Oster-Promotion 2025</div>
+                        </div>
+                        <div class="stat-row">
+                            <div class="stat-box">
+                                <div class="stat-value" style="color: #9b59b6;">1,247</div>
+                                <div class="stat-label">Paletten</div>
+                            </div>
+                            <div class="stat-box">
+                                <div class="stat-value" style="color: #9b59b6;">52</div>
+                                <div class="stat-label">Filialen</div>
+                            </div>
+                            <div class="stat-box">
+                                <div class="stat-value" style="color: #9b59b6;">3</div>
+                                <div class="stat-label">Liefertage</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p style="margin-top: 1.5rem;">
+                        Intelligente Verteilung von Aktionsware basierend auf Filialleistung 
+                        und historischen Daten. Reduziert Retouren um bis zu 60%.
+                    </p>
+                </div>
+            </div>
+
+            <div class="preview-card">
+                <div class="preview-header">
+                    <h3>ML-Training</h3>
+                    <span class="preview-badge">Selbstlernend</span>
+                </div>
+                <div class="preview-content">
+                    <div class="mock-dashboard">
+                        <div style="text-align: center; padding: 2rem 0;">
+                            <div style="font-size: 3rem; margin-bottom: 1rem;">🧠</div>
+                            <div style="color: var(--text-light); font-weight: 600;">Neural Network Active</div>
+                            <div class="progress-bar" style="margin: 1rem 0;">
+                                <div class="progress-fill" style="width: 73%; background: linear-gradient(45deg, #9b59b6, #00ffe1);"></div>
+                            </div>
+                            <div style="color: var(--text-muted); font-size: 0.875rem;">
+                                Training: 73% • 2.4M Datenpunkte verarbeitet
+                            </div>
+                        </div>
+                    </div>
+                    <p style="margin-top: 1.5rem;">
+                        Kontinuierliches Machine Learning verbessert die Prognosequalität 
+                        automatisch. Anomalieerkennung filtert Sondereffekte heraus.
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -1027,7 +1259,7 @@
     <section class="contact-cta" id="contact">
         <h2>Bereit für die Retail-Revolution?</h2>
         <p>Steigern Sie Ihre Effizienz um bis zu 80% mit unseren KI-Lösungen.</p>
-        <a href="mailto:info@instinctsystems.ai" class="btn">
+        <a href="mailto:info@instinct-systems.ai" class="btn">
             Demo vereinbaren
             <span>→</span>
         </a>
@@ -1125,7 +1357,7 @@
         }, observerOptions);
 
         // Observe all cards and sections
-        document.querySelectorAll('.feature-card, .industry-item, .tech-item, .founder-card').forEach(el => {
+        document.querySelectorAll('.feature-card, .industry-item, .tech-item, .founder-card, .preview-card').forEach(el => {
             observer.observe(el);
         });
 
