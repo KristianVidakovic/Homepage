@@ -246,9 +246,12 @@
         }
 
         .ai-brain-animation {
-            width: 400px;
-            height: 400px;
+            width: 600px;
+            height: 600px;
             position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .brain-large {
@@ -362,10 +365,10 @@
         }
 
         .industry-showcase {
-            max-width: 1400px;
+            max-width: 1200px;
             margin: 0 auto;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: repeat(4, 1fr);
             gap: 2rem;
         }
 
@@ -395,10 +398,53 @@
             filter: grayscale(0%);
         }
 
+        /* Partner Section */
+        .partners {
+            padding: 6rem 2rem;
+            background: var(--dark-bg);
+        }
+
+        .partner-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .partner-logo {
+            margin: 3rem 0;
+            padding: 3rem;
+            background: var(--card-bg);
+            border-radius: 20px;
+            border: 1px solid rgba(74, 144, 226, 0.2);
+            display: inline-block;
+        }
+
+        .partner-logo h3 {
+            font-size: 2.5rem;
+            color: var(--primary-blue);
+            margin-bottom: 1rem;
+        }
+
+        .partner-info {
+            font-size: 1.25rem;
+            color: var(--text-light);
+            margin-bottom: 1rem;
+        }
+
+        .pilot-badge {
+            display: inline-block;
+            background: var(--gradient-blue);
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 25px;
+            font-weight: 600;
+            margin-top: 1rem;
+        }
+
         /* About Section */
         .about-section {
             padding: 6rem 2rem;
-            background: var(--dark-bg);
+            background: var(--darker-bg);
         }
 
         .founders-grid {
@@ -631,6 +677,12 @@
         }
 
         /* Responsive */
+        @media (max-width: 1200px) {
+            .industry-showcase {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
         @media (max-width: 768px) {
             .nav-links {
                 display: none;
@@ -653,6 +705,14 @@
             .cta-buttons {
                 flex-direction: column;
                 align-items: center;
+            }
+
+            .industry-showcase {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .founders-grid {
+                grid-template-columns: 1fr;
             }
 
             .footer-content {
@@ -708,25 +768,29 @@
         <div class="neural-network"></div>
     </div>
 
-<!-- Navigation -->
-<nav>
-    <div class="nav-container">
-        <div class="logo-container">
-            <div class="logo-brain">
-                <img src="FullLogo_Transparent.png" alt="Instinct Systems AI" style="height: 50px; width: auto;">
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo-container">
+                <div class="logo-brain">
+                    <svg class="brain-icon" viewBox="0 0 100 100">
+                        <path d="M50 10 C30 10 20 25 20 40 C20 60 30 80 50 80 C70 80 80 60 80 40 C80 25 70 10 50 10 Z M50 10 L50 80 M20 40 C35 40 35 50 50 50 C65 50 65 40 80 40" 
+                              stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
+                </div>
+                <div class="company-name">INSTINCT SYSTEMS<span class="ai">AI</span></div>
             </div>
-            <!-- Diese Zeile können Sie löschen oder auskommentieren -->
-            <!-- <div class="company-name">INSTINCT SYSTEMS<span class="ai">AI</span></div> -->
+            <ul class="nav-links">
+                <li><a href="#about">Über uns</a></li>
+                <li><a href="#solutions">Lösungen</a></li>
+                <li><a href="#industries">Branchen</a></li>
+                <li><a href="#partners">Partner</a></li>
+                <li><a href="#technology">Technologie</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
         </div>
-        <ul class="nav-links">
-            <li><a href="#about">Über uns</a></li>
-            <li><a href="#solutions">Lösungen</a></li>
-            <li><a href="#industries">Branchen</a></li>
-            <li><a href="#technology">Technologie</a></li>
-            <li><a href="#contact">Kontakt</a></li>
-        </ul>
-    </div>
-</nav>
+    </nav>
+
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-content">
@@ -750,7 +814,7 @@
             </div>
             <div class="hero-visual">
                 <div class="ai-brain-animation">
-                    <img src="FullLogo_Transparent.png" alt="Instinct Systems AI" class="brain-large" style="width: 400px; height: auto;">
+                    <img src="FullLogo_Transparent.png" alt="Instinct Systems AI" class="brain-large" style="width: 100%; height: auto; max-width: 600px;">
                 </div>
             </div>
         </div>
@@ -842,6 +906,27 @@
                 <div class="industry-icon">🎯</div>
                 <h4>Fachhandel</h4>
             </div>
+        </div>
+    </section>
+
+    <!-- Partner Section -->
+    <section class="partners" id="partners">
+        <div class="section-header">
+            <h2>Unser Partner</h2>
+            <p>Gemeinsam gestalten wir die Zukunft des Einzelhandels</p>
+        </div>
+        <div class="partner-content">
+            <div class="partner-logo">
+                <h3>Migros Ostschweiz</h3>
+                <p class="partner-info">Führender Einzelhändler in der Ostschweiz</p>
+                <div class="pilot-badge">
+                    🚀 Ultra Instinct AI im Pilotbetrieb
+                </div>
+            </div>
+            <p style="font-size: 1.125rem; color: var(--text-muted); max-width: 800px; margin: 2rem auto;">
+                Die Migros Ostschweiz setzt als Innovationsführer bereits heute auf unsere KI-Lösung Ultra Instinct. 
+                Im laufenden Pilotbetrieb werden bereits über 1'000 Arbeitsstunden pro Woche eingespart.
+            </p>
         </div>
     </section>
 
@@ -968,6 +1053,7 @@
                 <h4>Unternehmen</h4>
                 <ul>
                     <li><a href="#about">Über uns</a></li>
+                    <li><a href="#partners">Partner</a></li>
                     <li><a href="#technology">Technologie</a></li>
                     <li><a href="#contact">Kontakt</a></li>
                 </ul>
@@ -1039,7 +1125,7 @@
         }, observerOptions);
 
         // Observe all cards and sections
-        document.querySelectorAll('.feature-card, .industry-item, .tech-item').forEach(el => {
+        document.querySelectorAll('.feature-card, .industry-item, .tech-item, .founder-card').forEach(el => {
             observer.observe(el);
         });
 
