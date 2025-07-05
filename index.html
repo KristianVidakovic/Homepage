@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instinct Systems AI - Where Intelligence Meets Instinct</title>
+    <style>
+        :root {
+            --primary-blue: #4A90E2;
+            --dark-blue: #2B5CE6;
+            --light-blue: #6BA3F5;
+            --accent-blue: #78B9F2;
+            --dark-bg: #0A0E1A;
+            --darker-bg: #050709;
+            --card-bg: #0F1420;
+            --text-light: #E8EAED;
+            --text-muted: #9CA3AF;
+            --gradient-blue: linear-gradient(135deg, #2B5CE6 0%, #78B9F2 100%);
+            --gradient-dark: linear-gradient(180deg, #0A0E1A 0%, #050709 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', sans-serif;
+            background: var(--darker-bg);
+            color: var(--text-light);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Animated Background */
+        .bg-animation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: var(--darker-bg);
+            overflow: hidden;
+        }
+
+        .neural-network {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0.03;
+            background-image: 
+                radial-gradient(circle at 20% 50%, var(--primary-blue) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, var(--dark-blue) 0%, transparent 50%),
+                radial-gradient(circle at 40% 20%, var(--light-blue) 0%, transparent 50%);
+            animation: pulse 10s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 0.03; }
+            50% { opacity: 0.06; }
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(10, 14, 26, 0.8);
+            backdrop-filter: blur(20px) saturate(180%);
+            border-bottom: 1px solid rgba(74, 144, 226, 0.1);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .logo-brain {
+            width: 50px;
+            height: 50px;
+            position: relative;
+        }
+
+        .brain-icon {
+            width: 100%;
+            height: 100%;
+            fill: var(--primary-blue);
+            filter: drop-shadow(0 0 20px rgba(74, 144, 226, 0.5));
+            animation: brain-pulse 3s ease-in-out infinite;
+        }
+
+        @keyframes brain-pulse {
+            0%, 100% { filter: drop-shadow(0 0 20px rgba(74, 144, 226, 0.5)); }
+            50% { filter: drop-shadow(0 0 30px rgba(74, 144, 226, 0.8)); }
+        }
+
+        .company-name {
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .company-name .ai {
+            color: var(--primary-blue);
+            margin-left: 0.5rem;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-weight: 500;
+            position: relative;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-blue);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--gradient-blue);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            padding-top: 80px;
+        }
+
+        .hero-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .hero-text h1 {
+            font-size: clamp(2.5rem, 5vw, 4.5rem);
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            background: var(--gradient-blue);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-text .tagline {
+            font-size: 1.5rem;
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+            font-style: italic;
+            letter-spacing: 1px;
+        }
+
+        .hero-description {
+            font-size: 1.25rem;
+            color: var(--text-light);
+            margin-bottom: 3rem;
+            line-height: 1.8;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .btn {
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-primary {
+            background: var(--gradient-blue);
+            color: white;
+            box-shadow: 0 4px 20px rgba(43, 92, 230, 0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(43, 92, 230, 0.6);
+        }
+
+        .btn-secondary {
+            border: 2px solid var(--primary-blue);
+            color: var(--primary-blue);
+            background: transparent;
+        }
+
+        .btn-secondary:hover {
+            background: rgba(74, 144, 226, 0.1);
+            border-color: var(--light-blue);
+            color: var(--light-blue);
+        }
+
+        .hero-visual {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .ai-brain-animation {
+            width: 400px;
+            height: 400px;
+            position: relative;
+        }
+
+        .brain-large {
+            width: 100%;
+            height: 100%;
+            fill: var(--primary-blue);
+            filter: drop-shadow(0 0 50px rgba(74, 144, 226, 0.5));
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        /* AI Features Section */
+        .ai-features {
+            padding: 6rem 2rem;
+            background: var(--dark-bg);
+            position: relative;
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto 4rem;
+        }
+
+        .section-header h2 {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            background: var(--gradient-blue);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .section-header p {
+            font-size: 1.25rem;
+            color: var(--text-muted);
+            line-height: 1.8;
+        }
+
+        .features-grid {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background: var(--card-bg);
+            padding: 3rem;
+            border-radius: 20px;
+            border: 1px solid rgba(74, 144, 226, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--gradient-blue);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary-blue);
+            box-shadow: 0 20px 40px rgba(74, 144, 226, 0.2);
+        }
+
+        .feature-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .feature-icon {
+            width: 70px;
+            height: 70px;
+            background: rgba(74, 144, 226, 0.1);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+        }
+
+        .feature-card h3 {
+            font-size: 1.75rem;
+            margin-bottom: 1rem;
+            color: var(--text-light);
+        }
+
+        .feature-card p {
+            color: var(--text-muted);
+            line-height: 1.8;
+        }
+
+        /* Industries Section */
+        .industries {
+            padding: 6rem 2rem;
+            background: var(--darker-bg);
+        }
+
+        .industry-showcase {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+
+        .industry-item {
+            background: rgba(74, 144, 226, 0.05);
+            border: 1px solid rgba(74, 144, 226, 0.2);
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .industry-item:hover {
+            background: rgba(74, 144, 226, 0.1);
+            border-color: var(--primary-blue);
+            transform: scale(1.05);
+        }
+
+        .industry-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            filter: grayscale(100%);
+            transition: filter 0.3s ease;
+        }
+
+        .industry-item:hover .industry-icon {
+            filter: grayscale(0%);
+        }
+
+        /* About Section */
+        .about-section {
+            padding: 6rem 2rem;
+            background: var(--dark-bg);
+        }
+
+        .founders-grid {
+            max-width: 1200px;
+            margin: 3rem auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 4rem;
+        }
+
+        .founder-card {
+            background: var(--card-bg);
+            border: 1px solid rgba(74, 144, 226, 0.1);
+            border-radius: 20px;
+            padding: 3rem;
+            transition: all 0.3s ease;
+        }
+
+        .founder-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary-blue);
+            box-shadow: 0 20px 40px rgba(74, 144, 226, 0.2);
+        }
+
+        .founder-image-placeholder {
+            margin-bottom: 2rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        .image-circle {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: rgba(74, 144, 226, 0.1);
+            border: 3px solid var(--primary-blue);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-muted);
+            font-size: 1.125rem;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .founder-card:hover .image-circle {
+            border-color: var(--light-blue);
+            background: rgba(74, 144, 226, 0.2);
+        }
+
+        .founder-card h3 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-light);
+            text-align: center;
+        }
+
+        .founder-card h4 {
+            font-size: 1.125rem;
+            color: var(--primary-blue);
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .founder-info {
+            color: var(--text-muted);
+            line-height: 1.8;
+        }
+
+        .founder-info p {
+            margin-top: 1.5rem;
+            font-weight: 600;
+            color: var(--text-light);
+        }
+
+        .founder-info ul {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 1rem;
+        }
+
+        .founder-info li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .founder-info li:before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: var(--primary-blue);
+        }
+
+        .vision-statement {
+            max-width: 1000px;
+            margin: 4rem auto 0;
+            text-align: center;
+            background: rgba(74, 144, 226, 0.05);
+            border: 1px solid rgba(74, 144, 226, 0.2);
+            padding: 3rem;
+            border-radius: 20px;
+        }
+
+        .vision-statement h3 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: var(--primary-blue);
+        }
+
+        .vision-statement p {
+            font-size: 1.25rem;
+            line-height: 1.8;
+            color: var(--text-light);
+        }
+
+        /* Technology Stack */
+        .tech-stack-section {
+            padding: 6rem 2rem;
+            background: var(--dark-bg);
+        }
+
+        .tech-grid {
+            max-width: 1200px;
+            margin: 3rem auto 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+        }
+
+        .tech-item {
+            background: rgba(74, 144, 226, 0.05);
+            border: 1px solid rgba(74, 144, 226, 0.2);
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .tech-item:hover {
+            background: rgba(74, 144, 226, 0.2);
+            border-color: var(--primary-blue);
+            transform: translateY(-5px);
+        }
+
+        /* Contact CTA */
+        .contact-cta {
+            padding: 6rem 2rem;
+            background: var(--gradient-blue);
+            text-align: center;
+        }
+
+        .contact-cta h2 {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            color: white;
+        }
+
+        .contact-cta p {
+            font-size: 1.5rem;
+            margin-bottom: 3rem;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .contact-cta .btn {
+            background: white;
+            color: var(--dark-blue);
+            font-size: 1.125rem;
+        }
+
+        .contact-cta .btn:hover {
+            background: rgba(255, 255, 255, 0.9);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--darker-bg);
+            padding: 4rem 2rem 2rem;
+            border-top: 1px solid rgba(74, 144, 226, 0.1);
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 4rem;
+        }
+
+        .footer-brand h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .footer-brand .tagline {
+            color: var(--primary-blue);
+            font-style: italic;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-links h4 {
+            color: var(--text-light);
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-links ul {
+            list-style: none;
+        }
+
+        .footer-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            line-height: 2;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary-blue);
+        }
+
+        .footer-bottom {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(74, 144, 226, 0.1);
+            text-align: center;
+            color: var(--text-muted);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .hero-visual {
+                order: -1;
+            }
+
+            .ai-brain-animation {
+                width: 300px;
+                height: 300px;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+        }
+
+        /* Loading Animation */
+        .loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--darker-bg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            transition: opacity 0.5s ease;
+        }
+
+        .loader.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .loader-brain {
+            width: 100px;
+            height: 100px;
+            fill: var(--primary-blue);
+            animation: loader-pulse 1.5s ease-in-out infinite;
+        }
+
+        @keyframes loader-pulse {
+            0%, 100% { transform: scale(1); opacity: 0.5; }
+            50% { transform: scale(1.1); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <svg class="loader-brain" viewBox="0 0 100 100">
+            <path d="M50 10 C30 10 20 25 20 40 C20 60 30 80 50 80 C70 80 80 60 80 40 C80 25 70 10 50 10 Z M50 10 L50 80 M20 40 C35 40 35 50 50 50 C65 50 65 40 80 40" 
+                  stroke="currentColor" stroke-width="2" fill="none"/>
+        </svg>
+    </div>
+
+    <!-- Background Animation -->
+    <div class="bg-animation">
+        <div class="neural-network"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo-container">
+                <div class="logo-brain">
+                    <svg class="brain-icon" viewBox="0 0 100 100">
+                        <path d="M50 10 C30 10 20 25 20 40 C20 60 30 80 50 80 C70 80 80 60 80 40 C80 25 70 10 50 10 Z M50 10 L50 80 M20 40 C35 40 35 50 50 50 C65 50 65 40 80 40" 
+                              stroke="currentColor" stroke-width="3" fill="none"/>
+                    </svg>
+                </div>
+                <div class="company-name">INSTINCT SYSTEMS<span class="ai">AI</span></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">Über uns</a></li>
+                <li><a href="#solutions">Lösungen</a></li>
+                <li><a href="#industries">Branchen</a></li>
+                <li><a href="#technology">Technologie</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>KI-Revolution für den Einzelhandel</h1>
+                <p class="tagline">"Where Intelligence Meets Instinct"</p>
+                <p class="hero-description">
+                    Transformieren Sie Ihren Einzelhandel mit künstlicher Intelligenz. 
+                    Von der Filiale bis zum Management - wir automatisieren und optimieren 
+                    jeden Prozess für maximale Effizienz und Profitabilität.
+                </p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        KI-Beratung starten
+                        <span>→</span>
+                    </a>
+                    <a href="#solutions" class="btn btn-secondary">
+                        Lösungen entdecken
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="ai-brain-animation">
+                    <svg class="brain-large" viewBox="0 0 200 200">
+                        <!-- Complex brain network visualization -->
+                        <g stroke="currentColor" stroke-width="1" fill="none" opacity="0.3">
+                            <circle cx="50" cy="50" r="8"/>
+                            <circle cx="150" cy="50" r="8"/>
+                            <circle cx="100" cy="30" r="8"/>
+                            <circle cx="100" cy="170" r="8"/>
+                            <circle cx="30" cy="100" r="8"/>
+                            <circle cx="170" cy="100" r="8"/>
+                            <circle cx="60" cy="140" r="8"/>
+                            <circle cx="140" cy="140" r="8"/>
+                        </g>
+                        <g stroke="currentColor" stroke-width="2" fill="none">
+                            <path d="M100 20 C60 20 30 50 30 100 C30 150 60 180 100 180 C140 180 170 150 170 100 C170 50 140 20 100 20 Z"/>
+                            <line x1="100" y1="20" x2="100" y2="180"/>
+                            <path d="M30 100 C70 100 70 120 100 120 C130 120 130 100 170 100"/>
+                        </g>
+                        <g fill="currentColor" opacity="0.6">
+                            <circle cx="50" cy="50" r="4"/>
+                            <circle cx="150" cy="50" r="4"/>
+                            <circle cx="100" cy="30" r="4"/>
+                            <circle cx="100" cy="170" r="4"/>
+                            <circle cx="30" cy="100" r="4"/>
+                            <circle cx="170" cy="100" r="4"/>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Features Section -->
+    <section class="ai-features" id="solutions">
+        <div class="section-header">
+            <h2>Intelligente Lösungen für den Einzelhandel</h2>
+            <p>Unsere KI-Plattform wurde speziell für die komplexen Anforderungen des Einzelhandels 
+               entwickelt - von Lebensmitteln bis Non-Food.</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🛒</div>
+                <h3>Intelligente Bestandsführung</h3>
+                <p>KI-gestützte Bestellmengenoptimierung reduziert Überbestände und Out-of-Stock 
+                   Situationen um bis zu 80%.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📈</div>
+                <h3>Aktionsplanung & Pricing</h3>
+                <p>Automatische Aktionsflächenplanung und dynamische Preisoptimierung 
+                   maximieren Umsatz und Marge.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">👥</div>
+                <h3>Personalplanung</h3>
+                <p>Präzise Bedarfsprognosen optimieren die Personalplanung und reduzieren 
+                   Kosten bei verbessertem Service.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📊</div>
+                <h3>Absatzprognosen</h3>
+                <p>Machine Learning analysiert Verkaufsmuster und prognostiziert 
+                   präzise zukünftige Absätze.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🏪</div>
+                <h3>Filialoptimierung</h3>
+                <p>Individuelle KI-Profile für jede Filiale berücksichtigen lokale 
+                   Besonderheiten und Kundenverhalten.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📱</div>
+                <h3>Echtzeit-Dashboards</h3>
+                <p>Intuitive Dashboards liefern Entscheidungsgrundlagen in Echtzeit 
+                   für alle Managementebenen.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries Section -->
+    <section class="industries" id="industries">
+        <div class="section-header">
+            <h2>Für jeden Einzelhandelsbereich</h2>
+            <p>Unsere KI-Lösungen sind perfekt auf die spezifischen Anforderungen verschiedener Einzelhandelssegmente abgestimmt.</p>
+        </div>
+        <div class="industry-showcase">
+            <div class="industry-item">
+                <div class="industry-icon">🥬</div>
+                <h4>Lebensmittel</h4>
+            </div>
+            <div class="industry-item">
+                <div class="industry-icon">🥖</div>
+                <h4>Bäckereien</h4>
+            </div>
+            <div class="industry-item">
+                <div class="industry-icon">🥩</div>
+                <h4>Metzgereien</h4>
+            </div>
+            <div class="industry-item">
+                <div class="industry-icon">👕</div>
+                <h4>Textilien</h4>
+            </div>
+            <div class="industry-item">
+                <div class="industry-icon">💻</div>
+                <h4>Elektronik</h4>
+            </div>
+            <div class="industry-item">
+                <div class="industry-icon">🏠</div>
+                <h4>Baumarkt</h4>
+            </div>
+            <div class="industry-item">
+                <div class="industry-icon">💊</div>
+                <h4>Drogerie</h4>
+            </div>
+            <div class="industry-item">
+                <div class="industry-icon">🎯</div>
+                <h4>Fachhandel</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="section-header">
+            <h2>Die Köpfe hinter der Innovation</h2>
+            <p>Zwei Visionäre mit über 35 Jahren kombinierter Expertise vereinen Retail-Know-how mit modernster Technologie.</p>
+        </div>
+        <div class="founders-grid">
+            <div class="founder-card">
+                <div class="founder-image-placeholder">
+                    <div class="image-circle">
+                        <span>Foto<br>einfügen</span>
+                    </div>
+                </div>
+                <h3>Kristian Vidakovic</h3>
+                <h4>Co-CEO & Chief Business Officer</h4>
+                <div class="founder-info">
+                    <p><strong>Ausbildung:</strong></p>
+                    <ul>
+                        <li>Detailhandelsfachmann EFZ</li>
+                        <li>Detailhandelsspezialist FA</li>
+                        <li>Marketing Manager HF</li>
+                    </ul>
+                    <p><strong>Erfahrung:</strong></p>
+                    <ul>
+                        <li>20 Jahre im Verkauf und Einkauf Supermarkt</li>
+                        <li>Entwicklung des Ultra Instinct Konzepts</li>
+                        <li>Expertise in Category Management & Aktionsplanung</li>
+                    </ul>
+                    <p><strong>Verantwortungsbereiche:</strong></p>
+                    <ul>
+                        <li>Geschäftsstrategie & Kundenbeziehungen</li>
+                        <li>Produktmanagement & Marketing</li>
+                        <li>Finanzen & Controlling</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="founder-card">
+                <div class="founder-image-placeholder">
+                    <div class="image-circle">
+                        <span>Foto<br>einfügen</span>
+                    </div>
+                </div>
+                <h3>Philip Tobler</h3>
+                <h4>Co-CEO & Chief Technology Officer</h4>
+                <div class="founder-info">
+                    <p><strong>Ausbildung:</strong></p>
+                    <ul>
+                        <li>Master in Computer Science</li>
+                        <li>Spezialisierung in KI & Machine Learning</li>
+                    </ul>
+                    <p><strong>Erfahrung:</strong></p>
+                    <ul>
+                        <li>15 Jahre Softwareentwicklung</li>
+                        <li>8 Jahre Fokus auf KI/ML</li>
+                        <li>3 Patente im Bereich Predictive Analytics</li>
+                    </ul>
+                    <p><strong>Verantwortungsbereiche:</strong></p>
+                    <ul>
+                        <li>Technologie & Entwicklung</li>
+                        <li>IT-Infrastruktur & Security</li>
+                        <li>KI-Modelle & Datenmanagement</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="vision-statement">
+            <h3>Unsere Vision</h3>
+            <p>Wir schaffen eine Zukunft, in der künstliche Intelligenz nahtlos in alle Einzelhandelsprozesse 
+               integriert ist. Mitarbeiter werden von repetitiven Aufgaben befreit und können sich auf 
+               Kreativität, Kundenservice und strategische Entscheidungen konzentrieren.</p>
+        </div>
+    </section>
+
+    <!-- Technology Stack -->
+    <section class="tech-stack-section" id="technology">
+        <div class="section-header">
+            <h2>Modernste Technologie</h2>
+            <p>Wir nutzen führende KI-Frameworks und Cloud-Technologien für maximale Performance.</p>
+        </div>
+        <div class="tech-grid">
+            <div class="tech-item">TensorFlow</div>
+            <div class="tech-item">PyTorch</div>
+            <div class="tech-item">Machine Learning</div>
+            <div class="tech-item">Deep Learning</div>
+            <div class="tech-item">Natural Language Processing</div>
+            <div class="tech-item">Computer Vision</div>
+            <div class="tech-item">Cloud Native</div>
+            <div class="tech-item">Kubernetes</div>
+            <div class="tech-item">Real-time Analytics</div>
+            <div class="tech-item">API-First</div>
+        </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="contact-cta" id="contact">
+        <h2>Bereit für die Retail-Revolution?</h2>
+        <p>Steigern Sie Ihre Effizienz um bis zu 80% mit unseren KI-Lösungen.</p>
+        <a href="mailto:info@instinctsystems.ai" class="btn">
+            Demo vereinbaren
+            <span>→</span>
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>INSTINCT SYSTEMS AI</h3>
+                <p class="tagline">"Where Intelligence Meets Instinct"</p>
+                <p>Führender Anbieter für KI-gestützte Einzelhandelsoptimierung</p>
+            </div>
+            <div class="footer-links">
+                <h4>Lösungen</h4>
+                <ul>
+                    <li><a href="#solutions">Bestandsoptimierung</a></li>
+                    <li><a href="#solutions">Aktionsplanung</a></li>
+                    <li><a href="#solutions">Personalplanung</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Unternehmen</h4>
+                <ul>
+                    <li><a href="#about">Über uns</a></li>
+                    <li><a href="#technology">Technologie</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Instinct Systems AI GmbH - Alle Rechte vorbehalten | St. Gallen, Schweiz</p>
+        </div>
+    </footer>
+
+    <script>
+        // Hide loader after page load
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                document.getElementById('loader').classList.add('hidden');
+            }, 1000);
+        });
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Navbar scroll effect
+        let lastScroll = 0;
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            const currentScroll = window.pageYOffset;
+            
+            if (currentScroll <= 0) {
+                nav.style.boxShadow = 'none';
+            } else {
+                nav.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
+            }
+            
+            lastScroll = currentScroll;
+        });
+
+        // Animate elements on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '0';
+                    entry.target.style.transform = 'translateY(30px)';
+                    
+                    setTimeout(() => {
+                        entry.target.style.transition = 'all 0.6s ease';
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }, 100);
+                    
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        // Observe all cards and sections
+        document.querySelectorAll('.feature-card, .industry-item, .tech-item').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Parallax effect for hero section
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const parallax = document.querySelector('.hero-visual');
+            if (parallax) {
+                parallax.style.transform = `translateY(${scrolled * 0.5}px)`;
+            }
+        });
+    </script>
+</body>
+</html>
