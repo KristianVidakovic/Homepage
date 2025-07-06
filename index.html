@@ -1167,43 +1167,6 @@
             0%, 100% { transform: scale(1); opacity: 0.5; }
             50% { transform: scale(1.1); opacity: 1; }
         }
-
-/* Floating Particles */
-.particles-container {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    pointer-events: none;
-}
-
-.particle {
-    position: absolute;
-    width: 4px;
-    height: 4px;
-    background: var(--primary-blue);
-    border-radius: 50%;
-    opacity: 0;
-    animation: floatUp 8s linear infinite;
-    box-shadow: 0 0 6px var(--primary-blue);
-}
-
-@keyframes floatUp {
-    0% {
-        opacity: 0;
-        transform: translateY(100vh) translateX(0);
-    }
-    10% {
-        opacity: 1;
-    }
-    90% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-        transform: translateY(-100vh) translateX(100px);
-    }
-}
         
     </style>
 </head>
@@ -1217,8 +1180,6 @@
 <!-- Background Animation -->
 <div class="bg-animation">
     <div class="neural-network"></div>
-    <!-- Floating Particles -->
-    <div class="particles-container"></div>
 </div>
 
     <!-- Navigation -->
@@ -1784,63 +1745,6 @@ ENDE AUSGEBLENDET -->
         document.querySelectorAll('.vision-metric, .impact-item').forEach(el => {
             visionObserver.observe(el);
         });
-
-        // Floating Particles Animation
-        function createParticle() {
-            const particlesContainer = document.querySelector('.particles-container');
-            const particle = document.createElement('div');
-            particle.classList.add('particle');
-            
-            // Random horizontal position
-            particle.style.left = Math.random() * 100 + '%';
-            
-            // Random animation duration between 6-10 seconds
-            particle.style.animationDuration = (Math.random() * 4 + 6) + 's';
-            
-            // Random animation delay
-            particle.style.animationDelay = Math.random() * 5 + 's';
-            
-            // Slight horizontal drift
-            const drift = (Math.random() - 0.5) * 200;
-            particle.style.setProperty('--drift', drift + 'px');
-            
-            particlesContainer.appendChild(particle);
-            
-            // Remove particle after animation
-            setTimeout(() => {
-                particle.remove();
-            }, 15000);
-        }
-
-        // Create initial particles
-        for (let i = 0; i < 20; i++) {
-            setTimeout(createParticle, i * 300);
-        }
-
-        // Continue creating particles
-        setInterval(createParticle, 2000);
-
-        // Update the floatUp animation to use the drift variable
-        const style = document.createElement('style');
-        style.textContent = `
-            @keyframes floatUp {
-                0% {
-                    opacity: 0;
-                    transform: translateY(100vh) translateX(0);
-                }
-                10% {
-                    opacity: 1;
-                }
-                90% {
-                    opacity: 1;
-                }
-                100% {
-                    opacity: 0;
-                    transform: translateY(-100vh) translateX(var(--drift, 0));
-                }
-            }
-        `;
-        document.head.appendChild(style);
     </script>
 </body>
 </html>
