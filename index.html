@@ -1317,8 +1317,8 @@
         </div>
     </section>
 
-    <!-- 4. Ultra Instinct - Die Revolution beginnt -->
-   <section class="ultra-instinct-section" id="ultra-instinct">
+<!-- Aktualisierte Ultra Instinct Section mit Neural Network Integration -->
+<section class="ultra-instinct-section" id="ultra-instinct">
     <div class="section-header">
         <h2>Ultra Instinct - Die Revolution beginnt</h2>
         <p>Ultra Instinct ist der erste Schritt auf unserem Weg, den Einzelhandel zu revolutionieren</p>
@@ -1358,23 +1358,8 @@
                     <h3 style="color: var(--primary-blue); margin-bottom: 1rem;">Neural Network</h3>
                     <p style="color: var(--text-muted); margin-bottom: 2rem;">Kontinuierliches Lernen aus Verkaufsdaten</p>
                     
-                    <!-- Erweiterte Metriken mit NN-Status -->
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 2rem;">
-                        <div style="background: rgba(74, 144, 226, 0.1); padding: 1rem; border-radius: 10px;">
-                            <div style="font-size: 1.5rem; color: var(--primary-blue);">Ø95%</div>
-                            <div style="font-size: 0.75rem; color: var(--text-muted);">ML-Genauigkeit</div>
-                        </div>
-                        <div style="background: rgba(74, 144, 226, 0.1); padding: 1rem; border-radius: 10px;">
-                            <div style="font-size: 1.5rem; color: var(--primary-blue);">+8%</div>
-                            <div style="font-size: 0.75rem; color: var(--text-muted);">NN-Optimierung</div>
-                        </div>
-                    </div>
                     
                     <div style="display: flex; justify-content: space-around; margin-top: 2rem;">
-                        <div>
-                            <div style="font-size: 2rem; color: var(--primary-blue);">Ø95%</div>
-                            <div style="font-size: 0.875rem; color: var(--text-muted);">Genauigkeit</div>
-                        </div>
                         <div>
                             <div style="font-size: 2rem; color: var(--primary-blue);">24/7</div>
                             <div style="font-size: 0.875rem; color: var(--text-muted);">Aktiv</div>
@@ -1385,13 +1370,9 @@
                         </div>
                     </div>
                     
-                    <!-- Neural Network Visualisierung -->
                     <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid rgba(74, 144, 226, 0.2);">
-                        <p style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 1rem;">
-                            <strong>Neural Network Features:</strong>
-                        </p>
                         <div style="display: grid; gap: 0.5rem; font-size: 0.75rem; color: var(--text-muted); text-align: left;">
-                            <div>• MLP-Architektur (20-10 Hidden Layers)</div>
+                            <div>• MLP-Architektur</div>
                             <div>• Kontextbasierte Anpassungen</div>
                             <div>• Saisonale Mustererkennung</div>
                             <div>• Volatilitäts-Berücksichtigung</div>
@@ -1400,32 +1381,38 @@
                 </div>
             </div>
         </div>
-        
-        <!-- Neue Sektion: Technologie im Detail -->
-        <div style="margin-top: 4rem; padding: 2rem; background: var(--card-bg); border-radius: 20px; border: 1px solid rgba(74, 144, 226, 0.2);">
-            <h3 style="text-align: center; color: var(--primary-blue); margin-bottom: 2rem;">Die Technologie hinter Ultra Instinct</h3>
-            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;">
-                <div style="text-align: center;">
-                    <div style="font-size: 2.5rem; margin-bottom: 1rem;">🔍</div>
-                    <h4 style="color: var(--text-light); margin-bottom: 0.5rem;">Anomalie-Erkennung</h4>
-                    <p style="color: var(--text-muted); font-size: 0.875rem;">Isolation Forest identifiziert und filtert untypische Verkaufsmuster für präzisere Vorhersagen</p>
-                </div>
-                <div style="text-align: center;">
-                    <div style="font-size: 2.5rem; margin-bottom: 1rem;">📊</div>
-                    <h4 style="color: var(--text-light); margin-bottom: 0.5rem;">Clustering-Analyse</h4>
-                    <p style="color: var(--text-muted); font-size: 0.875rem;">K-Means gruppiert ähnliche Verkaufsmuster für optimierte Filial-spezifische Profile</p>
-                </div>
-                <div style="text-align: center;">
-                    <div style="font-size: 2.5rem; margin-bottom: 1rem;">🧠</div>
-                    <h4 style="color: var(--text-light); margin-bottom: 0.5rem;">Neural Network</h4>
-                    <p style="color: var(--text-muted); font-size: 0.875rem;">Adaptives NN lernt aus historischen Abweichungen und verbessert kontinuierlich die Prognosequalität</p>
-                </div>
-            </div>
-        </div>
     </div>
 </section>
 
 <style>
+/* Zusätzliche Styles für die Neural Network Animation */
+@keyframes nn-pulse {
+    0% { 
+        transform: scale(1);
+        opacity: 0.8;
+    }
+    50% { 
+        transform: scale(1.05);
+        opacity: 1;
+    }
+    100% { 
+        transform: scale(1);
+        opacity: 0.8;
+    }
+}
+
+.ai-diagram > div:first-child {
+    animation: nn-pulse 3s ease-in-out infinite;
+}
+
+/* Responsive Anpassungen */
+@media (max-width: 768px) {
+    .ultra-content > div:last-child > div:last-child {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+    
 /* Zusätzliche Styles für die Neural Network Animation */
 @keyframes nn-pulse {
     0% { 
