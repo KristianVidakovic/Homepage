@@ -1001,34 +1001,188 @@
 
         /* Contact CTA */
         .contact-cta {
-            background: var(--gradient-blue);
-            text-align: center;
+            background: var(--dark-bg);
             flex-direction: column;
             justify-content: center;
+            padding: 4rem 2rem;
         }
 
-        .contact-cta h2 {
-            font-size: 3rem;
-            margin-bottom: 1.5rem;
-            color: white;
+        .contact-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            width: 100%;
         }
 
-        .contact-cta p {
-            font-size: 1.5rem;
+        .contact-header {
+            text-align: center;
             margin-bottom: 3rem;
-            color: rgba(255, 255, 255, 0.9);
         }
 
-        .contact-cta .btn {
-            background: white;
-            color: var(--dark-blue);
+        .contact-header h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            background: var(--gradient-blue);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .contact-header p {
+            font-size: 1.25rem;
+            color: var(--text-muted);
+        }
+
+        .contact-form {
+            background: var(--card-bg);
+            border: 1px solid rgba(74, 144, 226, 0.2);
+            border-radius: 25px;
+            padding: 3rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group.full-width {
+            grid-column: 1 / -1;
+        }
+
+        .form-group label {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            padding: 0.75rem 1rem;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(74, 144, 226, 0.2);
+            border-radius: 10px;
+            color: var(--text-light);
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary-blue);
+            background: rgba(255, 255, 255, 0.08);
+            box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1);
+        }
+
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: var(--text-muted);
+            opacity: 0.6;
+        }
+
+        .form-group select {
+            cursor: pointer;
+            background-color: rgba(10, 14, 26, 0.8);
+            color: var(--text-light);
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='rgba(255,255,255,0.5)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+            background-repeat: no-repeat;
+            background-position: right 1rem center;
+            background-size: 1.5em;
+            padding-right: 3rem;
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+        }
+
+        .form-group select option {
+            background-color: var(--card-bg);
+            color: var(--text-light);
+            padding: 0.5rem;
+        }
+
+        .form-group select:hover {
+            border-color: var(--primary-blue);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .form-options {
+            margin-bottom: 2rem;
+        }
+
+        .checkbox-label {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            cursor: pointer;
+            color: var(--text-muted);
+            transition: color 0.3s ease;
+        }
+
+        .checkbox-label:hover {
+            color: var(--text-light);
+        }
+
+        .checkbox-label input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            margin-right: 0.75rem;
+            cursor: pointer;
+            accent-color: var(--primary-blue);
+        }
+
+        .form-submit {
+            text-align: center;
+        }
+
+        .form-submit .btn {
             font-size: 1.125rem;
+            padding: 1rem 3rem;
         }
 
-        .contact-cta .btn:hover {
-            background: rgba(255, 255, 255, 0.9);
-            transform: translateY(-3px);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        .form-note {
+            margin-top: 1.5rem;
+            font-size: 0.875rem;
+            color: var(--text-muted);
+            line-height: 1.5;
+        }
+
+        /* Form Validation Styles */
+        .form-group input:invalid:not(:placeholder-shown),
+        .form-group textarea:invalid:not(:placeholder-shown) {
+            border-color: #e74c3c;
+        }
+
+        .form-group input:valid:not(:placeholder-shown),
+        .form-group textarea:valid:not(:placeholder-shown) {
+            border-color: #27ae60;
+        }
+
+        @media (max-width: 768px) {
+            .contact-form {
+                padding: 2rem;
+            }
+
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-header h2 {
+                font-size: 2rem;
+            }
         }
 
         /* Footer */
@@ -1436,32 +1590,32 @@
         <div class="development-grid">
             <div class="dev-card">
                 <h3>Finance-Instinct</h3>
-                <span class="status">Q4 2025</span>
+                <span class="status">Q2 2025</span>
                 <p>Vollautomatische Finanzanalyse mit KI-gestützten Prognosen und Optimierungsvorschlägen</p>
             </div>
             <div class="dev-card">
                 <h3>HR-Instinct</h3>
-                <span class="status"> Q2 2026</span>
+                <span class="status">Q3 2025</span>
                 <p>Intelligente Personalverwaltung von Recruiting bis zur Mitarbeiterentwicklung</p>
             </div>
             <div class="dev-card">
                 <h3>Sales-Instinct</h3>
-                <span class="status">Q4 2026</span>
+                <span class="status">Q3 2025</span>
                 <p>KI-gestützte Vertriebsoptimierung mit präzisen Vorhersagen und automatisierten Workflows</p>
             </div>
             <div class="dev-card">
                 <h3>Process-Instinct</h3>
-                <span class="status">2027</span>
+                <span class="status">Q4 2025</span>
                 <p>Automatische Prozessanalyse und -optimierung für alle Unternehmensbereiche</p>
             </div>
             <div class="dev-card">
                 <h3>Supply-Instinct</h3>
-                <span class="status">2028</span>
+                <span class="status">2026</span>
                 <p>End-to-End Supply Chain Optimierung mit prädiktiven Analysen</p>
             </div>
             <div class="dev-card">
                 <h3>Intelligence-Platform</h3>
-                <span class="status">2030</span>
+                <span class="status">2026</span>
                 <p>Zentrale KI-Plattform zur Integration aller Instinct-Module mit einheitlichem Dashboard</p>
             </div>
         </div>
@@ -1630,14 +1784,119 @@
         </div>
     </section>
 
-    <!-- 10. Contact CTA -->
+    <!-- 10. Contact Form Section -->
     <section class="contact-cta" id="contact">
-        <h2>Bereit für die KI-Transformation?</h2>
-        <p>Steigern Sie Ihre Effizienz mit unseren massgeschneiderten KI-Lösungen.</p>
-        <a href="mailto:support@ultra-instinct.ch" class="btn">
-            Termin vereinbaren
-            <span>→</span>
-        </a>
+        <div class="contact-container">
+            <div class="contact-header">
+                <h2>Bereit für die KI-Transformation?</h2>
+                <p>Beschreiben Sie uns Ihre Idee - wir bereiten eine massgeschneiderte Lösung für Sie vor.</p>
+            </div>
+            
+            <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                <!-- Hidden field for Web3Forms -->
+                <input type="hidden" name="access_key" value="YOUR-ACCESS-KEY-HERE">
+                <input type="hidden" name="redirect" value="https://ultra-instinct.ch/danke">
+                <input type="hidden" name="subject" value="Neue KI-Anfrage von ultra-instinct.ch">
+                <input type="hidden" name="from_name" value="Instinct Systems Website">
+                
+                <div class="form-grid">
+                    <!-- Basis Informationen -->
+                    <div class="form-group">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="Max Mustermann">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="company">Unternehmen *</label>
+                        <input type="text" id="company" name="company" required placeholder="Musterfirma AG">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">E-Mail *</label>
+                        <input type="email" id="email" name="email" required placeholder="max@musterfirma.ch">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Telefon</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+41 XX XXX XX XX">
+                    </div>
+                    
+                    <!-- KI Interesse -->
+                    <div class="form-group full-width">
+                        <label for="department">Welche Abteilung möchten Sie optimieren? *</label>
+                        <select id="department" name="department" required>
+                            <option value="">Bitte wählen...</option>
+                            <option value="finance">Finance & Controlling</option>
+                            <option value="hr">HR & Personal</option>
+                            <option value="procurement">Einkauf & Beschaffung</option>
+                            <option value="sales">Sales & Marketing</option>
+                            <option value="operations">Operations & Logistik</option>
+                            <option value="it">IT & Digitalisierung</option>
+                            <option value="executive">Geschäftsleitung</option>
+                            <option value="custom">Andere / Mehrere Bereiche</option>
+                        </select>
+                    </div>
+                    
+                    <!-- Projektbeschreibung -->
+                    <div class="form-group full-width">
+                        <label for="project">Beschreiben Sie Ihre KI-Idee oder Herausforderung *</label>
+                        <textarea id="project" name="project" rows="4" required 
+                                  placeholder="Beispiel: Wir möchten unsere monatlichen Finanzberichte automatisieren und KI-gestützte Prognosen erstellen. Aktuell dauert dieser Prozess 3 Tage..."></textarea>
+                    </div>
+                    
+                    <!-- Zusätzliche Details -->
+                    <div class="form-group full-width">
+                        <label for="current-process">Wie läuft dieser Prozess aktuell ab?</label>
+                        <textarea id="current-process" name="current-process" rows="3" 
+                                  placeholder="Beschreiben Sie kurz den aktuellen Ablauf, verwendete Tools, beteiligte Personen..."></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="timeline">Gewünschter Zeitrahmen</label>
+                        <select id="timeline" name="timeline">
+                            <option value="">Bitte wählen...</option>
+                            <option value="asap">So schnell wie möglich</option>
+                            <option value="1-3months">1-3 Monate</option>
+                            <option value="3-6months">3-6 Monate</option>
+                            <option value="6months+">6+ Monate</option>
+                            <option value="exploring">Noch in Evaluationsphase</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="budget">Budget-Rahmen</label>
+                        <select id="budget" name="budget">
+                            <option value="">Bitte wählen...</option>
+                            <option value="<50k">Unter 50'000 CHF</option>
+                            <option value="50-100k">50'000 - 100'000 CHF</option>
+                            <option value="100-250k">100'000 - 250'000 CHF</option>
+                            <option value="250k+">Über 250'000 CHF</option>
+                            <option value="tbd">Noch offen</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <!-- Zusätzliche Optionen -->
+                <div class="form-options">
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="demo-interest" value="yes">
+                        <span>Ja, ich möchte eine Demo / Proof of Concept sehen</span>
+                    </label>
+                </div>
+                
+                <!-- Submit -->
+                <div class="form-submit">
+                    <button type="submit" class="btn btn-primary">
+                        Anfrage senden
+                        <span>→</span>
+                    </button>
+                    <p class="form-note">
+                        * Pflichtfelder. Wir analysieren Ihre Anfrage kostenlos und bereiten unverbindlich erste Lösungskonzepte 
+                        und Demos für unser Erstgespräch vor - so sehen Sie sofort, was möglich ist.
+                    </p>
+                </div>
+            </form>
+        </div>
     </section>
 
     <!-- Footer -->
