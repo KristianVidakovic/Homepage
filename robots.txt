@@ -1,0 +1,11 @@
+# Robots.txt für instinct-systems.ch
+User-agent: *
+Allow: /
+Disallow: /danke
+
+# Sitemap Location
+Sitemap: https://instinct-systems.ch/sitemap.xml
+
+# Crawl-delay für höfliche Bots
+User-agent: *
+Crawl-delay: 1
