@@ -1,5 +1,3 @@
-123
-
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -321,7 +319,7 @@
             max-width: 1400px;
             margin: 0 auto;
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(4, 1fr);
             gap: 1.5rem;
         }
 
@@ -370,7 +368,7 @@
         }
 
         .feature-card h3 {
-            font-size: 1.5rem;
+            font-size: 1.25rem;
             margin-bottom: 0.75rem;
             color: var(--text-light);
             text-align: center;
@@ -380,7 +378,17 @@
             color: var(--text-muted);
             line-height: 1.6;
             text-align: center;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
+        }
+
+        .feature-card.custom-solution {
+            background: linear-gradient(135deg, rgba(74, 144, 226, 0.1) 0%, rgba(120, 185, 242, 0.1) 100%);
+            border-color: rgba(74, 144, 226, 0.3);
+        }
+
+        .feature-card.custom-solution:hover {
+            border-color: var(--light-blue);
+            box-shadow: 0 20px 40px rgba(120, 185, 242, 0.3);
         }
 
         /* Industries Section */
@@ -506,6 +514,17 @@
             text-align: center;
         }
 
+        .pilot-note {
+            margin-top: 2rem;
+            padding: 1rem;
+            background: rgba(74, 144, 226, 0.1);
+            border-radius: 10px;
+            text-align: center;
+            font-size: 0.9rem;
+            color: var(--primary-blue);
+            font-style: italic;
+        }
+
         /* Development Section */
         .development-section {
             background: var(--darker-bg);
@@ -602,6 +621,7 @@
             background: var(--darker-bg);
             flex-direction: column;
             justify-content: center;
+            display: none; /* Komplett versteckt, aber Code bleibt erhalten */
         }
 
         .founders-grid {
@@ -1083,6 +1103,10 @@
             .impact-grid {
                 grid-template-columns: 1fr;
             }
+
+            .features-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
         }
 
         @media (max-width: 768px) {
@@ -1136,6 +1160,10 @@
 
             .vision-text {
                 font-size: 1.25rem;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
             }
         }
 
@@ -1200,7 +1228,7 @@
                 <li><a href="#ultra-instinct">Ultra Instinct</a></li>
                 <li><a href="#development">Roadmap</a></li>
                 <li><a href="#technology">Technologie</a></li>
-                <li><a href="#about">Team</a></li>
+                <!-- <li><a href="#about">Team</a></li> -->
                 <li><a href="#vision">Vision</a></li>
                 <!-- <li><a href="#partners">Partner</a></li> -->
                 <li><a href="#contact">Kontakt</a></li>
@@ -1212,12 +1240,12 @@
     <section class="hero" id="home">
         <div class="hero-content">
             <div class="hero-text">
-                <h1>KI-Revolution für den Einzelhandel</h1>
+                <h1>KI-Revolution für Ihr Unternehmen</h1>
                 <p class="tagline">"Where Intelligence Meets Instinct"</p>
                 <p class="hero-description">
-                    Transformieren Sie Ihren Einzelhandel mit künstlicher Intelligenz. 
-                    Vom operativen Geschäft bis zur strategischen Führung - wir automatisieren und optimieren 
-                    jeden Prozess für maximale Effizienz und Profitabilität.
+                    Transformieren Sie Ihr Unternehmen mit massgeschneiderten KI-Lösungen. 
+                    Von Finance über HR bis zum Vertrieb - wir automatisieren und optimieren 
+                    jeden Geschäftsprozess für maximale Effizienz und nachhaltigen Erfolg.
                 </p>
                 <div class="cta-buttons">
                     <a href="#contact" class="btn btn-primary">
@@ -1237,93 +1265,103 @@
         </div>
     </section>
 
-<!-- 2. Intelligente Lösungen für den Einzelhandel -->
+<!-- 2. Intelligente Lösungen für jede Abteilung -->
 <section class="ai-features" id="solutions">
     <div class="section-header">
-        <h2>Intelligente Lösungen für den Einzelhandel</h2>
-        <p>Wir schaffen intelligente KI-Lösungen für die zentralen Herausforderungen im Einzelhandel.</p>
+        <h2>Intelligente Lösungen für jede Abteilung</h2>
+        <p>Eine KI-Lösung für jede Direktion - optimiert für Ihre spezifischen Herausforderungen.</p>
     </div>
     <div class="features-grid">
         <div class="feature-card">
-            <div class="feature-icon">🛒</div>
-            <h3>Intelligente Bestellmengenoptimierung</h3>
-            <p>KI-gestützte Bestellmengenoptimierung reduziert Überbestände und Out-of-Stock Situationen durch präzise Vorhersagen.</p>
-        </div>
-        <div class="feature-card">
-            <div class="feature-icon">📈</div>
-            <h3>Aktionsplanung & Pricing</h3>
-            <p>Automatische Aktionsflächenplanung und dynamische Preisoptimierung maximieren Umsatz und Marge.</p>
+            <div class="feature-icon">📊</div>
+            <h3>AI Finance Assistant</h3>
+            <p>Automatische Monatsabschlüsse, Abweichungsanalysen mit Handlungsempfehlungen und KPI-Monitoring mit Alerts.</p>
         </div>
         <div class="feature-card">
             <div class="feature-icon">👥</div>
-            <h3>Personalplanung</h3>
-            <p>Präzise Bedarfsprognosen optimieren die Personalplanung und reduzieren Kosten bei verbessertem Service.</p>
+            <h3>AI People Manager</h3>
+            <p>Bewerbermanagement, intelligente Schichtplanung, Mitarbeiterzufriedenheits-Analyse und Onboarding-Automatisierung.</p>
         </div>
         <div class="feature-card">
-            <div class="feature-icon">🛍️</div>
-            <h3>Sortimentsoptimierung</h3>
-            <p>Automatische Sortimentsanalyse mit KI-basierten Empfehlungen für das optimale Produktportfolio jeder einzelnen Filiale.</p>
+            <div class="feature-icon">🛒</div>
+            <h3>AI Procurement Suite</h3>
+            <p>Lieferantenbewertung, automatische Bestellvorschläge, Vertragsanalyse und automatisierte Rechnungsprüfung.</p>
         </div>
         <div class="feature-card">
-            <div class="feature-icon">🏪</div>
-            <h3>Standortoptimierung</h3>
-            <p>Machine Learning identifiziert Filialen mit Optimierungspotenzial und sendet automatische Alerts an das Management.</p>
+            <div class="feature-icon">📈</div>
+            <h3>AI Sales Accelerator</h3>
+            <p>Lead-Scoring, Kampagnen-Performance-Vorhersage, personalisierte Angebotserstellung und Preisoptimierung.</p>
         </div>
         <div class="feature-card">
-            <div class="feature-icon">📊</div>
-            <h3>Performance Management</h3>
-            <p>Automatisierte Abweichungsanalysen und Handlungsempfehlungen für das Management, KI-gestützte Erfolgsanalyse und Optimierungsvorschläge, Frühwarnsysteme und Prognosen für strategische Entscheidungen.</p>
+            <div class="feature-icon">⚙️</div>
+            <h3>AI Operations Hub</h3>
+            <p>Prozessoptimierung, Routenplanung, Qualitätskontrolle mit Anomalieerkennung und Wartungsvorhersagen.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">💻</div>
+            <h3>AI Tech Assistant</h3>
+            <p>Automatisches Ticket-Management, Code-Review, Security-Monitoring und System-Performance-Analyse.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">🎯</div>
+            <h3>AI Executive Dashboard</h3>
+            <p>360°-Unternehmensübersicht, strategische Handlungsempfehlungen und automatische Meeting-Zusammenfassungen.</p>
+        </div>
+        <div class="feature-card custom-solution">
+            <div class="feature-icon">✨</div>
+            <h3>Ihre individuelle KI-Lösung</h3>
+            <p>Massgeschneiderte Entwicklung für Ihre spezifischen Anforderungen. Proof of Concept in 4-8 Wochen.</p>
         </div>
     </div>
 </section>
 
-    <!-- 3. Für jeden Einzelhandelsbereich -->
+    <!-- 3. Für jede Branche -->
     <section class="industries" id="industries">
         <div class="section-header">
-            <h2>Für jeden Einzelhandelsbereich</h2>
-            <p>Unsere KI-Lösungen sind perfekt auf die spezifischen Anforderungen verschiedener Einzelhandelssegmente abgestimmt.</p>
+            <h2>Für jede Branche</h2>
+            <p>Unsere KI-Lösungen sind branchenübergreifend einsetzbar und an Ihre spezifischen Bedürfnisse anpassbar.</p>
         </div>
         <div class="industry-showcase">
             <div class="industry-item">
-                <div class="industry-icon">🛒</div>
-                <h4>Supermarkt</h4>
+                <div class="industry-icon">🏢</div>
+                <h4>Industrie</h4>
             </div>
             <div class="industry-item">
-                <div class="industry-icon">🥐</div>
-                <h4>Bäckereien</h4>
+                <div class="industry-icon">🏦</div>
+                <h4>Finanzwesen</h4>
             </div>
             <div class="industry-item">
-                <div class="industry-icon">🥩</div>
-                <h4>Metzgereien</h4>
+                <div class="industry-icon">🏥</div>
+                <h4>Gesundheit</h4>
             </div>
             <div class="industry-item">
-                <div class="industry-icon">👕</div>
-                <h4>Textilien</h4>
+                <div class="industry-icon">🛍️</div>
+                <h4>Einzelhandel</h4>
             </div>
             <div class="industry-item">
-                <div class="industry-icon">💻</div>
-                <h4>Elektronik</h4>
+                <div class="industry-icon">🚚</div>
+                <h4>Logistik</h4>
             </div>
             <div class="industry-item">
-                <div class="industry-icon">🏠</div>
-                <h4>Baumarkt</h4>
+                <div class="industry-icon">🏨</div>
+                <h4>Hospitality</h4>
             </div>
             <div class="industry-item">
-                <div class="industry-icon">💊</div>
-                <h4>Drogerie</h4>
+                <div class="industry-icon">🎓</div>
+                <h4>Bildung</h4>
             </div>
             <div class="industry-item">
-                <div class="industry-icon">🏪</div>
-                <h4>Fachhandel</h4>
+                <div class="industry-icon">🏛️</div>
+                <h4>Öffentlicher Sektor</h4>
             </div>
         </div>
     </section>
 
-<!-- Aktualisierte Ultra Instinct Section mit Neural Network Integration -->
+<!-- Ultra Instinct Section mit Pilot-Hinweis -->
 <section class="ultra-instinct-section" id="ultra-instinct">
     <div class="section-header">
         <h2>Ultra Instinct - Die Revolution beginnt</h2>
-        <p>Ultra Instinct ist der erste Schritt auf unserem Weg, den Einzelhandel zu revolutionieren</p>
+        <p>Ultra Instinct ist der erste Schritt auf unserem Weg, Geschäftsprozesse zu revolutionieren</p>
     </div>
     <div class="ultra-content">
         <div class="ultra-grid">
@@ -1383,6 +1421,9 @@
                 </div>
             </div>
         </div>
+        <div class="pilot-note">
+            Ultra Instinct wird aktuell bei einem der grössten Detailhändler der Schweiz erfolgreich pilotiert
+        </div>
     </div>
 </section>
 
@@ -1390,38 +1431,38 @@
     <section class="development-section" id="development">
         <div class="section-header">
             <h2>Roadmap</h2>
-            <p>Unser wachsendes Portfolio an KI-Lösungen für den Einzelhandel</p>
+            <p>Unsere Vision für die Zukunft der Business-Automatisierung</p>
         </div>
         <div class="development-grid">
             <div class="dev-card">
-                <h3>Promo-Instinct</h3>
-                <span class="status">Vision</span>
-                <p>Vollautomatische Aktionsflächenplanung mit intelligenter Platzierung basierend auf Verkaufspotenzial</p>
+                <h3>Finance-Instinct</h3>
+                <span class="status">Q2 2025</span>
+                <p>Vollautomatische Finanzanalyse mit KI-gestützten Prognosen und Optimierungsvorschlägen</p>
             </div>
             <div class="dev-card">
-                <h3>Team-Instinct</h3>
-                <span class="status">Vision</span>
-                <p>KI-basierte Personalplanung für optimale Mitarbeiterauslastung und Kostenkontrolle</p>
+                <h3>HR-Instinct</h3>
+                <span class="status">Q3 2025</span>
+                <p>Intelligente Personalverwaltung von Recruiting bis zur Mitarbeiterentwicklung</p>
             </div>
             <div class="dev-card">
-                <h3>Inventory-Instinct</h3>
-                <span class="status">Konzept</span>
-                <p>Dynamische Mindestbestandsberechnung zur Vermeidung von Überbeständen und Out-of-Stock</p>
+                <h3>Sales-Instinct</h3>
+                <span class="status">Q3 2025</span>
+                <p>KI-gestützte Vertriebsoptimierung mit präzisen Vorhersagen und automatisierten Workflows</p>
             </div>
             <div class="dev-card">
-                <h3>Assortment-Instinct</h3>
-                <span class="status">Exploration</span>
-                <p>ML-basierte Sortimentsanalyse für optimale Produktauswahl und Listungsentscheidungen</p>
+                <h3>Process-Instinct</h3>
+                <span class="status">Q4 2025</span>
+                <p>Automatische Prozessanalyse und -optimierung für alle Unternehmensbereiche</p>
             </div>
             <div class="dev-card">
-                <h3>Flow-Instinct</h3>
-                <span class="status">Vision</span>
-                <p>Intelligente Kommunikationsplattform für optimalen Informationsfluss zwischen allen Ebenen</p>
+                <h3>Supply-Instinct</h3>
+                <span class="status">2026</span>
+                <p>End-to-End Supply Chain Optimierung mit prädiktiven Analysen</p>
             </div>
             <div class="dev-card">
-                <h3>Future-Instinct</h3>
-                <span class="status">Vision</span>
-                <p>Kontinuierliche Entwicklung weiterer KI-Module für Customer Analytics, Supply Chain und Predictive Maintenance</p>
+                <h3>Intelligence-Platform</h3>
+                <span class="status">2026</span>
+                <p>Zentrale KI-Plattform zur Integration aller Instinct-Module mit einheitlichem Dashboard</p>
             </div>
         </div>
     </section>
@@ -1446,7 +1487,7 @@
         </div>
     </section>
 
-    <!-- 7. Die Köpfe hinter der Innovation -->
+    <!-- 7. Die Köpfe hinter der Innovation - AUSGEGRAUT -->
     <section class="about-section" id="about">
         <div class="section-header">
             <h2>Die Köpfe hinter der Innovation</h2>
@@ -1515,16 +1556,16 @@
         </div>
     </section>
 
-    <!-- 8. Vision - Professional Redesign -->
+    <!-- 8. Vision - Angepasst für alle Unternehmen -->
     <section class="vision-section" id="vision">
         <div class="vision-content">
             <div class="vision-main">
                 <h2>Unsere Vision für die Zukunft</h2>
                 <div class="vision-statement-box">
                     <p class="vision-text">
-                        Wir schaffen eine Zukunft, in der künstliche Intelligenz nahtlos in alle Einzelhandelsprozesse 
+                        Wir schaffen eine Zukunft, in der künstliche Intelligenz nahtlos in alle Geschäftsprozesse 
                         integriert ist. Mitarbeiter werden von repetitiven Aufgaben befreit und können sich auf 
-                        ihre Kernaufgaben konzentrieren.
+                        strategische und kreative Tätigkeiten konzentrieren, die echten Mehrwert schaffen.
                     </p>
                 </div>
             </div>
@@ -1541,7 +1582,7 @@
                     <div class="metric-icon">⚡</div>
                     <div class="metric-title">Effizienz</div>
                     <div class="metric-description">
-                        KI-gestützte Automatisierung maximiert die Produktivität und reduziert manuelle Prozesse
+                        KI-gestützte Automatisierung maximiert die Produktivität in allen Abteilungen
                     </div>
                 </div>
                 <div class="vision-metric">
@@ -1560,28 +1601,28 @@
                         <div class="impact-number">01</div>
                         <div class="impact-content">
                             <h4>Marktführerschaft</h4>
-                            <p>Führender KI-Anbieter für den Schweizer Einzelhandel</p>
+                            <p>Führender KI-Anbieter für Schweizer Unternehmen aller Branchen</p>
                         </div>
                     </div>
                     <div class="impact-item">
                         <div class="impact-number">02</div>
                         <div class="impact-content">
                             <h4>Flächendeckende Integration</h4>
-                            <p>KI-Lösungen in über 600 Filialen im aktiven Einsatz</p>
+                            <p>KI-Lösungen in über 1000 Unternehmen im aktiven Einsatz</p>
                         </div>
                     </div>
                     <div class="impact-item">
                         <div class="impact-number">03</div>
                         <div class="impact-content">
                             <h4>Nachhaltige Transformation</h4>
-                            <p>Reduzierte Lieferkosten, weniger CO₂-Emissionen und weniger Food Waste durch präzise Prognosen</p>
+                            <p>30% Effizienzsteigerung und massive CO₂-Reduktion durch optimierte Prozesse</p>
                         </div>
                     </div>
                     <div class="impact-item">
                         <div class="impact-number">04</div>
                         <div class="impact-content">
                             <h4>Wirtschaftlicher Impact</h4>
-                            <p>Über 100 Millionen CHF eingespartes Kapital</p>
+                            <p>Über 500 Millionen CHF Kosteneinsparungen für unsere Kunden</p>
                         </div>
                     </div>
                 </div>
@@ -1589,55 +1630,10 @@
         </div>
     </section>
 
-<!-- AUSGEBLENDET: Partner Section - Bei Bedarf reaktivieren
-    9. Partner
-    <section class="partners" id="partners">
-        <div class="section-header">
-            <h2>Unser Partner & Investor</h2>
-            <p>Gemeinsam gestalten wir die Zukunft des Einzelhandels</p>
-        </div>
-        <div class="partner-content">
-            <div class="partner-logo">
-                <h3>Migros Ostschweiz</h3>
-                <p class="partner-info">Führender Einzelhändler in der Ostschweiz</p>
-                <div class="partner-status">
-                    <div class="status-badge pilot-badge">
-                        Ultra Instinct AI im produktiven Einsatz
-                    </div>
-                    <div class="status-badge investor-badge">
-                        Strategischer Teilhaber & Investor
-                    </div>
-                </div>
-            </div>
-            <div class="partner-description">
-                <p>
-                    Die Migros Ostschweiz ist nicht nur unser Pilotkunde, sondern auch strategischer Teilhaber 
-                    und Investor. Durch diese einzigartige Partnerschaft entwickeln wir gemeinsam die Zukunft 
-                    des intelligenten Einzelhandels.
-                </p>
-            </div>
-            <div class="partnership-benefits">
-                <div class="benefit-item">
-                    <h4>Technologieführerschaft</h4>
-                    <p>Erste Schweizer Retail-Kette mit vollständiger KI-Integration</p>
-                </div>
-                <div class="benefit-item">
-                    <h4>Messbare Erfolge</h4>
-                    <p>Nachweisbare Effizienzsteigerung und Kosteneinsparungen</p>
-                </div>
-                <div class="benefit-item">
-                    <h4>Gemeinsame Innovation</h4>
-                    <p>Co-Development neuer KI-Lösungen für den Einzelhandel</p>
-                </div>
-            </div>
-        </div>
-    </section>
-ENDE AUSGEBLENDET -->
-
     <!-- 10. Contact CTA -->
     <section class="contact-cta" id="contact">
-        <h2>Bereit für die Retail-Revolution?</h2>
-        <p>Steigern Sie Ihre Effizienz mit unseren KI-Lösungen.</p>
+        <h2>Bereit für die KI-Transformation?</h2>
+        <p>Steigern Sie Ihre Effizienz mit unseren massgeschneiderten KI-Lösungen.</p>
         <a href="mailto:info@instinct-systems.ai" class="btn">
             Termin vereinbaren
             <span>→</span>
@@ -1654,17 +1650,18 @@ ENDE AUSGEBLENDET -->
             <div class="footer-links">
                 <h4>KI-Lösungen</h4>
                 <ul>
-                    <li><a href="#solutions">Mengensteuerung</a></li>
-                    <li><a href="#solutions">Bestandsführung</a></li>
-                    <li><a href="#solutions">Planung & Optimierung</a></li>
+                    <li><a href="#solutions">Finance & Controlling</a></li>
+                    <li><a href="#solutions">HR & Personal</a></li>
+                    <li><a href="#solutions">Sales & Marketing</a></li>
+                    <li><a href="#solutions">Operations</a></li>
                 </ul>
             </div>
             <div class="footer-links">
                 <h4>Unternehmen</h4>
                 <ul>
-                    <li><a href="#about">Über uns</a></li>
-                    <!-- <li><a href="#partners">Partner</a></li> -->
+                    <!-- <li><a href="#about">Über uns</a></li> -->
                     <li><a href="#technology">Technologie</a></li>
+                    <li><a href="#vision">Vision</a></li>
                     <li><a href="#contact">Kontakt</a></li>
                 </ul>
             </div>
