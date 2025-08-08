@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instinct Systems AI - KI-Lösungen für Schweizer Unternehmen | St. Gallen</title>
+    <title>Instinct Systems AI - KI-Lösungen für Schweizer Unternehmen | 100% Swiss Hosting | St. Gallen</title>
     
     <!-- SEO Meta Tags -->
-    <meta name="description" content="KI-Lösungen für Schweizer Unternehmen. Automatisierung und Optimierung von Geschäftsprozessen mit künstlicher Intelligenz. Kostenlose Erstberatung in St. Gallen.">
-    <meta name="keywords" content="KI Lösungen Schweiz, AI Beratung St. Gallen, Künstliche Intelligenz KMU, Automatisierung Schweiz, Machine Learning, Business Intelligence, KI Consulting">
+    <meta name="description" content="KI-Lösungen mit 100% Schweizer Datenhaltung. DSGVO/DSG-konform, keine externen APIs. Gratis Proof of Concept. Automatisierung für Schweizer Unternehmen in St. Gallen.">
+    <meta name="keywords" content="KI Lösungen Schweiz, Swiss AI, Schweizer Datenschutz, DSGVO konform, DSG konform, AI Beratung St. Gallen, Künstliche Intelligenz KMU, On-Premise KI, Automatisierung Schweiz, Machine Learning, keine ChatGPT API">
     <meta name="author" content="Instinct Systems AI">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://instinct-systems.ch/">
     
     <!-- Open Graph Tags für Social Media -->
-    <meta property="og:title" content="Instinct Systems AI - KI-Revolution für Ihr Unternehmen">
-    <meta property="og:description" content="Massgeschneiderte KI-Lösungen für Schweizer Unternehmen. Von Finance über HR bis zum Vertrieb - wir automatisieren Ihre Geschäftsprozesse.">
+    <meta property="og:title" content="Instinct Systems AI - 100% Schweizer KI-Lösungen">
+    <meta property="og:description" content="KI-Lösungen mit garantierter Schweizer Datenhaltung. Keine externen APIs. Gratis Proof of Concept. DSGVO/DSG-konform.">
     <meta property="og:image" content="https://instinct-systems.ch/FullLogo_Transparent.png">
     <meta property="og:url" content="https://instinct-systems.ch/">
     <meta property="og:type" content="website">
@@ -23,8 +23,8 @@
     
     <!-- Twitter Card Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Instinct Systems AI - KI-Revolution für Ihr Unternehmen">
-    <meta name="twitter:description" content="Massgeschneiderte KI-Lösungen für Schweizer Unternehmen. Kostenlose Erstberatung.">
+    <meta name="twitter:title" content="Instinct Systems AI - 100% Schweizer KI-Lösungen">
+    <meta name="twitter:description" content="KI mit garantierter Schweizer Datenhaltung. Gratis Proof of Concept.">
     <meta name="twitter:image" content="https://instinct-systems.ch/FullLogo_Transparent.png">
     
     <!-- Favicon -->
@@ -37,7 +37,7 @@
       "@context": "https://schema.org",
       "@type": "Organization",
       "name": "Instinct Systems AI",
-      "description": "KI-Lösungen und Beratung für Schweizer Unternehmen",
+      "description": "KI-Lösungen mit 100% Schweizer Datenhaltung für Unternehmen",
       "url": "https://instinct-systems.ch",
       "logo": "https://instinct-systems.ch/FullLogo_Transparent.png",
       "address": {
@@ -52,55 +52,12 @@
       },
       "email": "info@instinct-systems.ch",
       "areaServed": "CH",
-      "priceRange": "$",
+      "priceRange": "$$",
       "knowsLanguage": ["de", "en"],
       "sameAs": []
     }
     </script>
     
-    <!-- Additional Schema for IT Services -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "name": "Instinct Systems AI",
-      "serviceType": ["KI-Beratung", "IT-Consulting", "Software-Entwicklung"],
-      "areaServed": {
-        "@type": "Country",
-        "name": "Schweiz"
-      },
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "KI-Lösungen",
-        "itemListElement": [
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "AI Finance Assistant",
-              "description": "Automatische Finanzanalyse und Reporting"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "AI People Manager",
-              "description": "HR-Automatisierung und Personalmanagement"
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "AI Sales Accelerator",
-              "description": "Vertriebsoptimierung mit KI"
-            }
-          }
-        ]
-      }
-    }
-    </script>
     <style>
         :root {
             --primary-blue: #4A90E2;
@@ -114,6 +71,7 @@
             --text-muted: #9CA3AF;
             --gradient-blue: linear-gradient(135deg, #2B5CE6 0%, #78B9F2 100%);
             --gradient-dark: linear-gradient(180deg, #0A0E1A 0%, #050709 100%);
+            --swiss-red: #DA291C;
         }
 
         * {
@@ -218,8 +176,9 @@
 
         .nav-links {
             display: flex;
-            gap: 2.5rem;
+            gap: 2rem;
             list-style: none;
+            align-items: center;
         }
 
         .nav-links a {
@@ -249,16 +208,58 @@
             width: 100%;
         }
 
+        .nav-links .nav-cta {
+            background: var(--gradient-blue);
+            padding: 0.5rem 1.5rem;
+            border-radius: 25px;
+            color: white !important;
+            font-weight: 600;
+        }
+
+        .nav-links .nav-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(74, 144, 226, 0.4);
+        }
+
+        .nav-links .nav-cta::after {
+            display: none;
+        }
+
+        /* Trust Badge - dezent platziert */
+        .trust-badge {
+            position: absolute;
+            top: 100px;
+            right: 40px;
+            background: rgba(10, 14, 26, 0.9);
+            backdrop-filter: blur(10px);
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            border: 1px solid rgba(218, 41, 28, 0.3);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+            color: var(--text-light);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            z-index: 10;
+        }
+
+        .trust-badge:hover {
+            border-color: var(--swiss-red);
+            transform: translateY(-2px);
+            transition: all 0.3s ease;
+        }
+
         /* Full Page Sections */
         .hero,
         .ai-features,
+        .data-security-section,
         .industries,
         .ultra-instinct-section,
         .development-section,
         .tech-stack-section,
-        .about-section,
+        .pricing-section,
         .vision-section,
-        .partners,
         .contact-cta {
             min-height: 100vh;
             display: flex;
@@ -266,6 +267,12 @@
             position: relative;
             padding: 80px 2rem 2rem;
             overflow: hidden;
+        }
+
+        .data-security-section,
+        .pricing-section {
+            min-height: auto;
+            padding: 4rem 2rem;
         }
 
         /* Hero Section */
@@ -302,7 +309,7 @@
         .hero-text .tagline {
             font-size: 1.5rem;
             color: var(--text-muted);
-            margin-bottom: 2rem;
+            margin-bottom: 1rem;
             font-style: italic;
             letter-spacing: 1px;
         }
@@ -330,6 +337,9 @@
             gap: 0.5rem;
             position: relative;
             overflow: hidden;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
         }
 
         .btn-primary {
@@ -488,6 +498,43 @@
             box-shadow: 0 20px 40px rgba(120, 185, 242, 0.3);
         }
 
+        /* Data Security Section */
+        .data-security-section {
+            background: var(--dark-bg);
+        }
+
+        .security-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .security-card {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 20px;
+            border: 1px solid rgba(218, 41, 28, 0.2);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .security-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--swiss-red);
+            box-shadow: 0 10px 30px rgba(218, 41, 28, 0.2);
+        }
+
+        .security-card h3 {
+            color: var(--text-light);
+            margin-bottom: 1rem;
+        }
+
+        .security-card p {
+            color: var(--text-muted);
+        }
+
         /* Industries Section */
         .industries {
             background: var(--darker-bg);
@@ -622,6 +669,51 @@
             font-style: italic;
         }
 
+        /* Pricing Section */
+        .pricing-section {
+            background: var(--darker-bg);
+        }
+
+        .process-timeline {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .process-step {
+            text-align: center;
+        }
+
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient-blue);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+        }
+
+        .pricing-info-box {
+            background: var(--card-bg);
+            border-radius: 20px;
+            padding: 2.5rem;
+            border: 2px solid var(--primary-blue);
+            text-align: center;
+        }
+
+        .pricing-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
         /* Development Section */
         .development-section {
             background: var(--darker-bg);
@@ -674,7 +766,6 @@
             line-height: 1.6;
         }
         
-        /* Special color for Roadmap heading */
         .development-section .section-header h2 {
             background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%);
             -webkit-background-clip: text;
@@ -713,108 +804,7 @@
             transform: translateY(-5px);
         }
 
-        /* About Section */
-        .about-section {
-            background: var(--darker-bg);
-            flex-direction: column;
-            justify-content: center;
-            display: none; /* Komplett versteckt, aber Code bleibt erhalten */
-        }
-
-        .founders-grid {
-            max-width: 1400px;
-            margin: 1.5rem auto;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 2rem;
-        }
-
-        .founder-card {
-            background: var(--card-bg);
-            border: 1px solid rgba(74, 144, 226, 0.1);
-            border-radius: 20px;
-            padding: 1.5rem;
-            transition: all 0.3s ease;
-        }
-
-        .founder-card:hover {
-            transform: translateY(-10px);
-            border-color: var(--primary-blue);
-            box-shadow: 0 20px 40px rgba(74, 144, 226, 0.2);
-        }
-
-        .founder-image-placeholder {
-            margin-bottom: 2rem;
-            display: flex;
-            justify-content: center;
-        }
-
-        .image-circle {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            background: rgba(74, 144, 226, 0.1);
-            border: 3px solid var(--primary-blue);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--text-muted);
-            font-size: 1rem;
-            text-align: center;
-            transition: all 0.3s ease;
-        }
-
-        .founder-card:hover .image-circle {
-            border-color: var(--light-blue);
-            background: rgba(74, 144, 226, 0.2);
-        }
-
-        .founder-card h3 {
-            font-size: 2rem;
-            margin-bottom: 0.5rem;
-            color: var(--text-light);
-            text-align: center;
-        }
-
-        .founder-card h4 {
-            font-size: 1.125rem;
-            color: var(--primary-blue);
-            margin-bottom: 2rem;
-            text-align: center;
-        }
-
-        .founder-info {
-            color: var(--text-muted);
-            line-height: 1.4;
-            font-size: 0.85rem;
-        }
-
-        .founder-info p {
-            margin-top: 0.75rem;
-            font-weight: 600;
-            color: var(--text-light);
-        }
-
-        .founder-info ul {
-            list-style: none;
-            padding-left: 0;
-            margin-bottom: 0.5rem;
-        }
-
-        .founder-info li {
-            padding: 0.2rem 0;
-            padding-left: 1rem;
-            position: relative;
-        }
-
-        .founder-info li:before {
-            content: "▸";
-            position: absolute;
-            left: 0;
-            color: var(--primary-blue);
-        }
-
-        /* Vision Section - Professional Redesign */
+        /* Vision Section */
         .vision-section {
             background: linear-gradient(135deg, var(--dark-bg) 0%, rgba(74, 144, 226, 0.02) 100%);
             overflow: hidden;
@@ -976,126 +966,6 @@
             font-size: 0.85rem;
         }
 
-        /* Partner Section */
-        .partners {
-            background: var(--dark-bg);
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        .partner-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .partner-logo {
-            margin: 2rem 0;
-            padding: 2rem;
-            background: var(--card-bg);
-            border-radius: 20px;
-            border: 1px solid rgba(74, 144, 226, 0.2);
-            display: inline-block;
-        }
-
-        .partner-logo h3 {
-            font-size: 2rem;
-            color: var(--primary-blue);
-            margin-bottom: 0.75rem;
-        }
-
-        .partner-info {
-            font-size: 1.125rem;
-            color: var(--text-light);
-            margin-bottom: 0.75rem;
-        }
-
-        .partner-status {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            margin-top: 1.5rem;
-        }
-
-        .status-badge {
-            display: inline-block;
-            padding: 0.5rem 1.5rem;
-            border-radius: 25px;
-            font-weight: 600;
-        }
-
-        .partner-metrics {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 2rem;
-            margin: 2rem 0;
-            padding: 2rem 0;
-            border-top: 1px solid rgba(74, 144, 226, 0.2);
-            border-bottom: 1px solid rgba(74, 144, 226, 0.2);
-        }
-
-        .metric-item {
-            text-align: center;
-        }
-
-        .metric-value {
-            font-size: 2.5rem;
-            font-weight: bold;
-            background: var(--gradient-blue);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .metric-label {
-            color: var(--text-muted);
-            font-size: 0.875rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-top: 0.5rem;
-        }
-
-        .partnership-benefits {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 2rem;
-            margin-top: 3rem;
-            max-width: 1000px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .benefit-item {
-            text-align: center;
-            padding: 2rem;
-            background: rgba(74, 144, 226, 0.05);
-            border-radius: 15px;
-            border: 1px solid rgba(74, 144, 226, 0.2);
-            transition: all 0.3s ease;
-        }
-
-        .benefit-item:hover {
-            transform: translateY(-5px);
-            border-color: var(--primary-blue);
-            box-shadow: 0 10px 30px rgba(74, 144, 226, 0.2);
-        }
-
-        .benefit-item h4 {
-            color: var(--primary-blue);
-            margin-bottom: 1rem;
-            font-size: 1.25rem;
-        }
-
-        .pilot-badge {
-            background: linear-gradient(45deg, #00ffe1, #0099cc);
-            color: #000;
-        }
-
-        .investor-badge {
-            background: linear-gradient(45deg, #f39c12, #f1c40f);
-            color: #000;
-        }
-
         /* Contact CTA */
         .contact-cta {
             background: var(--dark-bg);
@@ -1216,6 +1086,13 @@
             min-height: 100px;
         }
 
+        .form-group small {
+            color: var(--text-muted);
+            font-size: 0.8rem;
+            margin-top: 0.25rem;
+            display: block;
+        }
+
         .form-options {
             margin-bottom: 2rem;
         }
@@ -1255,31 +1132,6 @@
             font-size: 0.875rem;
             color: var(--text-muted);
             line-height: 1.5;
-        }
-
-        /* Form Validation Styles */
-        .form-group input:invalid:not(:placeholder-shown),
-        .form-group textarea:invalid:not(:placeholder-shown) {
-            border-color: #e74c3c;
-        }
-
-        .form-group input:valid:not(:placeholder-shown),
-        .form-group textarea:valid:not(:placeholder-shown) {
-            border-color: #27ae60;
-        }
-
-        @media (max-width: 768px) {
-            .contact-form {
-                padding: 2rem;
-            }
-
-            .form-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .contact-header h2 {
-                font-size: 2rem;
-            }
         }
 
         /* Footer */
@@ -1328,6 +1180,21 @@
             color: var(--primary-blue);
         }
 
+        .footer-trust {
+            text-align: center;
+            padding: 2rem 0;
+            border-top: 1px solid rgba(74, 144, 226, 0.1);
+            margin-top: 2rem;
+        }
+
+        .footer-trust p {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
         .footer-bottom {
             margin-top: 3rem;
             padding-top: 2rem;
@@ -1343,7 +1210,8 @@
             }
             
             .ai-brain-animation {
-                width: 600px;
+                width: 400px;
+                height: 400px;
             }
 
             .vision-metrics {
@@ -1356,7 +1224,7 @@
             }
 
             .features-grid {
-                grid-template-columns: repeat(2, 1fr);
+                grid-template-columns: repeat(3, 1fr);
             }
         }
 
@@ -1384,12 +1252,13 @@
                 align-items: center;
             }
 
-            .industry-showcase {
-                grid-template-columns: repeat(2, 1fr);
+            .trust-indicators {
+                flex-direction: column;
+                align-items: center;
             }
 
-            .founders-grid {
-                grid-template-columns: 1fr;
+            .industry-showcase {
+                grid-template-columns: repeat(2, 1fr);
             }
 
             .footer-content {
@@ -1406,14 +1275,34 @@
             }
 
             .vision-main h2 {
-                font-size: 2.5rem;
+                font-size: 2rem;
             }
 
             .vision-text {
-                font-size: 1.25rem;
+                font-size: 1rem;
             }
 
             .features-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-header h2 {
+                font-size: 2rem;
+            }
+
+            .contact-form {
+                padding: 2rem;
+            }
+
+            .pricing-options {
+                grid-template-columns: 1fr;
+            }
+
+            .process-timeline {
                 grid-template-columns: 1fr;
             }
         }
@@ -1477,12 +1366,11 @@
                 <li><a href="#solutions">Lösungen</a></li>
                 <li><a href="#industries">Branchen</a></li>
                 <li><a href="#ultra-instinct">Ultra Instinct</a></li>
+                <li><a href="#pricing">Angebot</a></li>
                 <li><a href="#development">Roadmap</a></li>
-                <li><a href="#technology">Technologie</a></li>
-                <!-- <li><a href="#about">Team</a></li> -->
                 <li><a href="#vision">Vision</a></li>
-                <!-- <li><a href="#partners">Partner</a></li> -->
-                <li><a href="#contact">Kontakt</a></li>
+                <li><a href="#security">Datenschutz</a></li>
+                <li><a href="#contact" class="nav-cta">Kostenlose Beratung</a></li>
             </ul>
         </div>
     </nav>
@@ -1493,18 +1381,20 @@
             <div class="hero-text">
                 <h1>KI-Revolution für Ihr Unternehmen</h1>
                 <p class="tagline">"Where Intelligence Meets Instinct"</p>
+                
                 <p class="hero-description">
                     Transformieren Sie Ihr Unternehmen mit massgeschneiderten KI-Lösungen. 
                     Von Finance über HR bis zum Vertrieb - wir automatisieren und optimieren 
-                    jeden Geschäftsprozess für maximale Effizienz und nachhaltigen Erfolg.
+                    Ihre Geschäftsprozesse mit 100% Schweizer Datenhaltung 
+                    und höchsten Sicherheitsstandards. <strong>Starten Sie mit einem kostenlosen Proof of Concept.</strong>
                 </p>
                 <div class="cta-buttons">
                     <a href="#contact" class="btn btn-primary">
-                        KI-Beratung starten
+                        Kostenlose Beratung
                         <span>→</span>
                     </a>
-                    <a href="#solutions" class="btn btn-secondary">
-                        Lösungen entdecken
+                    <a href="#pricing" class="btn btn-secondary">
+                        So funktioniert's
                     </a>
                 </div>
             </div>
@@ -1529,7 +1419,7 @@
             <p>Alle Unternehmenszahlen in Echtzeit mit automatischen Handlungsempfehlungen. Erkennt Abweichungen sofort und schlägt konkrete Massnahmen vor.</p>
         </div>
         <div class="feature-card">
-            <div class="feature-icon">👥</div>
+            <div class="feature-icon">🤝</div>
             <h3>WORKFORCE INSTINCT AI</h3>
             <p>Intelligente Personalplanung für optimale Auslastung. Erstellt automatisch effiziente Schichtpläne basierend auf Bedarf und Ressourcen.</p>
         </div>
@@ -1549,14 +1439,14 @@
             <p>24/7 Chatbot der Kundenanfragen intelligent beantwortet. Entlastet den Support und steigert die Kundenzufriedenheit.</p>
         </div>
         <div class="feature-card">
-            <div class="feature-icon">🔄</div>
-            <h3>PROCESS INSTINCT AI</h3>
-            <p>Findet Schwachstellen in Ihren Prozessen und automatisiert Routineaufgaben. Steigert die Effizienz durch intelligente Workflow-Optimierung.</p>
-        </div>
-        <div class="feature-card">
-            <div class="feature-icon">🎯</div>
+            <div class="feature-icon">💡</div>
             <h3>EXECUTIVE INSTINCT AI</h3>
             <p>Das Cockpit für die Geschäftsleitung - alle KPIs auf einen Blick mit Prognosen und Entscheidungshilfen für strategische Weichenstellungen.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">📱</div>
+            <h3>MOBILE INSTINCT AI</h3>
+            <p>Alle unsere KI-Lösungen auch als native iOS/Android App. Ihre Mitarbeiter haben die KI-Power direkt in der Hosentasche - online und offline verfügbar.</p>
         </div>
         <div class="feature-card custom-solution">
             <div class="feature-icon">✨</div>
@@ -1608,7 +1498,7 @@
         </div>
     </section>
 
-<!-- Ultra Instinct Section mit Pilot-Hinweis -->
+<!-- Ultra Instinct Section -->
 <section class="ultra-instinct-section" id="ultra-instinct">
     <div class="section-header">
         <h2>Ultra Instinct - Die Revolution beginnt</h2>
@@ -1649,7 +1539,6 @@
                     <h3 style="color: var(--primary-blue); margin-bottom: 1rem;">Neural Network</h3>
                     <p style="color: var(--text-muted); margin-bottom: 2rem;">Kontinuierliches Lernen aus Verkaufsdaten</p>
                     
-                    
                     <div style="display: flex; justify-content: space-around; margin-top: 2rem;">
                         <div>
                             <div style="font-size: 2rem; color: var(--primary-blue);">24/7</div>
@@ -1674,6 +1563,103 @@
         </div>
         <div class="pilot-note">
             Ultra Instinct wird aktuell bei einem der grössten Detailhändler der Schweiz erfolgreich pilotiert
+        </div>
+    </div>
+</section>
+
+<!-- Neue Pricing Section -->
+<section class="pricing-section" id="pricing">
+    <div class="section-header">
+        <h2>Ihr Weg zur KI-Lösung</h2>
+        <p style="font-size: 1.25rem; color: var(--text-muted);">
+            Transparent, fair und ohne versteckte Kosten
+        </p>
+    </div>
+    
+    <div style="max-width: 1200px; margin: 0 auto;">
+        <!-- Prozess Timeline in schönem Design -->
+        <div style="background: linear-gradient(135deg, rgba(74, 144, 226, 0.05) 0%, rgba(120, 185, 242, 0.05) 100%); border-radius: 30px; padding: 3rem; margin-bottom: 3rem; border: 1px solid rgba(74, 144, 226, 0.2);">
+            <div class="process-timeline" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 3rem; position: relative;">
+                <!-- Verbindungslinie -->
+                <div style="position: absolute; top: 30px; left: 10%; right: 10%; height: 2px; background: linear-gradient(90deg, var(--primary-blue) 0%, var(--light-blue) 100%); z-index: 0;"></div>
+                
+                <div class="process-step" style="position: relative; z-index: 1;">
+                    <div class="step-number" style="background: white; border: 3px solid var(--primary-blue); color: var(--primary-blue);">1</div>
+                    <h4 style="color: var(--primary-blue); font-size: 1.125rem; margin-bottom: 0.5rem;">Erstberatung</h4>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">Kostenlos & unverbindlich</p>
+                </div>
+                
+                <div class="process-step" style="position: relative; z-index: 1;">
+                    <div class="step-number" style="background: var(--gradient-blue); color: white;">2</div>
+                    <h4 style="color: var(--primary-blue); font-size: 1.125rem; margin-bottom: 0.5rem;">Proof of Concept</h4>
+                    <p style="color: var(--text-light); font-size: 0.9rem; font-weight: 600;">KOSTENLOS - Wir zeigen, was möglich ist</p>
+                </div>
+                
+                <div class="process-step" style="position: relative; z-index: 1;">
+                    <div class="step-number" style="background: white; border: 3px solid var(--primary-blue); color: var(--primary-blue);">3</div>
+                    <h4 style="color: var(--primary-blue); font-size: 1.125rem; margin-bottom: 0.5rem;">Pilot-Projekt</h4>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">4-8 Wochen Entwicklung</p>
+                </div>
+                
+                <div class="process-step" style="position: relative; z-index: 1;">
+                    <div class="step-number" style="background: white; border: 3px solid var(--primary-blue); color: var(--primary-blue);">4</div>
+                    <h4 style="color: var(--primary-blue); font-size: 1.125rem; margin-bottom: 0.5rem;">Rollout</h4>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">Implementierung & Support</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Info Box mit besserem Design -->
+        <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 3rem; align-items: start;">
+            <!-- Hauptfeature links -->
+            <div style="background: var(--gradient-blue); border-radius: 25px; padding: 2.5rem; text-align: center; color: white; box-shadow: 0 20px 40px rgba(74, 144, 226, 0.3);">
+                <div style="font-size: 3rem; margin-bottom: 1rem;">✨</div>
+                <h3 style="font-size: 1.75rem; margin-bottom: 1rem; color: white;">Kostenloser Proof of Concept</h3>
+                <p style="font-size: 1.125rem; line-height: 1.6; opacity: 0.95;">
+                    Wir entwickeln einen funktionierenden Prototyp für Ihre spezifische Herausforderung - völlig kostenlos.
+                </p>
+            </div>
+            
+            <!-- Optionen rechts -->
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;">
+                <div style="background: var(--card-bg); border-radius: 20px; padding: 2rem; border: 1px solid rgba(74, 144, 226, 0.2); text-align: center; transition: all 0.3s ease;">
+                    <div style="font-size: 2rem; margin-bottom: 1rem;">🚀</div>
+                    <h4 style="color: var(--primary-blue); margin-bottom: 1rem;">Pilot-Projekt</h4>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.5;">
+                        4-8 Wochen Entwicklung<br>
+                        Individuelles Angebot
+                    </p>
+                </div>
+                
+                <div style="background: var(--card-bg); border-radius: 20px; padding: 2rem; border: 1px solid rgba(74, 144, 226, 0.2); text-align: center; transition: all 0.3s ease;">
+                    <div style="font-size: 2rem; margin-bottom: 1rem;">🏢</div>
+                    <h4 style="color: var(--primary-blue); margin-bottom: 1rem;">Enterprise</h4>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.5;">
+                        Massgeschneiderte Lösung<br>
+                        Für komplexe Anforderungen
+                    </p>
+                </div>
+                
+                <div style="background: var(--card-bg); border-radius: 20px; padding: 2rem; border: 1px solid rgba(74, 144, 226, 0.2); text-align: center; transition: all 0.3s ease;">
+                    <div style="font-size: 2rem; margin-bottom: 1rem;">🛡️</div>
+                    <h4 style="color: var(--primary-blue); margin-bottom: 1rem;">Support</h4>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.5;">
+                        Kontinuierliche Betreuung<br>
+                        Updates & Optimierungen
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Call to Action -->
+        <div style="text-align: center; margin-top: 3rem;">
+            <p style="font-size: 1.25rem; color: var(--text-light); margin-bottom: 2rem;">
+                Überzeugen Sie sich selbst - ohne Risiko und ohne Kosten
+            </p>
+            <a href="#contact" class="btn btn-primary" style="font-size: 1.125rem; padding: 1rem 3rem;">
+                Jetzt starten
+                <span>→</span>
+            </a>
         </div>
     </div>
 </section>
@@ -1706,9 +1692,9 @@
                 <p>Intelligente Dokumentenverarbeitung für papierlose und effiziente Büroprozesse</p>
             </div>
             <div class="dev-card">
-                <h3>PROCESS INSTINCT AI</h3>
+                <h3>MOBILE INSTINCT AI</h3>
                 <span class="status">Q3 2026</span>
-                <p>Automatische Prozessanalyse und -optimierung für maximale Effizienz</p>
+                <p>Native Apps für iOS und Android - KI-Power für unterwegs mit Offline-Funktionalität</p>
             </div>
             <div class="dev-card">
                 <h3>INSTINCT AI PLATFORM</h3>
@@ -1738,76 +1724,7 @@
         </div>
     </section>
 
-    <!-- 7. Die Köpfe hinter der Innovation - AUSGEGRAUT -->
-    <section class="about-section" id="about">
-        <div class="section-header">
-            <h2>Die Köpfe hinter der Innovation</h2>
-            <p>Zwei Visionäre mit über 35 Jahren kombinierter Expertise vereinen Retail-Know-how mit modernster Technologie.</p>
-        </div>
-        <div class="founders-grid">
-            <div class="founder-card">
-                <div class="founder-image-placeholder">
-                    <div class="image-circle">
-                        <span>Foto<br>einfügen</span>
-                    </div>
-                </div>
-                <h3>Kristian V.</h3>
-                <h4>Co-CEO & Chief Business Officer</h4>
-                <div class="founder-info">
-                    <p><strong>Ausbildung:</strong></p>
-                    <ul>
-                        <li>Detailhandelsfachmann EFZ</li>
-                        <li>Detailhandelsspezialist FA</li>
-                        <li>Marketing Manager HF</li>
-                    </ul>
-                    <p><strong>Erfahrung:</strong></p>
-                    <ul>
-                        <li>20 Jahre Erfahrung im Einzelhandel</li>
-                        <li>Entwicklung der KI "Ultra Instinct" </li>
-                        <li>Spezialist für Filialperformance-Optimierung durch Standort- und Flächenanalyse</li>
-                        <li>Expertise in Prozessoptimierung und digitaler Transformation im Retail</li>
-                    </ul>
-                    <p><strong>Verantwortungsbereiche:</strong></p>
-                    <ul>
-                        <li>Geschäftsstrategie & Kundenbeziehungen</li>
-                        <li>Produktmanagement & Marketing</li>
-                        <li>Finanzen & Controlling</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="founder-card">
-                <div class="founder-image-placeholder">
-                    <div class="image-circle">
-                        <span>Foto<br>einfügen</span>
-                    </div>
-                </div>
-                <h3>Philip T.</h3>
-                <h4>Co-CEO & Chief Technology Officer</h4>
-                <div class="founder-info">
-                    <p><strong>Ausbildung:</strong></p>
-                    <ul>
-                        <li>Master in Computer Science</li>
-                        <li>Spezialisierung in KI & Machine Learning</li>
-                    </ul>
-                    <p><strong>Erfahrung:</strong></p>
-                    <ul>
-                        <li>15 Jahre Softwareentwicklung</li>
-                        <li>Entwicklung der KI "Ultra Instinct"</li>
-                        <li>Spezialist in Software-Engineering und IT-Sicherheit </li>
-                    </ul>
-                    <p><strong>Verantwortungsbereiche:</strong></p>
-                    <ul>
-                        <li>Technologie & Entwicklung</li>
-                        <li>IT-Infrastruktur & Security</li>
-                        <li>KI-Modelle & Datenmanagement</li>
-                        <li>Recruiting & Talententwicklung</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 8. Vision - Angepasst für alle Unternehmen -->
+    <!-- 7. Vision -->
     <section class="vision-section" id="vision">
         <div class="vision-content">
             <div class="vision-main">
@@ -1881,7 +1798,44 @@
         </div>
     </section>
 
-    <!-- 10. Contact Form Section -->
+    <!-- Datenschutz-Sektion NACH Vision -->
+    <section class="data-security-section" id="security">
+        <div class="section-header">
+            <h2>Ihre Daten bleiben in der Schweiz</h2>
+            <p style="font-size: 1.25rem; color: var(--text-light);">
+                Höchste Sicherheitsstandards und vollständige Datenkontrolle - 
+                garantiert durch Schweizer Hosting und lokale Verarbeitung.
+            </p>
+        </div>
+        
+        <div class="security-grid">
+            <div class="security-card">
+                <div style="font-size: 3rem; margin-bottom: 1rem;">🏔️</div>
+                <h3>100% Swiss Hosting</h3>
+                <p>Alle Daten werden ausschliesslich in Schweizer Rechenzentren gespeichert und verarbeitet.</p>
+            </div>
+            
+            <div class="security-card">
+                <div style="font-size: 3rem; margin-bottom: 1rem;">🔐</div>
+                <h3>On-Premise Option</h3>
+                <p>Installation direkt in Ihrer IT-Infrastruktur möglich - volle Kontrolle garantiert.</p>
+            </div>
+            
+            <div class="security-card">
+                <div style="font-size: 3rem; margin-bottom: 1rem;">🚫</div>
+                <h3>Keine externen APIs</h3>
+                <p>Ihre Daten werden niemals an ChatGPT, Claude oder andere externe KI-Dienste gesendet.</p>
+            </div>
+            
+            <div class="security-card">
+                <div style="font-size: 3rem; margin-bottom: 1rem;">⚖️</div>
+                <h3>DSG/DSGVO konform</h3>
+                <p>Vollständige Compliance mit Schweizer und EU-Datenschutzgesetzen.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Contact Form Section -->
     <section class="contact-cta" id="contact">
         <div class="contact-container">
             <div class="contact-header">
@@ -1890,7 +1844,7 @@
             </div>
             
             <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
-                <!-- Hidden field for Web3Forms -->
+                <!-- Hidden fields for Web3Forms -->
                 <input type="hidden" name="access_key" value="6aba7eb2-91e9-4b83-a73f-373135977a93">
                 <input type="hidden" name="redirect" value="https://instinct-systems.ch/danke">
                 <input type="hidden" name="subject" value="Neue KI-Anfrage von instinct-systems.ch">
@@ -1899,18 +1853,6 @@
                 <!-- Custom Email Template -->
                 <input type="hidden" name="email_template" value="box">
                 <input type="hidden" name="botcheck" value="">
-                
-                <!-- Deutsche Feldnamen -->
-                <input type="hidden" name="_name" value="Name">
-                <input type="hidden" name="_company" value="Unternehmen">
-                <input type="hidden" name="_email" value="E-Mail">
-                <input type="hidden" name="_phone" value="Telefon">
-                <input type="hidden" name="_department" value="Abteilung">
-                <input type="hidden" name="_project" value="Projektbeschreibung">
-                <input type="hidden" name="_current-process" value="Aktueller Prozess">
-                <input type="hidden" name="_timeline" value="Zeitrahmen">
-                <input type="hidden" name="_budget" value="Budget">
-                <input type="hidden" name="_demo-interest" value="Demo gewünscht">
                 
                 <div class="form-grid">
                     <!-- Basis Informationen -->
@@ -1977,15 +1919,12 @@
                     </div>
                     
                     <div class="form-group">
-                        <label for="budget">Budget-Rahmen</label>
-                        <select id="budget" name="budget">
-                            <option value="">Bitte wählen...</option>
-                            <option value="<50k">Unter 50'000 CHF</option>
-                            <option value="50-100k">50'000 - 100'000 CHF</option>
-                            <option value="100-250k">100'000 - 250'000 CHF</option>
-                            <option value="250k+">Über 250'000 CHF</option>
-                            <option value="tbd">Noch offen</option>
-                        </select>
+                        <label for="budget">Budget-Rahmen (optional)</label>
+                        <input type="text" 
+                               id="budget" 
+                               name="budget" 
+                               placeholder="">
+                        <small>Hilft uns, die passende Lösung vorzuschlagen</small>
                     </div>
                 </div>
                 
@@ -2029,19 +1968,30 @@
                     <li><a href="#solutions">Controlling Instinct AI</a></li>
                     <li><a href="#solutions">Workforce Instinct AI</a></li>
                     <li><a href="#solutions">Inventory Instinct AI</a></li>
-                    <li><a href="#solutions">Executive Instinct AI</a></li>
+                    <li><a href="#solutions">Mobile Instinct AI</a></li>
                 </ul>
             </div>
             <div class="footer-links">
                 <h4>Unternehmen</h4>
                 <ul>
-                    <!-- <li><a href="#about">Über uns</a></li> -->
+                    <li><a href="#security">🇨🇭 Datenschutz</a></li>
                     <li><a href="#technology">Technologie</a></li>
                     <li><a href="#vision">Vision</a></li>
                     <li><a href="#contact">Kontakt</a></li>
                 </ul>
             </div>
         </div>
+        
+        <!-- Trust Elements im Footer -->
+        <div class="footer-trust">
+            <p>
+                <span>100% Swiss Made</span>
+                <span>🔒 DSGVO/DSG konform</span>
+                <span>🏢 On-Premise verfügbar</span>
+                <span>📱 Web & Mobile Apps</span>
+            </p>
+        </div>
+        
         <div class="footer-bottom">
             <p>&copy; 2025 Instinct Systems AI | St. Gallen, Schweiz | <a href="mailto:info@instinct-systems.ch" style="color: var(--text-muted);">info@instinct-systems.ch</a></p>
         </div>
@@ -2108,7 +2058,7 @@
         }, observerOptions);
 
         // Observe all cards and sections
-        document.querySelectorAll('.feature-card, .industry-item, .tech-item, .founder-card, .dev-card, .vision-metric, .impact-item').forEach(el => {
+        document.querySelectorAll('.feature-card, .industry-item, .tech-item, .dev-card, .vision-metric, .impact-item, .security-card, .process-step').forEach(el => {
             observer.observe(el);
         });
 
