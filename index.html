@@ -269,12 +269,6 @@
             overflow: hidden;
         }
 
-        .data-security-section,
-        .pricing-section {
-            min-height: auto;
-            padding: 4rem 2rem;
-        }
-
         /* Hero Section */
         .hero {
             min-height: 100vh;
@@ -669,9 +663,14 @@
             font-style: italic;
         }
 
-        /* Pricing Section */
+        /* Pricing Section - Full Height */
         .pricing-section {
             background: var(--darker-bg);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 80px 2rem 2rem;
         }
 
         .process-timeline {
@@ -891,15 +890,15 @@
         }
 
         .metric-icon {
-            width: 80px;
-            height: 80px;
-            margin: 0 auto 1.5rem;
+            width: 60px;
+            height: 60px;
+            margin: 0 auto 1rem;
             background: var(--gradient-blue);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 2.5rem;
+            font-size: 2rem;
             color: white;
             box-shadow: 0 10px 30px rgba(74, 144, 226, 0.3);
         }
@@ -1500,166 +1499,154 @@
 
 <!-- Ultra Instinct Section -->
 <section class="ultra-instinct-section" id="ultra-instinct">
-    <div class="section-header">
-        <h2>Ultra Instinct - Die Revolution beginnt</h2>
-        <p>Ultra Instinct ist der erste Schritt auf unserem Weg, Geschäftsprozesse zu revolutionieren</p>
-    </div>
-    <div class="ultra-content">
-        <div class="ultra-grid">
-            <div class="ultra-features">
-                <h3>Was Ultra Instinct kann</h3>
-                <div class="ultra-feature-item">
-                    <h4>Intelligente Algorithmen</h4>
-                    <p>Selbstlernende KI-Modelle mit Isolation Forest und K-Means Clustering für präzise Mustererkennung</p>
-                </div>
-                <div class="ultra-feature-item">
-                    <h4>Machine Learning Engine</h4>
-                    <p>Deep Learning analysiert Millionen von Datenpunkten und lernt kontinuierlich aus neuen Verkaufsmustern</p>
-                </div>
-                <div class="ultra-feature-item">
-                    <h4>Neural Network Optimierung</h4>
-                    <p>Adaptives neuronales Netz passt Prognosen dynamisch an saisonale und kontextuelle Faktoren an</p>
-                </div>
-                <div class="ultra-feature-item">
-                    <h4>Out-of-Stock Erkennung</h4>
-                    <p>Selbstlernende Mengenoptimierung nach zu geringen Mengen oder OOS</p>
-                </div>
-                <div class="ultra-feature-item">
-                    <h4>Präzise Mengenprognose</h4>
-                    <p>Berechnet die optimale Bestellmenge unter Berücksichtigung aller relevanten Faktoren</p>
-                </div>
-                <div class="ultra-feature-item">
-                    <h4>Automatische Mengensteuerung</h4>
-                    <p>Erstellt vollautomatisch die Verteilung pro Filiale und Tag basierend auf historischen Daten</p>
-                </div>
-            </div>
-            <div class="ultra-visual">
-                <div class="ai-diagram">
-                    <div style="font-size: 4rem; margin-bottom: 2rem;">🧠</div>
-                    <h3 style="color: var(--primary-blue); margin-bottom: 1rem;">Neural Network</h3>
-                    <p style="color: var(--text-muted); margin-bottom: 2rem;">Kontinuierliches Lernen aus Verkaufsdaten</p>
-                    
-                    <div style="display: flex; justify-content: space-around; margin-top: 2rem;">
-                        <div>
-                            <div style="font-size: 2rem; color: var(--primary-blue);">24/7</div>
-                            <div style="font-size: 0.875rem; color: var(--text-muted);">Aktiv</div>
-                        </div>
-                        <div>
-                            <div style="font-size: 2rem; color: var(--primary-blue);">∞</div>
-                            <div style="font-size: 0.875rem; color: var(--text-muted);">Lernend</div>
-                        </div>
-                    </div>
-                    
-                    <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid rgba(74, 144, 226, 0.2);">
-                        <div style="display: grid; gap: 0.5rem; font-size: 0.75rem; color: var(--text-muted); text-align: left;">
-                            <div>• MLP-Architektur</div>
-                            <div>• Kontextbasierte Anpassungen</div>
-                            <div>• Saisonale Mustererkennung</div>
-                            <div>• Volatilitäts-Berücksichtigung</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div style="width: 100%; max-width: 1400px; margin: 0 auto;">
+        <div class="section-header" style="text-align: center; margin-bottom: 2rem;">
+            <h2 style="font-size: 2.5rem; margin-bottom: 0.75rem;">Ultra Instinct - Die Revolution beginnt</h2>
+            <p style="font-size: 1.125rem; color: var(--text-muted);">Ultra Instinct ist der erste Schritt auf unserem Weg, Geschäftsprozesse zu revolutionieren</p>
         </div>
-        <div class="pilot-note">
-            Ultra Instinct wird aktuell bei einem der grössten Detailhändler der Schweiz erfolgreich pilotiert
+        <div class="ultra-content">
+            <div class="ultra-grid" style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 2rem; align-items: start;">
+                <div class="ultra-features" style="background: var(--card-bg); border-radius: 20px; padding: 1.5rem; border: 1px solid rgba(74, 144, 226, 0.2);">
+                    <h3 style="font-size: 1.5rem; color: var(--primary-blue); margin-bottom: 1rem;">Was Ultra Instinct kann</h3>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                        <div class="ultra-feature-item" style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
+                            <h4 style="color: var(--text-light); margin-bottom: 0.25rem; font-size: 1rem;">Intelligente Algorithmen</h4>
+                            <p style="color: var(--text-muted); line-height: 1.4; font-size: 0.8rem;">Selbstlernende KI-Modelle für präzise Mustererkennung</p>
+                        </div>
+                        <div class="ultra-feature-item" style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
+                            <h4 style="color: var(--text-light); margin-bottom: 0.25rem; font-size: 1rem;">Machine Learning Engine</h4>
+                            <p style="color: var(--text-muted); line-height: 1.4; font-size: 0.8rem;">Deep Learning analysiert Millionen von Datenpunkten</p>
+                        </div>
+                        <div class="ultra-feature-item" style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
+                            <h4 style="color: var(--text-light); margin-bottom: 0.25rem; font-size: 1rem;">Neural Network</h4>
+                            <p style="color: var(--text-muted); line-height: 1.4; font-size: 0.8rem;">Adaptives Netz für dynamische Prognosen</p>
+                        </div>
+                        <div class="ultra-feature-item" style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
+                            <h4 style="color: var(--text-light); margin-bottom: 0.25rem; font-size: 1rem;">Out-of-Stock Erkennung</h4>
+                            <p style="color: var(--text-muted); line-height: 1.4; font-size: 0.8rem;">Selbstlernende Mengenoptimierung</p>
+                        </div>
+                        <div class="ultra-feature-item" style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
+                            <h4 style="color: var(--text-light); margin-bottom: 0.25rem; font-size: 1rem;">Präzise Mengenprognose</h4>
+                            <p style="color: var(--text-muted); line-height: 1.4; font-size: 0.8rem;">Optimale Bestellmenge berechnen</p>
+                        </div>
+                        <div class="ultra-feature-item" style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
+                            <h4 style="color: var(--text-light); margin-bottom: 0.25rem; font-size: 1rem;">Automatische Steuerung</h4>
+                            <p style="color: var(--text-muted); line-height: 1.4; font-size: 0.8rem;">Vollautomatische Verteilung pro Filiale</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ultra-visual">
+                    <div class="ai-diagram" style="width: 100%; background: var(--card-bg); border-radius: 20px; padding: 1.5rem; border: 1px solid rgba(74, 144, 226, 0.2); text-align: center;">
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">🧠</div>
+                        <h3 style="color: var(--primary-blue); margin-bottom: 0.5rem; font-size: 1.25rem;">Neural Network</h3>
+                        <p style="color: var(--text-muted); margin-bottom: 1rem; font-size: 0.85rem;">Kontinuierliches Lernen</p>
+                        
+                        <div style="display: flex; justify-content: space-around; margin-top: 1rem;">
+                            <div>
+                                <div style="font-size: 1.5rem; color: var(--primary-blue);">24/7</div>
+                                <div style="font-size: 0.75rem; color: var(--text-muted);">Aktiv</div>
+                            </div>
+                            <div>
+                                <div style="font-size: 1.5rem; color: var(--primary-blue);">∞</div>
+                                <div style="font-size: 0.75rem; color: var(--text-muted);">Lernend</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pilot-note" style="margin-top: 1.5rem; padding: 0.75rem; background: rgba(74, 144, 226, 0.1); border-radius: 10px; text-align: center; font-size: 0.9rem; color: var(--primary-blue); font-style: italic;">
+                Ultra Instinct wird aktuell bei einem der grössten Detailhändler der Schweiz erfolgreich pilotiert
+            </div>
         </div>
     </div>
 </section>
 
 <!-- Neue Pricing Section -->
 <section class="pricing-section" id="pricing">
-    <div class="section-header">
-        <h2>Ihr Weg zur KI-Lösung</h2>
-        <p style="font-size: 1.25rem; color: var(--text-muted);">
-            Transparent, fair und ohne versteckte Kosten
-        </p>
-    </div>
-    
-    <div style="max-width: 1200px; margin: 0 auto;">
-        <!-- Prozess Timeline in schönem Design -->
-        <div style="background: linear-gradient(135deg, rgba(74, 144, 226, 0.05) 0%, rgba(120, 185, 242, 0.05) 100%); border-radius: 30px; padding: 3rem; margin-bottom: 3rem; border: 1px solid rgba(74, 144, 226, 0.2);">
-            <div class="process-timeline" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 3rem; position: relative;">
+    <div style="width: 100%; max-width: 1200px; margin: 0 auto;">
+        <!-- Header mittig -->
+        <div style="text-align: center; margin-bottom: 2rem;">
+            <h2 style="font-size: 2.5rem; margin-bottom: 0.75rem; background: var(--gradient-blue); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+                Ihr Weg zur KI-Lösung
+            </h2>
+            <p style="font-size: 1.125rem; color: var(--text-muted);">
+                Transparent, fair und ohne versteckte Kosten
+            </p>
+        </div>
+        
+        <!-- Prozess Timeline -->
+        <div style="background: linear-gradient(135deg, rgba(74, 144, 226, 0.05) 0%, rgba(120, 185, 242, 0.05) 100%); border-radius: 25px; padding: 2rem; margin-bottom: 2rem; border: 1px solid rgba(74, 144, 226, 0.2);">
+            <div class="process-timeline" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; position: relative;">
                 <!-- Verbindungslinie -->
                 <div style="position: absolute; top: 30px; left: 10%; right: 10%; height: 2px; background: linear-gradient(90deg, var(--primary-blue) 0%, var(--light-blue) 100%); z-index: 0;"></div>
                 
                 <div class="process-step" style="position: relative; z-index: 1;">
                     <div class="step-number" style="background: white; border: 3px solid var(--primary-blue); color: var(--primary-blue);">1</div>
-                    <h4 style="color: var(--primary-blue); font-size: 1.125rem; margin-bottom: 0.5rem;">Erstberatung</h4>
-                    <p style="color: var(--text-muted); font-size: 0.9rem;">Kostenlos & unverbindlich</p>
+                    <h4 style="color: var(--primary-blue); font-size: 1rem; margin-bottom: 0.25rem;">Erstberatung</h4>
+                    <p style="color: var(--text-muted); font-size: 0.85rem;">Kostenlos</p>
                 </div>
                 
                 <div class="process-step" style="position: relative; z-index: 1;">
                     <div class="step-number" style="background: var(--gradient-blue); color: white;">2</div>
-                    <h4 style="color: var(--primary-blue); font-size: 1.125rem; margin-bottom: 0.5rem;">Proof of Concept</h4>
-                    <p style="color: var(--text-light); font-size: 0.9rem; font-weight: 600;">KOSTENLOS - Wir zeigen, was möglich ist</p>
+                    <h4 style="color: var(--primary-blue); font-size: 1rem; margin-bottom: 0.25rem;">Proof of Concept</h4>
+                    <p style="color: var(--text-light); font-size: 0.85rem; font-weight: 600;">Kostenlos</p>
                 </div>
                 
                 <div class="process-step" style="position: relative; z-index: 1;">
                     <div class="step-number" style="background: white; border: 3px solid var(--primary-blue); color: var(--primary-blue);">3</div>
-                    <h4 style="color: var(--primary-blue); font-size: 1.125rem; margin-bottom: 0.5rem;">Pilot-Projekt</h4>
-                    <p style="color: var(--text-muted); font-size: 0.9rem;">4-8 Wochen Entwicklung</p>
+                    <h4 style="color: var(--primary-blue); font-size: 1rem; margin-bottom: 0.25rem;">Pilot-Projekt</h4>
+                    <p style="color: var(--text-muted); font-size: 0.85rem;">4-8 Wochen</p>
                 </div>
                 
                 <div class="process-step" style="position: relative; z-index: 1;">
                     <div class="step-number" style="background: white; border: 3px solid var(--primary-blue); color: var(--primary-blue);">4</div>
-                    <h4 style="color: var(--primary-blue); font-size: 1.125rem; margin-bottom: 0.5rem;">Rollout</h4>
-                    <p style="color: var(--text-muted); font-size: 0.9rem;">Implementierung & Support</p>
+                    <h4 style="color: var(--primary-blue); font-size: 1rem; margin-bottom: 0.25rem;">Rollout</h4>
+                    <p style="color: var(--text-muted); font-size: 0.85rem;">Implementierung</p>
                 </div>
             </div>
         </div>
         
-        <!-- Info Box mit besserem Design -->
-        <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 3rem; align-items: start;">
-            <!-- Hauptfeature links -->
-            <div style="background: var(--gradient-blue); border-radius: 25px; padding: 2.5rem; text-align: center; color: white; box-shadow: 0 20px 40px rgba(74, 144, 226, 0.3);">
-                <div style="font-size: 3rem; margin-bottom: 1rem;">✨</div>
-                <h3 style="font-size: 1.75rem; margin-bottom: 1rem; color: white;">Kostenloser Proof of Concept</h3>
-                <p style="font-size: 1.125rem; line-height: 1.6; opacity: 0.95;">
-                    Wir entwickeln einen funktionierenden Prototyp für Ihre spezifische Herausforderung - völlig kostenlos.
+        <!-- PoC Feature über die ganze Breite -->
+        <div style="background: var(--gradient-blue); border-radius: 20px; padding: 2rem; text-align: center; color: white; box-shadow: 0 15px 30px rgba(74, 144, 226, 0.3); margin-bottom: 2rem;">
+            <div style="display: flex; align-items: center; justify-content: center; gap: 2rem;">
+                <div style="font-size: 2.5rem;">✨</div>
+                <div>
+                    <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem; color: white;">Kostenloser Proof of Concept</h3>
+                    <p style="font-size: 1.125rem; opacity: 0.95;">
+                        Wir entwickeln einen funktionierenden Prototyp für Ihre spezifische Herausforderung - völlig kostenlos.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Service Optionen -->
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;">
+            <div style="background: var(--card-bg); border-radius: 15px; padding: 1.75rem; border: 1px solid rgba(74, 144, 226, 0.2); text-align: center; transition: all 0.3s ease;">
+                <div style="font-size: 1.75rem; margin-bottom: 0.75rem;">🚀</div>
+                <h4 style="color: var(--primary-blue); margin-bottom: 0.75rem; font-size: 1.125rem;">Pilot-Projekt</h4>
+                <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.4;">
+                    4-8 Wochen Entwicklung<br>
+                    Individuelles Angebot
                 </p>
             </div>
             
-            <!-- Optionen rechts -->
-            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;">
-                <div style="background: var(--card-bg); border-radius: 20px; padding: 2rem; border: 1px solid rgba(74, 144, 226, 0.2); text-align: center; transition: all 0.3s ease;">
-                    <div style="font-size: 2rem; margin-bottom: 1rem;">🚀</div>
-                    <h4 style="color: var(--primary-blue); margin-bottom: 1rem;">Pilot-Projekt</h4>
-                    <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.5;">
-                        4-8 Wochen Entwicklung<br>
-                        Individuelles Angebot
-                    </p>
-                </div>
-                
-                <div style="background: var(--card-bg); border-radius: 20px; padding: 2rem; border: 1px solid rgba(74, 144, 226, 0.2); text-align: center; transition: all 0.3s ease;">
-                    <div style="font-size: 2rem; margin-bottom: 1rem;">🏢</div>
-                    <h4 style="color: var(--primary-blue); margin-bottom: 1rem;">Enterprise</h4>
-                    <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.5;">
-                        Massgeschneiderte Lösung<br>
-                        Für komplexe Anforderungen
-                    </p>
-                </div>
-                
-                <div style="background: var(--card-bg); border-radius: 20px; padding: 2rem; border: 1px solid rgba(74, 144, 226, 0.2); text-align: center; transition: all 0.3s ease;">
-                    <div style="font-size: 2rem; margin-bottom: 1rem;">🛡️</div>
-                    <h4 style="color: var(--primary-blue); margin-bottom: 1rem;">Support</h4>
-                    <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.5;">
-                        Kontinuierliche Betreuung<br>
-                        Updates & Optimierungen
-                    </p>
-                </div>
+            <div style="background: var(--card-bg); border-radius: 15px; padding: 1.75rem; border: 1px solid rgba(74, 144, 226, 0.2); text-align: center; transition: all 0.3s ease;">
+                <div style="font-size: 1.75rem; margin-bottom: 0.75rem;">🏢</div>
+                <h4 style="color: var(--primary-blue); margin-bottom: 0.75rem; font-size: 1.125rem;">Enterprise</h4>
+                <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.4;">
+                    Massgeschneiderte Lösung<br>
+                    Für komplexe Anforderungen
+                </p>
             </div>
-        </div>
-        
-        <!-- Call to Action -->
-        <div style="text-align: center; margin-top: 3rem;">
-            <p style="font-size: 1.25rem; color: var(--text-light); margin-bottom: 2rem;">
-                Überzeugen Sie sich selbst - ohne Risiko und ohne Kosten
-            </p>
-            <a href="#contact" class="btn btn-primary" style="font-size: 1.125rem; padding: 1rem 3rem;">
-                Jetzt starten
-                <span>→</span>
-            </a>
+            
+            <div style="background: var(--card-bg); border-radius: 15px; padding: 1.75rem; border: 1px solid rgba(74, 144, 226, 0.2); text-align: center; transition: all 0.3s ease;">
+                <div style="font-size: 1.75rem; margin-bottom: 0.75rem;">🛡️</div>
+                <h4 style="color: var(--primary-blue); margin-bottom: 0.75rem; font-size: 1.125rem;">Support</h4>
+                <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.4;">
+                    Kontinuierliche Betreuung<br>
+                    Updates & Optimierungen
+                </p>
+            </div>
         </div>
     </div>
 </section>
@@ -1726,11 +1713,11 @@
 
     <!-- 7. Vision -->
     <section class="vision-section" id="vision">
-        <div class="vision-content">
-            <div class="vision-main">
-                <h2>Unsere Vision für die Zukunft</h2>
-                <div class="vision-statement-box">
-                    <p class="vision-text">
+        <div class="vision-content" style="max-width: 1200px; margin: 0 auto; position: relative; z-index: 1;">
+            <div class="vision-main" style="text-align: center; margin-bottom: 2rem;">
+                <h2 style="font-size: 2.5rem; margin-bottom: 1rem; font-weight: 800; background: var(--gradient-blue); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Unsere Vision für die Zukunft</h2>
+                <div class="vision-statement-box" style="max-width: 900px; margin: 0 auto; background: rgba(74, 144, 226, 0.05); border: 1px solid rgba(74, 144, 226, 0.2); border-radius: 20px; padding: 1.5rem;">
+                    <p class="vision-text" style="font-size: 1.125rem; line-height: 1.5; color: var(--text-light); font-weight: 300;">
                         Wir schaffen eine Zukunft, in der künstliche Intelligenz nahtlos in alle Geschäftsprozesse 
                         integriert ist. Mitarbeiter werden von repetitiven Aufgaben befreit und können sich auf 
                         strategische und kreative Tätigkeiten konzentrieren, die echten Mehrwert schaffen.
@@ -1738,109 +1725,106 @@
                 </div>
             </div>
             
-            <div class="vision-metrics">
-                <div class="vision-metric">
+            <div class="vision-metrics" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 2rem;">
+                <div class="vision-metric" style="text-align: center;">
                     <div class="metric-icon">🎯</div>
-                    <div class="metric-title">Fokussierung</div>
-                    <div class="metric-description">
-                        Mitarbeiter konzentrieren sich auf wertschöpfende Tätigkeiten statt auf repetitive Prozesse
+                    <div class="metric-title" style="font-size: 1.25rem; font-weight: 700; color: var(--text-light); margin-bottom: 0.25rem;">Fokussierung</div>
+                    <div class="metric-description" style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.4;">
+                        Mitarbeiter konzentrieren sich auf wertschöpfende Tätigkeiten
                     </div>
                 </div>
-                <div class="vision-metric">
+                <div class="vision-metric" style="text-align: center;">
                     <div class="metric-icon">⚡</div>
-                    <div class="metric-title">Effizienz</div>
-                    <div class="metric-description">
-                        KI-gestützte Automatisierung maximiert die Produktivität in allen Abteilungen
+                    <div class="metric-title" style="font-size: 1.25rem; font-weight: 700; color: var(--text-light); margin-bottom: 0.25rem;">Effizienz</div>
+                    <div class="metric-description" style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.4;">
+                        KI-gestützte Automatisierung maximiert die Produktivität
                     </div>
                 </div>
-                <div class="vision-metric">
+                <div class="vision-metric" style="text-align: center;">
                     <div class="metric-icon">🚀</div>
-                    <div class="metric-title">Innovation</div>
-                    <div class="metric-description">
+                    <div class="metric-title" style="font-size: 1.25rem; font-weight: 700; color: var(--text-light); margin-bottom: 0.25rem;">Innovation</div>
+                    <div class="metric-description" style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.4;">
                         Kontinuierliche Weiterentwicklung durch selbstlernende Systeme
                     </div>
                 </div>
             </div>
 
-            <div class="vision-impact">
-                <h3>Unser Impact bis 2030</h3>
-                <div class="impact-grid">
-                    <div class="impact-item">
-                        <div class="impact-number">01</div>
-                        <div class="impact-content">
-                            <h4>Marktführerschaft</h4>
-                            <p>Führender KI-Anbieter für Schweizer Unternehmen aller Branchen</p>
-                        </div>
+            <div class="vision-impact" style="margin-top: 2rem;">
+                <h3 style="font-size: 1.5rem; text-align: center; margin-bottom: 2rem; color: var(--primary-blue);">Unser Impact bis 2030</h3>
+                <div class="impact-grid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem;">
+                    <div class="impact-item" style="background: linear-gradient(135deg, rgba(74, 144, 226, 0.1) 0%, rgba(120, 185, 242, 0.05) 100%); border-radius: 15px; padding: 1.5rem; text-align: center; border: 1px solid rgba(74, 144, 226, 0.2); transition: all 0.3s ease; position: relative; overflow: hidden;">
+                        <div style="position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--gradient-blue);"></div>
+                        <div class="impact-number" style="font-size: 2.5rem; font-weight: 800; background: var(--gradient-blue); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 0.75rem;">01</div>
+                        <h4 style="font-size: 1rem; color: var(--primary-blue); margin-bottom: 0.5rem; font-weight: 600;">Marktführerschaft</h4>
+                        <p style="color: var(--text-muted); line-height: 1.3; font-size: 0.8rem;">Führender KI-Anbieter für Schweizer Unternehmen</p>
                     </div>
-                    <div class="impact-item">
-                        <div class="impact-number">02</div>
-                        <div class="impact-content">
-                            <h4>Flächendeckende Integration</h4>
-                            <p>KI-Lösungen in über 1000 Unternehmen im aktiven Einsatz</p>
-                        </div>
+                    <div class="impact-item" style="background: linear-gradient(135deg, rgba(74, 144, 226, 0.1) 0%, rgba(120, 185, 242, 0.05) 100%); border-radius: 15px; padding: 1.5rem; text-align: center; border: 1px solid rgba(74, 144, 226, 0.2); transition: all 0.3s ease; position: relative; overflow: hidden;">
+                        <div style="position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--gradient-blue);"></div>
+                        <div class="impact-number" style="font-size: 2.5rem; font-weight: 800; background: var(--gradient-blue); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 0.75rem;">02</div>
+                        <h4 style="font-size: 1rem; color: var(--primary-blue); margin-bottom: 0.5rem; font-weight: 600;">Flächendeckend</h4>
+                        <p style="color: var(--text-muted); line-height: 1.3; font-size: 0.8rem;">KI-Lösungen in über<br><strong style="color: var(--text-light); font-size: 1.125rem;">1000+</strong><br>Unternehmen</p>
                     </div>
-                    <div class="impact-item">
-                        <div class="impact-number">03</div>
-                        <div class="impact-content">
-                            <h4>Nachhaltige Transformation</h4>
-                            <p>30% Effizienzsteigerung und massive CO₂-Reduktion durch optimierte Prozesse</p>
-                        </div>
+                    <div class="impact-item" style="background: linear-gradient(135deg, rgba(74, 144, 226, 0.1) 0%, rgba(120, 185, 242, 0.05) 100%); border-radius: 15px; padding: 1.5rem; text-align: center; border: 1px solid rgba(74, 144, 226, 0.2); transition: all 0.3s ease; position: relative; overflow: hidden;">
+                        <div style="position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--gradient-blue);"></div>
+                        <div class="impact-number" style="font-size: 2.5rem; font-weight: 800; background: var(--gradient-blue); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 0.75rem;">03</div>
+                        <h4 style="font-size: 1rem; color: var(--primary-blue); margin-bottom: 0.5rem; font-weight: 600;">Nachhaltigkeit</h4>
+                        <p style="color: var(--text-muted); line-height: 1.3; font-size: 0.8rem;"><strong style="color: var(--text-light); font-size: 1.125rem;">30%</strong><br>Effizienzsteigerung<br>& CO₂-Reduktion</p>
                     </div>
-                    <div class="impact-item">
-                        <div class="impact-number">04</div>
-                        <div class="impact-content">
-                            <h4>Wirtschaftlicher Impact</h4>
-                            <p>Über 500 Millionen CHF Kosteneinsparungen für unsere Kunden</p>
-                        </div>
+                    <div class="impact-item" style="background: linear-gradient(135deg, rgba(74, 144, 226, 0.1) 0%, rgba(120, 185, 242, 0.05) 100%); border-radius: 15px; padding: 1.5rem; text-align: center; border: 1px solid rgba(74, 144, 226, 0.2); transition: all 0.3s ease; position: relative; overflow: hidden;">
+                        <div style="position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--gradient-blue);"></div>
+                        <div class="impact-number" style="font-size: 2.5rem; font-weight: 800; background: var(--gradient-blue); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 0.75rem;">04</div>
+                        <h4 style="font-size: 1rem; color: var(--primary-blue); margin-bottom: 0.5rem; font-weight: 600;">Einsparungen</h4>
+                        <p style="color: var(--text-muted); line-height: 1.3; font-size: 0.8rem;">Über<br><strong style="color: var(--text-light); font-size: 1.125rem;">500 Mio. CHF</strong><br>Kosteneinsparungen</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Datenschutz-Sektion NACH Vision -->
+    <!-- Datenschutz-Sektion -->
     <section class="data-security-section" id="security">
-        <div class="section-header">
-            <h2>Ihre Daten bleiben in der Schweiz</h2>
-            <p style="font-size: 1.25rem; color: var(--text-light);">
-                Höchste Sicherheitsstandards und vollständige Datenkontrolle - 
-                garantiert durch Schweizer Hosting und lokale Verarbeitung.
-            </p>
-        </div>
-        
-        <div class="security-grid">
-            <div class="security-card">
-                <div style="font-size: 3rem; margin-bottom: 1rem;">🏔️</div>
-                <h3>100% Swiss Hosting</h3>
-                <p>Alle Daten werden ausschliesslich in Schweizer Rechenzentren gespeichert und verarbeitet.</p>
+        <div style="width: 100%; max-width: 1200px; margin: 0 auto;">
+            <div class="section-header" style="text-align: center; margin-bottom: 2rem;">
+                <h2 style="font-size: 2.5rem; margin-bottom: 0.75rem;">Ihre Daten bleiben in der Schweiz</h2>
+                <p style="font-size: 1.125rem; color: var(--text-light);">
+                    Höchste Sicherheitsstandards und vollständige Datenkontrolle
+                </p>
             </div>
             
-            <div class="security-card">
-                <div style="font-size: 3rem; margin-bottom: 1rem;">🔐</div>
-                <h3>On-Premise Option</h3>
-                <p>Installation direkt in Ihrer IT-Infrastruktur möglich - volle Kontrolle garantiert.</p>
-            </div>
-            
-            <div class="security-card">
-                <div style="font-size: 3rem; margin-bottom: 1rem;">🚫</div>
-                <h3>Keine externen APIs</h3>
-                <p>Ihre Daten werden niemals an ChatGPT, Claude oder andere externe KI-Dienste gesendet.</p>
-            </div>
-            
-            <div class="security-card">
-                <div style="font-size: 3rem; margin-bottom: 1rem;">⚖️</div>
-                <h3>DSG/DSGVO konform</h3>
-                <p>Vollständige Compliance mit Schweizer und EU-Datenschutzgesetzen.</p>
+            <div class="security-grid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem;">
+                <div class="security-card" style="background: var(--card-bg); padding: 1.5rem; border-radius: 15px; border: 1px solid rgba(218, 41, 28, 0.2); text-align: center; transition: all 0.3s ease;">
+                    <div style="font-size: 2.5rem; margin-bottom: 0.75rem;">🏔️</div>
+                    <h3 style="color: var(--text-light); margin-bottom: 0.5rem; font-size: 1.125rem;">100% Swiss Hosting</h3>
+                    <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.4;">Alle Daten werden ausschliesslich in Schweizer Rechenzentren gespeichert</p>
+                </div>
+                
+                <div class="security-card" style="background: var(--card-bg); padding: 1.5rem; border-radius: 15px; border: 1px solid rgba(218, 41, 28, 0.2); text-align: center; transition: all 0.3s ease;">
+                    <div style="font-size: 2.5rem; margin-bottom: 0.75rem;">🔐</div>
+                    <h3 style="color: var(--text-light); margin-bottom: 0.5rem; font-size: 1.125rem;">On-Premise Option</h3>
+                    <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.4;">Installation direkt in Ihrer IT-Infrastruktur möglich</p>
+                </div>
+                
+                <div class="security-card" style="background: var(--card-bg); padding: 1.5rem; border-radius: 15px; border: 1px solid rgba(218, 41, 28, 0.2); text-align: center; transition: all 0.3s ease;">
+                    <div style="font-size: 2.5rem; margin-bottom: 0.75rem;">🚫</div>
+                    <h3 style="color: var(--text-light); margin-bottom: 0.5rem; font-size: 1.125rem;">Keine externen APIs</h3>
+                    <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.4;">Ihre Daten werden niemals an ChatGPT oder Claude gesendet</p>
+                </div>
+                
+                <div class="security-card" style="background: var(--card-bg); padding: 1.5rem; border-radius: 15px; border: 1px solid rgba(218, 41, 28, 0.2); text-align: center; transition: all 0.3s ease;">
+                    <div style="font-size: 2.5rem; margin-bottom: 0.75rem;">⚖️</div>
+                    <h3 style="color: var(--text-light); margin-bottom: 0.5rem; font-size: 1.125rem;">DSG/DSGVO konform</h3>
+                    <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.4;">Vollständige Compliance mit Datenschutzgesetzen</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- 8. Contact Form Section -->
     <section class="contact-cta" id="contact">
-        <div class="contact-container">
-            <div class="contact-header">
-                <h2>Bereit für die KI-Transformation?</h2>
-                <p>Beschreiben Sie uns Ihre Idee - wir bereiten eine massgeschneiderte Lösung für Sie vor.</p>
+        <div class="contact-container" style="max-width: 900px; margin: 0 auto; width: 100%;">
+            <div class="contact-header" style="text-align: center; margin-bottom: 2rem;">
+                <h2 style="font-size: 2.5rem; margin-bottom: 0.75rem;">Bereit für die KI-Transformation?</h2>
+                <p style="font-size: 1.125rem; color: var(--text-muted);">Beschreiben Sie uns Ihre Idee - wir bereiten eine massgeschneiderte Lösung vor.</p>
             </div>
             
             <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
