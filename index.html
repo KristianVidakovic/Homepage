@@ -10,7 +10,16 @@
     <meta name="keywords" content="KI Lösungen Schweiz, Swiss AI, Schweizer Datenschutz, DSGVO konform, DSG konform, AI Beratung St. Gallen, Künstliche Intelligenz KMU, On-Premise KI, Automatisierung Schweiz, Machine Learning, keine ChatGPT API">
     <meta name="author" content="Instinct Systems AI">
     <meta name="robots" content="index, follow">
+    <meta name="language" content="de-CH">
+    <meta name="revisit-after" content="7 days">
+    <meta name="distribution" content="global">
+    <meta name="rating" content="general">
+    
+    <!-- Canonical URL -->
     <link rel="canonical" href="https://instinct-systems.ch/">
+    
+    <!-- Explizit keine AMP -->
+    <meta name="amp-google-client-id-api" content="googleanalytics">
     
     <!-- Open Graph Tags für Social Media -->
     <meta property="og:title" content="Instinct Systems AI - 100% Schweizer KI-Lösungen">
@@ -31,7 +40,7 @@
     <link rel="icon" type="image/png" href="IconOnly.png">
     <link rel="apple-touch-icon" href="IconOnly.png">
     
-    <!-- Schema.org Structured Data -->
+    <!-- Korrigierte Schema.org Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -40,9 +49,13 @@
       "description": "KI-Lösungen mit 100% Schweizer Datenhaltung für Unternehmen",
       "url": "https://instinct-systems.ch",
       "logo": "https://instinct-systems.ch/FullLogo_Transparent.png",
+      "image": "https://instinct-systems.ch/FullLogo_Transparent.png",
       "address": {
         "@type": "PostalAddress",
+        "streetAddress": "Vadianstrasse 59",
         "addressLocality": "St. Gallen",
+        "addressRegion": "SG",
+        "postalCode": "9000",
         "addressCountry": "CH"
       },
       "geo": {
@@ -51,10 +64,192 @@
         "longitude": 9.3767
       },
       "email": "info@instinct-systems.ch",
-      "areaServed": "CH",
-      "priceRange": "$$",
-      "knowsLanguage": ["de", "en"],
-      "sameAs": []
+      "areaServed": {
+        "@type": "Country",
+        "name": "Switzerland"
+      },
+      "knowsLanguage": ["de-CH", "en"],
+      "sameAs": [],
+      "founder": {
+        "@type": "Person",
+        "name": "Instinct Systems AI Team"
+      },
+      "foundingDate": "2024",
+      "slogan": "Where Intelligence Meets Instinct",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "sales",
+        "email": "info@instinct-systems.ch",
+        "availableLanguage": ["German", "English"],
+        "areaServed": "CH"
+      }
+    }
+    </script>
+    
+    <!-- Service Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Instinct Systems AI - KI-Beratung und Entwicklung",
+      "description": "Massgeschneiderte KI-Lösungen für Schweizer Unternehmen mit 100% Datenhaltung in der Schweiz",
+      "url": "https://instinct-systems.ch",
+      "provider": {
+        "@type": "Organization",
+        "name": "Instinct Systems AI"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Switzerland"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "KI-Lösungen",
+        "itemListElement": [
+          {
+            "@type": "Service",
+            "name": "CONTROLLING INSTINCT AI",
+            "description": "Alle Unternehmenszahlen in Echtzeit mit automatischen Handlungsempfehlungen"
+          },
+          {
+            "@type": "Service",
+            "name": "WORKFORCE INSTINCT AI",
+            "description": "Intelligente Personalplanung für optimale Auslastung"
+          },
+          {
+            "@type": "Service",
+            "name": "INVENTORY INSTINCT AI",
+            "description": "Berechnet optimale Bestellmengen und Mindestbestände"
+          },
+          {
+            "@type": "Service",
+            "name": "DOCUMENT INSTINCT AI",
+            "description": "Verarbeitet Rechnungen, Verträge und E-Mails automatisch"
+          },
+          {
+            "@type": "Service",
+            "name": "CUSTOMER INSTINCT AI",
+            "description": "24/7 Chatbot der Kundenanfragen intelligent beantwortet"
+          },
+          {
+            "@type": "Service",
+            "name": "EXECUTIVE INSTINCT AI",
+            "description": "Das Cockpit für die Geschäftsleitung"
+          },
+          {
+            "@type": "Service",
+            "name": "MOBILE INSTINCT AI",
+            "description": "Alle KI-Lösungen als native iOS/Android App"
+          },
+          {
+            "@type": "Service",
+            "name": "CUSTOM INSTINCT AI",
+            "description": "Massgeschneiderte KI-Lösung für individuelle Herausforderungen"
+          }
+        ]
+      }
+    }
+    </script>
+    
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://instinct-systems.ch"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Lösungen",
+          "item": "https://instinct-systems.ch/#loesungen"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Kontakt",
+          "item": "https://instinct-systems.ch/#contact"
+        }
+      ]
+    }
+    </script>
+    
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Wo werden meine Daten gespeichert?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Alle Daten werden zu 100% in Schweizer Rechenzentren gespeichert. Wir verwenden keine externen APIs wie ChatGPT oder Claude. Optional ist auch eine On-Premise Installation in Ihrer eigenen IT-Infrastruktur möglich."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Was kostet ein Proof of Concept?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Der Proof of Concept ist komplett kostenlos. Wir entwickeln einen funktionierenden Prototyp für Ihre spezifische Herausforderung ohne jegliche Kosten für Sie."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Wie lange dauert die Implementierung?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ein Pilot-Projekt dauert typischerweise 4-8 Wochen. Nach erfolgreichem Pilotprojekt erfolgt der Rollout und die vollständige Implementierung in Ihrem Unternehmen."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Sind Ihre Lösungen DSGVO/DSG konform?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja, alle unsere Lösungen sind vollständig DSGVO und DSG konform. Wir garantieren höchste Schweizer Datenschutzstandards."
+          }
+        }
+      ]
+    }
+    </script>
+    
+    <!-- LocalBusiness Schema für St. Gallen -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Instinct Systems AI",
+      "description": "KI-Beratung und Entwicklung in St. Gallen",
+      "image": "https://instinct-systems.ch/FullLogo_Transparent.png",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Vadianstrasse 59",
+        "addressLocality": "St. Gallen",
+        "addressRegion": "SG",
+        "postalCode": "9000",
+        "addressCountry": "CH"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 47.4245,
+        "longitude": 9.3767
+      },
+      "url": "https://instinct-systems.ch",
+      "email": "info@instinct-systems.ch",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "09:00",
+        "closes": "18:00"
+      }
     }
     </script>
     
