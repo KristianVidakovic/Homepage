@@ -1,11 +1,36 @@
-# Robots.txt für instinct-systems.ch
+# robots.txt für instinct-systems.ch
+# Erstellt: August 2025
+
+# Erlaubt allen Suchmaschinen den Zugriff
 User-agent: *
 Allow: /
-Disallow: /danke
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /*.pdf$
 
-# Sitemap Location
+# Spezielle Regeln für Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Spezielle Regeln für Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Blockiere schlechte Bots
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+# Sitemap-Verweis
 Sitemap: https://instinct-systems.ch/sitemap.xml
 
-# Crawl-delay für höfliche Bots
-User-agent: *
-Crawl-delay: 1
+# Host (optional, aber empfohlen für Yandex)
+Host: https://instinct-systems.ch
