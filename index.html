@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instinct Systems AI - KI-Lösungen für Schweizer Unternehmen | 100% Swiss Hosting | St. Gallen</title>
+    <title>Instinct Systems AI - KI-Lösungen für Schweizer Unternehmen | 100% Swiss Hosting</title>
     
     <!-- SEO Meta Tags -->
-    <meta name="description" content="KI-Lösungen mit 100% Schweizer Datenhaltung. DSGVO/DSG-konform, keine externen APIs. Gratis Proof of Concept. Automatisierung für Schweizer Unternehmen in St. Gallen.">
-    <meta name="keywords" content="KI Lösungen Schweiz, Swiss AI, Schweizer Datenschutz, DSGVO konform, DSG konform, AI Beratung St. Gallen, Künstliche Intelligenz KMU, On-Premise KI, Automatisierung Schweiz, Machine Learning, keine ChatGPT API">
+    <meta name="description" content="KI-Lösungen mit 100% Schweizer Datenhaltung. DSGVO/DSG-konform, keine externen APIs. Gratis Proof of Concept. Automatisierung für Schweizer Unternehmen.">
+    <meta name="keywords" content="KI Lösungen Schweiz, Swiss AI, Schweizer Datenschutz, DSGVO konform, DSG konform, AI Beratung, Künstliche Intelligenz KMU, On-Premise KI, Automatisierung Schweiz, Machine Learning, keine ChatGPT API">
     <meta name="author" content="Instinct Systems AI">
     <meta name="robots" content="index, follow">
     <meta name="language" content="de-CH">
@@ -40,7 +40,9 @@
     <link rel="icon" type="image/png" href="IconOnly.png">
     <link rel="apple-touch-icon" href="IconOnly.png">
     
-    <!-- Korrigierte Schema.org Structured Data -->
+    <!-- KORRIGIERTE Schema.org Structured Data für Online-Only Business -->
+    
+    <!-- Organization Schema - OHNE physische Adresse -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -50,30 +52,12 @@
       "url": "https://instinct-systems.ch",
       "logo": "https://instinct-systems.ch/FullLogo_Transparent.png",
       "image": "https://instinct-systems.ch/FullLogo_Transparent.png",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Vadianstrasse 59",
-        "addressLocality": "St. Gallen",
-        "addressRegion": "SG",
-        "postalCode": "9000",
-        "addressCountry": "CH"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 47.4245,
-        "longitude": 9.3767
-      },
       "email": "info@instinct-systems.ch",
       "areaServed": {
         "@type": "Country",
         "name": "Switzerland"
       },
       "knowsLanguage": ["de-CH", "en"],
-      "sameAs": [],
-      "founder": {
-        "@type": "Person",
-        "name": "Instinct Systems AI Team"
-      },
       "foundingDate": "2024",
       "slogan": "Where Intelligence Meets Instinct",
       "contactPoint": {
@@ -86,7 +70,7 @@
     }
     </script>
     
-    <!-- Service Schema -->
+    <!-- Professional Service Schema für Online-Dienstleistungen -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -102,6 +86,12 @@
         "@type": "Country",
         "name": "Switzerland"
       },
+      "availableChannel": {
+        "@type": "ServiceChannel",
+        "serviceType": "Online-Beratung und Remote-Implementierung",
+        "serviceUrl": "https://instinct-systems.ch",
+        "availableLanguage": ["de-CH", "en"]
+      },
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
         "name": "KI-Lösungen",
@@ -109,42 +99,50 @@
           {
             "@type": "Service",
             "name": "CONTROLLING INSTINCT AI",
-            "description": "Alle Unternehmenszahlen in Echtzeit mit automatischen Handlungsempfehlungen"
+            "description": "Alle Unternehmenszahlen in Echtzeit mit automatischen Handlungsempfehlungen",
+            "serviceType": "Remote-Implementierung"
           },
           {
             "@type": "Service",
             "name": "WORKFORCE INSTINCT AI",
-            "description": "Intelligente Personalplanung für optimale Auslastung"
+            "description": "Intelligente Personalplanung für optimale Auslastung",
+            "serviceType": "Remote-Implementierung"
           },
           {
             "@type": "Service",
             "name": "INVENTORY INSTINCT AI",
-            "description": "Berechnet optimale Bestellmengen und Mindestbestände"
+            "description": "Berechnet optimale Bestellmengen und Mindestbestände",
+            "serviceType": "Remote-Implementierung"
           },
           {
             "@type": "Service",
             "name": "DOCUMENT INSTINCT AI",
-            "description": "Verarbeitet Rechnungen, Verträge und E-Mails automatisch"
+            "description": "Verarbeitet Rechnungen, Verträge und E-Mails automatisch",
+            "serviceType": "Remote-Implementierung"
           },
           {
             "@type": "Service",
             "name": "CUSTOMER INSTINCT AI",
-            "description": "24/7 Chatbot der Kundenanfragen intelligent beantwortet"
+            "description": "24/7 Chatbot der Kundenanfragen intelligent beantwortet",
+            "serviceType": "Remote-Implementierung"
           },
           {
             "@type": "Service",
             "name": "EXECUTIVE INSTINCT AI",
-            "description": "Das Cockpit für die Geschäftsleitung"
+            "description": "Das Cockpit für die Geschäftsleitung",
+            "serviceType": "Remote-Implementierung"
           },
           {
             "@type": "Service",
             "name": "MOBILE INSTINCT AI",
-            "description": "Alle KI-Lösungen als native iOS/Android App"
+            "description": "Alle KI-Lösungen als native iOS/Android App",
+            "serviceType": "Remote-Implementierung"
           },
           {
             "@type": "Service",
             "name": "CUSTOM INSTINCT AI",
-            "description": "Massgeschneiderte KI-Lösung für individuelle Herausforderungen"
+            "description": "Massgeschneiderte KI-Lösung für individuelle Herausforderungen",
+            "serviceType": "Remote-Implementierung"
           }
         ]
       }
@@ -216,40 +214,36 @@
             "@type": "Answer",
             "text": "Ja, alle unsere Lösungen sind vollständig DSGVO und DSG konform. Wir garantieren höchste Schweizer Datenschutzstandards."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "Wie funktioniert die Zusammenarbeit ohne physisches Büro?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Wir arbeiten vollständig digital und remote. Alle Meetings finden per Videocall statt, die Implementierung erfolgt über sichere Remote-Verbindungen. Das ermöglicht uns, effizienter zu arbeiten und diese Kostenersparnis an unsere Kunden weiterzugeben."
+          }
         }
       ]
     }
     </script>
     
-    <!-- LocalBusiness Schema für St. Gallen -->
+    <!-- WebSite Schema für bessere Suchfunktion -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "LocalBusiness",
+      "@type": "WebSite",
       "name": "Instinct Systems AI",
-      "description": "KI-Beratung und Entwicklung in St. Gallen",
-      "image": "https://instinct-systems.ch/FullLogo_Transparent.png",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Vadianstrasse 59",
-        "addressLocality": "St. Gallen",
-        "addressRegion": "SG",
-        "postalCode": "9000",
-        "addressCountry": "CH"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 47.4245,
-        "longitude": 9.3767
-      },
       "url": "https://instinct-systems.ch",
-      "email": "info@instinct-systems.ch",
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-        "opens": "09:00",
-        "closes": "18:00"
-      }
+      "description": "KI-Lösungen mit 100% Schweizer Datenhaltung für Unternehmen",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Instinct Systems AI",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://instinct-systems.ch/FullLogo_Transparent.png"
+        }
+      },
+      "inLanguage": "de-CH"
     }
     </script>
     
@@ -1709,18 +1703,6 @@
                     <div style="position: absolute; top: 30px; left: 10%; right: 10%; height: 2px; background: linear-gradient(90deg, var(--primary-blue) 0%, var(--light-blue) 100%); z-index: 0;"></div>
                     
                     <div class="process-step" style="position: relative; z-index: 1;">
-                        <div class="step-number" style="background: var(--gradient-blue); color: white;">1</div>
-                        <h4 style="color: var(--primary-blue); font-size: 1rem; margin-bottom: 0.25rem;">Erstberatung</h4>
-                        <p style="color: var(--text-muted); font-size: 0.85rem;">Kostenlos</p>
-                    </div>
-                    
-                    <div class="process-step" style="position: relative; z-index: 1;">
-                        <div class="step-number" style="background: var(--gradient-blue); color: white;">2</div>
-                        <h4 style="color: var(--primary-blue); font-size: 1rem; margin-bottom: 0.25rem;">Proof of Concept</h4>
-                        <p style="color: var(--text-light); font-size: 0.85rem; font-weight: 600;">Kostenlos</p>
-                    </div>
-                    
-                    <div class="process-step" style="position: relative; z-index: 1;">
                         <div class="step-number" style="background: var(--gradient-blue); color: white;">3</div>
                         <h4 style="color: var(--primary-blue); font-size: 1rem; margin-bottom: 0.25rem;">Pilot-Projekt</h4>
                         <p style="color: var(--text-muted); font-size: 0.85rem;">4-8 Wochen</p>
@@ -2126,7 +2108,7 @@
                 <h3>INSTINCT SYSTEMS AI</h3>
                 <p class="tagline">"Where Intelligence Meets Instinct"</p>
                 <p style="margin-top: 1rem; color: var(--text-muted);">
-                    St. Gallen, Schweiz<br>
+                    100% Remote - Schweiz<br>
                     <a href="mailto:info@instinct-systems.ch" style="color: var(--primary-blue); text-decoration: none;">info@instinct-systems.ch</a>
                 </p>
             </div>
@@ -2161,7 +2143,7 @@
         </div>
         
         <div class="footer-bottom">
-            <p>&copy; 2025 Instinct Systems AI | St. Gallen, Schweiz | <a href="mailto:info@instinct-systems.ch" style="color: var(--text-muted);">info@instinct-systems.ch</a></p>
+            <p>&copy; 2025 Instinct Systems AI | 100% Remote - Schweiz | <a href="mailto:info@instinct-systems.ch" style="color: var(--text-muted);">info@instinct-systems.ch</a></p>
         </div>
     </footer>
 
@@ -2253,4 +2235,16 @@
         });
     </script>
 </body>
-</html>
+</html>" style="background: var(--gradient-blue); color: white;">1</div>
+                        <h4 style="color: var(--primary-blue); font-size: 1rem; margin-bottom: 0.25rem;">Erstberatung</h4>
+                        <p style="color: var(--text-muted); font-size: 0.85rem;">Kostenlos</p>
+                    </div>
+                    
+                    <div class="process-step" style="position: relative; z-index: 1;">
+                        <div class="step-number" style="background: var(--gradient-blue); color: white;">2</div>
+                        <h4 style="color: var(--primary-blue); font-size: 1rem; margin-bottom: 0.25rem;">Proof of Concept</h4>
+                        <p style="color: var(--text-light); font-size: 0.85rem; font-weight: 600;">Kostenlos</p>
+                    </div>
+                    
+                    <div class="process-step" style="position: relative; z-index: 1;">
+                        <div class="step-number
