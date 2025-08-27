@@ -35,11 +35,6 @@
     <meta name="twitter:title" content="Instinct Systems AI - 100% Schweizer KI-Lösungen">
     <meta name="twitter:description" content="KI mit garantierter Schweizer Datenhaltung. Gratis Proof of Concept.">
     <meta name="twitter:image" content="https://instinct-systems.ch/FullLogo_Transparent.png">
-
-    <!-- Security Meta Tags -->
-    <meta http-equiv="X-Content-Type-Options" content="nosniff">
-    <meta name="referrer" content="strict-origin-when-cross-origin">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https:; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:;">
     
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="IconOnly.png">
@@ -429,7 +424,7 @@
             padding: 0.75rem 1.5rem;
             border-radius: 50px;
             border: 1px solid rgba(218, 41, 28, 0.3);
-            display: none;
+            display: flex;
             align-items: center;
             gap: 0.5rem;
             font-size: 0.9rem;
@@ -1421,7 +1416,7 @@
             }
         }
 
-       @media (max-width: 768px) {
+        @media (max-width: 768px) {
             .nav-links {
                 display: none;
             }
@@ -1497,129 +1492,6 @@
 
             .process-timeline {
                 grid-template-columns: 1fr;
-            }
-            
-            /* Fix für Angebot Section auf Mobile */
-            .pricing-section {
-                min-height: auto;
-                padding: 60px 1rem 2rem;
-            }
-            
-            .process-timeline {
-                position: relative;
-                padding-left: 2rem;
-            }
-            
-            .process-timeline::before {
-                content: '';
-                position: absolute;
-                left: 30px;
-                top: 30px;
-                bottom: 30px;
-                width: 2px;
-                background: var(--gradient-blue);
-            }
-            
-            .process-step {
-                margin-bottom: 2rem;
-                text-align: left;
-                padding-left: 2rem;
-            }
-            
-            .step-number {
-                position: absolute;
-                left: 0;
-                margin: 0;
-            }
-            
-            /* Fix für Vision Section auf Mobile */
-            .vision-section {
-                min-height: auto;
-                padding: 60px 1rem 2rem;
-            }
-            
-            .vision-content {
-                padding: 0;
-            }
-            
-            .vision-statement-box {
-                padding: 1.5rem;
-            }
-            
-            .vision-main h2 {
-                font-size: 1.75rem;
-            }
-            
-            .vision-text {
-                font-size: 1rem;
-                line-height: 1.5;
-            }
-            
-            .metric-icon {
-                width: 60px;
-                height: 60px;
-                font-size: 1.75rem;
-            }
-            
-            .vision-metric {
-                margin-bottom: 2rem;
-            }
-            
-            .metric-title {
-                font-size: 1.25rem;
-            }
-            
-            .metric-description {
-                font-size: 0.9rem;
-            }
-            
-            .vision-impact {
-                padding: 1.5rem;
-            }
-            
-            .vision-impact h3 {
-                font-size: 1.25rem;
-            }
-            
-            .impact-grid {
-                grid-template-columns: 1fr;
-                gap: 1rem;
-            }
-            
-            /* Fix für Datenschutz Section auf Mobile */
-            .data-security-section {
-                min-height: auto;
-                padding: 60px 1rem 2rem;
-            }
-            
-            .security-grid {
-                grid-template-columns: 1fr;
-                gap: 1rem;
-            }
-            
-            .security-card {
-                padding: 1.5rem;
-            }
-            
-            .security-card h3 {
-                font-size: 1rem;
-            }
-            
-            .security-card p {
-                font-size: 0.85rem;
-            }
-            
-            /* Allgemeine Section-Header Anpassungen */
-            .section-header {
-                margin-bottom: 2rem;
-            }
-            
-            .section-header h2 {
-                font-size: 1.75rem;
-            }
-            
-            .section-header p {
-                font-size: 1rem;
             }
         }
 
@@ -1828,7 +1700,8 @@
         
             <div style="background: linear-gradient(135deg, rgba(74, 144, 226, 0.05) 0%, rgba(120, 185, 242, 0.05) 100%); border-radius: 25px; padding: 2rem; margin-bottom: 2rem; border: 1px solid rgba(74, 144, 226, 0.2);">
                 <div class="process-timeline" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; position: relative;">
-                    <div class="timeline-line" style="position: absolute; top: 30px; left: 10%; right: 10%; height: 2px; background: linear-gradient(90deg, var(--primary-blue) 0%, var(--light-blue) 100%); z-index: 0;"></div>
+                    <div style="position: absolute; top: 30px; left: 10%; right: 10%; height: 2px; background: linear-gradient(90deg, var(--primary-blue) 0%, var(--light-blue) 100%); z-index: 0;"></div>
+                
                     <div class="process-step" style="position: relative; z-index: 1;">
                         <div class="step-number">1</div>
                         <h4 style="color: var(--primary-blue); font-size: 1rem; margin-bottom: 0.25rem;">Erstberatung</h4>
