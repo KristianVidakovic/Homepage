@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+</script>
+</body>
+</html><!DOCTYPE html>
 <html lang="de">
 <head>
     <meta charset="UTF-8">
@@ -17,9 +19,6 @@
     
     <!-- Canonical URL -->
     <link rel="canonical" href="https://instinct-systems.ch/">
-    
-    <!-- Explizit keine AMP -->
-    <meta name="amp-google-client-id-api" content="googleanalytics">
     
     <!-- Open Graph Tags für Social Media -->
     <meta property="og:title" content="Instinct Systems AI - 100% Schweizer KI-Lösungen">
@@ -40,9 +39,7 @@
     <link rel="icon" type="image/png" href="IconOnly.png">
     <link rel="apple-touch-icon" href="IconOnly.png">
     
-    <!-- KORRIGIERTE Schema.org Structured Data für Online-Only Business -->
-    
-    <!-- Organization Schema - OHNE physische Adresse -->
+    <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -51,215 +48,36 @@
       "description": "KI-Lösungen mit 100% Schweizer Datenhaltung für Unternehmen",
       "url": "https://instinct-systems.ch",
       "logo": "https://instinct-systems.ch/FullLogo_Transparent.png",
-      "image": "https://instinct-systems.ch/FullLogo_Transparent.png",
       "email": "info@instinct-systems.ch",
       "areaServed": {
         "@type": "Country",
         "name": "Switzerland"
-      },
-      "knowsLanguage": ["de-CH", "en"],
-      "foundingDate": "2024",
-      "slogan": "Where Intelligence Meets Instinct",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "sales",
-        "email": "info@instinct-systems.ch",
-        "availableLanguage": ["German", "English"],
-        "areaServed": "CH"
       }
-    }
-    </script>
-    
-    <!-- Professional Service Schema für Online-Dienstleistungen -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "name": "Instinct Systems AI - KI-Beratung und Entwicklung",
-      "description": "Massgeschneiderte KI-Lösungen für Schweizer Unternehmen mit 100% Datenhaltung in der Schweiz",
-      "url": "https://instinct-systems.ch",
-      "provider": {
-        "@type": "Organization",
-        "name": "Instinct Systems AI"
-      },
-      "areaServed": {
-        "@type": "Country",
-        "name": "Switzerland"
-      },
-      "availableChannel": {
-        "@type": "ServiceChannel",
-        "serviceType": "Online-Beratung und Remote-Implementierung",
-        "serviceUrl": "https://instinct-systems.ch",
-        "availableLanguage": ["de-CH", "en"]
-      },
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "KI-Lösungen",
-        "itemListElement": [
-          {
-            "@type": "Service",
-            "name": "CONTROLLING INSTINCT AI",
-            "description": "Alle Unternehmenszahlen in Echtzeit mit automatischen Handlungsempfehlungen",
-            "serviceType": "Remote-Implementierung"
-          },
-          {
-            "@type": "Service",
-            "name": "WORKFORCE INSTINCT AI",
-            "description": "Intelligente Personalplanung für optimale Auslastung",
-            "serviceType": "Remote-Implementierung"
-          },
-          {
-            "@type": "Service",
-            "name": "INVENTORY INSTINCT AI",
-            "description": "Berechnet optimale Bestellmengen und Mindestbestände",
-            "serviceType": "Remote-Implementierung"
-          },
-          {
-            "@type": "Service",
-            "name": "DOCUMENT INSTINCT AI",
-            "description": "Verarbeitet Rechnungen, Verträge und E-Mails automatisch",
-            "serviceType": "Remote-Implementierung"
-          },
-          {
-            "@type": "Service",
-            "name": "CUSTOMER INSTINCT AI",
-            "description": "24/7 Chatbot der Kundenanfragen intelligent beantwortet",
-            "serviceType": "Remote-Implementierung"
-          },
-          {
-            "@type": "Service",
-            "name": "EXECUTIVE INSTINCT AI",
-            "description": "Das Cockpit für die Geschäftsleitung",
-            "serviceType": "Remote-Implementierung"
-          },
-          {
-            "@type": "Service",
-            "name": "MOBILE INSTINCT AI",
-            "description": "Alle KI-Lösungen als native iOS/Android App",
-            "serviceType": "Remote-Implementierung"
-          },
-          {
-            "@type": "Service",
-            "name": "CUSTOM INSTINCT AI",
-            "description": "Massgeschneiderte KI-Lösung für individuelle Herausforderungen",
-            "serviceType": "Remote-Implementierung"
-          }
-        ]
-      }
-    }
-    </script>
-    
-    <!-- Breadcrumb Schema -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://instinct-systems.ch"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Lösungen",
-          "item": "https://instinct-systems.ch/#loesungen"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Kontakt",
-          "item": "https://instinct-systems.ch/#contact"
-        }
-      ]
-    }
-    </script>
-    
-    <!-- FAQ Schema -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Wo werden meine Daten gespeichert?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Alle Daten werden zu 100% in Schweizer Rechenzentren gespeichert. Wir verwenden keine externen APIs wie ChatGPT oder Claude. Optional ist auch eine On-Premise Installation in Ihrer eigenen IT-Infrastruktur möglich."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Was kostet ein Proof of Concept?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Der Proof of Concept ist komplett kostenlos. Wir entwickeln einen funktionierenden Prototyp für Ihre spezifische Herausforderung ohne jegliche Kosten für Sie."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Wie lange dauert die Implementierung?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Ein Pilot-Projekt dauert typischerweise 4-8 Wochen. Nach erfolgreichem Pilotprojekt erfolgt der Rollout und die vollständige Implementierung in Ihrem Unternehmen."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Sind Ihre Lösungen DSGVO/DSG konform?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Ja, alle unsere Lösungen sind vollständig DSGVO und DSG konform. Wir garantieren höchste Schweizer Datenschutzstandards."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Wie funktioniert die Zusammenarbeit ohne physisches Büro?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Wir arbeiten vollständig digital und remote. Alle Meetings finden per Videocall statt, die Implementierung erfolgt über sichere Remote-Verbindungen. Das ermöglicht uns, effizienter zu arbeiten und diese Kostenersparnis an unsere Kunden weiterzugeben."
-          }
-        }
-      ]
-    }
-    </script>
-    
-    <!-- WebSite Schema für bessere Suchfunktion -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "Instinct Systems AI",
-      "url": "https://instinct-systems.ch",
-      "description": "KI-Lösungen mit 100% Schweizer Datenhaltung für Unternehmen",
-      "publisher": {
-        "@type": "Organization",
-        "name": "Instinct Systems AI",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://instinct-systems.ch/FullLogo_Transparent.png"
-        }
-      },
-      "inLanguage": "de-CH"
     }
     </script>
     
     <style>
         :root {
-            --primary-blue: #4A90E2;
-            --dark-blue: #2B5CE6;
-            --light-blue: #6BA3F5;
-            --accent-blue: #78B9F2;
-            --dark-bg: #0A0E1A;
-            --darker-bg: #050709;
-            --card-bg: #0F1420;
-            --text-light: #E8EAED;
-            --text-muted: #9CA3AF;
-            --gradient-blue: linear-gradient(135deg, #2B5CE6 0%, #78B9F2 100%);
-            --gradient-dark: linear-gradient(180deg, #0A0E1A 0%, #050709 100%);
+            /* Modern Purple-Black-White Color Palette für KI-Software 2025 */
+            --primary-purple: #7C3AED;
+            --dark-purple: #5B21B6;
+            --light-purple: #A78BFA;
+            --accent-purple: #C4B5FD;
+            --deep-black: #0A0A0B;
+            --pure-black: #000000;
+            --dark-gray: #18181B;
+            --medium-gray: #27272A;
+            --light-gray: #3F3F46;
+            --pure-white: #FFFFFF;
+            --off-white: #FAFAFA;
+            --text-gray: #A1A1AA;
+            
+            /* Gradients */
+            --gradient-purple: linear-gradient(135deg, #7C3AED 0%, #A78BFA 100%);
+            --gradient-dark: linear-gradient(180deg, #0A0A0B 0%, #18181B 100%);
+            --gradient-purple-black: linear-gradient(135deg, #5B21B6 0%, #18181B 100%);
+            
+            /* Swiss Red for trust badges */
             --swiss-red: #DA291C;
         }
 
@@ -271,8 +89,8 @@
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', sans-serif;
-            background: var(--darker-bg);
-            color: var(--text-light);
+            background: var(--pure-black);
+            color: var(--pure-white);
             line-height: 1.6;
             overflow-x: hidden;
         }
@@ -285,7 +103,7 @@
             width: 100%;
             height: 100%;
             z-index: -1;
-            background: var(--darker-bg);
+            background: var(--pure-black);
             overflow: hidden;
         }
 
@@ -295,15 +113,15 @@
             height: 100%;
             opacity: 0.03;
             background-image: 
-                radial-gradient(circle at 20% 50%, var(--primary-blue) 0%, transparent 50%),
-                radial-gradient(circle at 80% 80%, var(--dark-blue) 0%, transparent 50%),
-                radial-gradient(circle at 40% 20%, var(--light-blue) 0%, transparent 50%);
-            animation: pulse 10s ease-in-out infinite;
+                radial-gradient(circle at 20% 50%, var(--primary-purple) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, var(--dark-purple) 0%, transparent 50%),
+                radial-gradient(circle at 40% 20%, var(--light-purple) 0%, transparent 50%);
+            animation: pulse 15s ease-in-out infinite;
         }
 
         @keyframes pulse {
-            0%, 100% { opacity: 0.03; }
-            50% { opacity: 0.06; }
+            0%, 100% { opacity: 0.03; transform: scale(1); }
+            50% { opacity: 0.08; transform: scale(1.1); }
         }
 
         /* Navigation */
@@ -311,9 +129,9 @@
             position: fixed;
             top: 0;
             width: 100%;
-            background: rgba(10, 14, 26, 0.8);
+            background: rgba(0, 0, 0, 0.9);
             backdrop-filter: blur(20px) saturate(180%);
-            border-bottom: 1px solid rgba(74, 144, 226, 0.1);
+            border-bottom: 1px solid rgba(124, 58, 237, 0.1);
             z-index: 1000;
             transition: all 0.3s ease;
         }
@@ -342,24 +160,24 @@
         .brain-icon {
             width: 100%;
             height: 100%;
-            fill: var(--primary-blue);
-            filter: drop-shadow(0 0 20px rgba(74, 144, 226, 0.5));
+            filter: drop-shadow(0 0 20px rgba(124, 58, 237, 0.5));
             animation: brain-pulse 3s ease-in-out infinite;
         }
 
         @keyframes brain-pulse {
-            0%, 100% { filter: drop-shadow(0 0 20px rgba(74, 144, 226, 0.5)); }
-            50% { filter: drop-shadow(0 0 30px rgba(74, 144, 226, 0.8)); }
+            0%, 100% { filter: drop-shadow(0 0 20px rgba(124, 58, 237, 0.5)); }
+            50% { filter: drop-shadow(0 0 30px rgba(167, 139, 250, 0.8)); }
         }
 
         .company-name {
             font-size: 1.5rem;
             font-weight: 700;
             letter-spacing: -0.5px;
+            color: var(--pure-white);
         }
 
         .company-name .ai {
-            color: var(--primary-blue);
+            color: var(--primary-purple);
             margin-left: 0.5rem;
         }
 
@@ -371,7 +189,7 @@
         }
 
         .nav-links a {
-            color: var(--text-muted);
+            color: var(--text-gray);
             text-decoration: none;
             transition: all 0.3s ease;
             font-weight: 500;
@@ -379,7 +197,7 @@
         }
 
         .nav-links a:hover {
-            color: var(--primary-blue);
+            color: var(--light-purple);
         }
 
         .nav-links a::after {
@@ -389,7 +207,7 @@
             left: 0;
             width: 0;
             height: 2px;
-            background: var(--gradient-blue);
+            background: var(--gradient-purple);
             transition: width 0.3s ease;
         }
 
@@ -398,45 +216,21 @@
         }
 
         .nav-links .nav-cta {
-            background: var(--gradient-blue);
-            padding: 0.5rem 1.5rem;
-            border-radius: 25px;
+            background: var(--gradient-purple);
+            padding: 0.75rem 2rem;
+            border-radius: 50px;
             color: white !important;
             font-weight: 600;
+            box-shadow: 0 4px 15px rgba(124, 58, 237, 0.3);
         }
 
         .nav-links .nav-cta:hover {
             transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(74, 144, 226, 0.4);
+            box-shadow: 0 6px 25px rgba(124, 58, 237, 0.5);
         }
 
         .nav-links .nav-cta::after {
             display: none;
-        }
-
-        /* Trust Badge - dezent platziert */
-        .trust-badge {
-            position: absolute;
-            top: 100px;
-            right: 40px;
-            background: rgba(10, 14, 26, 0.9);
-            backdrop-filter: blur(10px);
-            padding: 0.75rem 1.5rem;
-            border-radius: 50px;
-            border: 1px solid rgba(218, 41, 28, 0.3);
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            font-size: 0.9rem;
-            color: var(--text-light);
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-            z-index: 10;
-        }
-
-        .trust-badge:hover {
-            border-color: var(--swiss-red);
-            transform: translateY(-2px);
-            transition: all 0.3s ease;
         }
 
         /* Full Page Sections */
@@ -444,9 +238,6 @@
         .ai-features,
         .data-security-section,
         .industries,
-        .ultra-instinct-section,
-        .development-section,
-        .tech-stack-section,
         .pricing-section,
         .vision-section,
         .contact-cta {
@@ -454,24 +245,19 @@
             display: flex;
             align-items: center;
             position: relative;
-            padding: 80px 2rem 2rem;
+            padding: 100px 2rem 2rem;
             overflow: hidden;
         }
 
         /* Hero Section */
         .hero {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            padding: 0;
-            overflow: hidden;
+            background: linear-gradient(135deg, var(--pure-black) 0%, var(--dark-gray) 100%);
         }
 
         .hero-content {
             width: 100%;
             max-width: 1400px;
             margin: 0 auto;
-            padding: 2rem;
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 4rem;
@@ -479,11 +265,11 @@
         }
 
         .hero-text h1 {
-            font-size: clamp(2rem, 4vw, 3.5rem);
+            font-size: clamp(2.5rem, 5vw, 4rem);
             font-weight: 800;
             line-height: 1.1;
             margin-bottom: 1.5rem;
-            background: var(--gradient-blue);
+            background: var(--gradient-purple);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -491,7 +277,7 @@
 
         .hero-text .tagline {
             font-size: 1.5rem;
-            color: var(--text-muted);
+            color: var(--text-gray);
             margin-bottom: 1rem;
             font-style: italic;
             letter-spacing: 1px;
@@ -499,7 +285,7 @@
 
         .hero-description {
             font-size: 1.25rem;
-            color: var(--text-light);
+            color: var(--off-white);
             margin-bottom: 3rem;
             line-height: 1.8;
         }
@@ -526,26 +312,25 @@
         }
 
         .btn-primary {
-            background: var(--gradient-blue);
+            background: var(--gradient-purple);
             color: white;
-            box-shadow: 0 4px 20px rgba(43, 92, 230, 0.4);
+            box-shadow: 0 4px 20px rgba(124, 58, 237, 0.4);
         }
 
         .btn-primary:hover {
             transform: translateY(-2px);
-            box-shadow: 0 8px 30px rgba(43, 92, 230, 0.6);
+            box-shadow: 0 8px 30px rgba(124, 58, 237, 0.6);
         }
 
         .btn-secondary {
-            border: 2px solid var(--primary-blue);
-            color: var(--primary-blue);
+            border: 2px solid var(--primary-purple);
+            color: var(--light-purple);
             background: transparent;
         }
 
         .btn-secondary:hover {
-            background: rgba(74, 144, 226, 0.1);
-            border-color: var(--light-blue);
-            color: var(--light-blue);
+            background: rgba(124, 58, 237, 0.1);
+            border-color: var(--light-purple);
         }
 
         .hero-visual {
@@ -556,8 +341,8 @@
         }
 
         .ai-brain-animation {
-            width: 600px;
-            height: 600px;
+            width: 500px;
+            height: 500px;
             position: relative;
             display: flex;
             align-items: center;
@@ -567,7 +352,7 @@
         .brain-large {
             width: 100%;
             height: 100%;
-            filter: drop-shadow(0 0 50px rgba(74, 144, 226, 0.5));
+            filter: drop-shadow(0 0 50px rgba(124, 58, 237, 0.5));
             animation: float 6s ease-in-out infinite;
             object-fit: contain;
         }
@@ -579,7 +364,7 @@
 
         /* AI Features Section */
         .ai-features {
-            background: var(--dark-bg);
+            background: var(--deep-black);
             flex-direction: column;
             justify-content: center;
         }
@@ -587,21 +372,21 @@
         .section-header {
             text-align: center;
             max-width: 900px;
-            margin: 0 auto 2rem;
+            margin: 0 auto 3rem;
         }
 
         .section-header h2 {
-            font-size: 2.5rem;
+            font-size: 3rem;
             margin-bottom: 1rem;
-            background: var(--gradient-blue);
+            background: var(--gradient-purple);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
 
         .section-header p {
-            font-size: 1.125rem;
-            color: var(--text-muted);
+            font-size: 1.25rem;
+            color: var(--text-gray);
             line-height: 1.6;
         }
 
@@ -610,17 +395,16 @@
             margin: 0 auto;
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            gap: 1.5rem;
+            gap: 2rem;
         }
 
         .feature-card {
-            background: var(--card-bg);
-            padding: 2rem;
+            background: var(--dark-gray);
             border-radius: 20px;
-            border: 1px solid rgba(74, 144, 226, 0.1);
+            overflow: hidden;
+            border: 1px solid rgba(124, 58, 237, 0.1);
             transition: all 0.3s ease;
             position: relative;
-            overflow: hidden;
         }
 
         .feature-card::before {
@@ -629,98 +413,53 @@
             top: 0;
             left: 0;
             right: 0;
-            height: 4px;
-            background: var(--gradient-blue);
+            height: 3px;
+            background: var(--gradient-purple);
             transform: scaleX(0);
             transition: transform 0.3s ease;
         }
 
         .feature-card:hover {
             transform: translateY(-10px);
-            border-color: var(--primary-blue);
-            box-shadow: 0 20px 40px rgba(74, 144, 226, 0.2);
+            border-color: var(--primary-purple);
+            box-shadow: 0 20px 40px rgba(124, 58, 237, 0.3);
         }
 
         .feature-card:hover::before {
             transform: scaleX(1);
         }
 
-        .feature-icon {
-            width: 60px;
-            height: 60px;
-            background: rgba(74, 144, 226, 0.1);
-            border-radius: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 1.5rem;
-            font-size: 1.75rem;
+        .feature-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            opacity: 0.8;
+            transition: opacity 0.3s ease;
+        }
+
+        .feature-card:hover .feature-image {
+            opacity: 1;
+        }
+
+        .feature-content {
+            padding: 1.5rem;
         }
 
         .feature-card h3 {
             font-size: 1.25rem;
             margin-bottom: 0.75rem;
-            color: var(--text-light);
-            text-align: center;
+            color: var(--pure-white);
         }
 
         .feature-card p {
-            color: var(--text-muted);
+            color: var(--text-gray);
             line-height: 1.6;
-            text-align: center;
             font-size: 0.9rem;
-        }
-
-        .feature-card.custom-solution {
-            background: linear-gradient(135deg, rgba(74, 144, 226, 0.1) 0%, rgba(120, 185, 242, 0.1) 100%);
-            border-color: rgba(74, 144, 226, 0.3);
-        }
-
-        .feature-card.custom-solution:hover {
-            border-color: var(--light-blue);
-            box-shadow: 0 20px 40px rgba(120, 185, 242, 0.3);
-        }
-
-        /* Data Security Section */
-        .data-security-section {
-            background: var(--dark-bg);
-        }
-
-        .security-grid {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-        }
-
-        .security-card {
-            background: var(--card-bg);
-            padding: 2rem;
-            border-radius: 20px;
-            border: 1px solid rgba(218, 41, 28, 0.2);
-            text-align: center;
-            transition: all 0.3s ease;
-        }
-
-        .security-card:hover {
-            transform: translateY(-5px);
-            border-color: var(--swiss-red);
-            box-shadow: 0 10px 30px rgba(218, 41, 28, 0.2);
-        }
-
-        .security-card h3 {
-            color: var(--text-light);
-            margin-bottom: 1rem;
-        }
-
-        .security-card p {
-            color: var(--text-muted);
         }
 
         /* Industries Section */
         .industries {
-            background: var(--darker-bg);
+            background: linear-gradient(180deg, var(--deep-black) 0%, var(--dark-gray) 100%);
             flex-direction: column;
             justify-content: center;
         }
@@ -734,436 +473,376 @@
         }
 
         .industry-item {
-            background: rgba(74, 144, 226, 0.05);
-            border: 1px solid rgba(74, 144, 226, 0.2);
-            padding: 2rem;
+            background: var(--medium-gray);
             border-radius: 15px;
-            text-align: center;
+            overflow: hidden;
+            border: 1px solid rgba(124, 58, 237, 0.2);
             transition: all 0.3s ease;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .industry-item:hover {
-            background: rgba(74, 144, 226, 0.1);
-            border-color: var(--primary-blue);
-            transform: scale(1.05);
-        }
-
-        .industry-icon {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            filter: grayscale(100%);
-            transition: filter 0.3s ease;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .industry-item:hover .industry-icon {
-            filter: grayscale(0%);
-        }
-
-        /* Ultra Instinct Section */
-        .ultra-instinct-section {
-            background: var(--dark-bg);
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        .ultra-content {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .ultra-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3rem;
-            align-items: center;
-            margin-top: 2rem;
-        }
-
-        .ultra-features {
-            background: var(--card-bg);
-            border-radius: 20px;
-            padding: 2rem;
-            border: 1px solid rgba(74, 144, 226, 0.2);
-        }
-
-        .ultra-features h3 {
-            font-size: 1.75rem;
-            color: var(--primary-blue);
-            margin-bottom: 1.5rem;
-        }
-
-        .ultra-feature-item {
-            margin-bottom: 1.5rem;
-            padding-left: 1.75rem;
             position: relative;
         }
 
-        .ultra-feature-item::before {
-            content: "→";
-            position: absolute;
-            left: 0;
-            color: var(--primary-blue);
-            font-size: 1.25rem;
+        .industry-item:hover {
+            transform: scale(1.05);
+            border-color: var(--primary-purple);
+            box-shadow: 0 15px 30px rgba(124, 58, 237, 0.4);
         }
 
-        .ultra-feature-item h4 {
-            color: var(--text-light);
-            margin-bottom: 0.25rem;
-            font-size: 1.125rem;
-        }
-
-        .ultra-feature-item p {
-            color: var(--text-muted);
-            line-height: 1.5;
-            font-size: 0.9rem;
-        }
-
-        .ultra-visual {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .ai-diagram {
+        .industry-image {
             width: 100%;
-            max-width: 500px;
-            background: var(--card-bg);
-            border-radius: 20px;
-            padding: 2rem;
-            border: 1px solid rgba(74, 144, 226, 0.2);
-            text-align: center;
+            height: 150px;
+            object-fit: cover;
+            opacity: 0.7;
+            transition: opacity 0.3s ease;
         }
 
-        .pilot-note {
-            margin-top: 2rem;
+        .industry-item:hover .industry-image {
+            opacity: 1;
+        }
+
+        .industry-label {
             padding: 1rem;
-            background: rgba(74, 144, 226, 0.1);
-            border-radius: 10px;
             text-align: center;
-            font-size: 0.9rem;
-            color: var(--primary-blue);
-            font-style: italic;
+            font-weight: 600;
+            color: var(--pure-white);
+            background: rgba(0, 0, 0, 0.5);
         }
 
-        /* Pricing Section - Full Height */
+        /* Pricing Section */
         .pricing-section {
-            background: var(--darker-bg);
+            background: var(--deep-black);
             min-height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 80px 2rem 2rem;
+            flex-direction: column;
+        }
+
+        .pricing-container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
         }
 
         .process-timeline {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
             margin-bottom: 3rem;
+            padding: 0 2rem;
+        }
+
+        .timeline-line {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--gradient-purple);
+            transform: translateX(-50%);
         }
 
         .process-step {
-            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 600px;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        .process-step:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .step-content {
+            background: var(--dark-gray);
+            border-radius: 15px;
+            padding: 1.5rem;
+            width: 45%;
+            border: 1px solid rgba(124, 58, 237, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .step-content:hover {
+            transform: scale(1.05);
+            border-color: var(--primary-purple);
+            box-shadow: 0 10px 25px rgba(124, 58, 237, 0.3);
         }
 
         .step-number {
             width: 60px;
             height: 60px;
-            background: var(--gradient-blue);
+            background: var(--gradient-purple);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 0 auto 1rem;
             font-size: 1.5rem;
             font-weight: bold;
             color: white;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+            box-shadow: 0 5px 20px rgba(124, 58, 237, 0.5);
         }
 
-        .pricing-info-box {
-            background: var(--card-bg);
-            border-radius: 20px;
+        .step-content h4 {
+            color: var(--primary-purple);
+            margin-bottom: 0.5rem;
+            font-size: 1.125rem;
+        }
+
+        .step-content p {
+            color: var(--text-gray);
+            font-size: 0.9rem;
+        }
+
+        .pricing-highlight {
+            background: var(--gradient-purple);
+            border-radius: 25px;
             padding: 2.5rem;
-            border: 2px solid var(--primary-blue);
             text-align: center;
+            color: white;
+            box-shadow: 0 20px 40px rgba(124, 58, 237, 0.4);
+            margin: 3rem 0;
+        }
+
+        .pricing-highlight h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .pricing-highlight p {
+            font-size: 1.25rem;
+            opacity: 0.95;
         }
 
         .pricing-options {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1.5rem;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
             margin-top: 2rem;
         }
 
-        /* Development Section */
-        .development-section {
-            background: var(--darker-bg);
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        .development-grid {
-            max-width: 1400px;
-            margin: 3rem auto;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 2rem;
-        }
-
-        .dev-card {
-            background: linear-gradient(135deg, rgba(155, 89, 182, 0.1) 0%, rgba(74, 144, 226, 0.1) 100%);
+        .pricing-card {
+            background: var(--dark-gray);
             border-radius: 20px;
-            padding: 2.5rem;
-            border: 1px solid rgba(155, 89, 182, 0.3);
-            transition: all 0.3s ease;
+            padding: 2rem;
+            border: 1px solid rgba(124, 58, 237, 0.2);
             text-align: center;
-        }
-
-        .dev-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(155, 89, 182, 0.2);
-            border-color: #9b59b6;
-        }
-
-        .dev-card h3 {
-            color: #9b59b6;
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-        }
-
-        .dev-card .status {
-            display: inline-block;
-            background: rgba(155, 89, 182, 0.2);
-            color: #9b59b6;
-            padding: 0.25rem 0.75rem;
-            border-radius: 15px;
-            font-size: 0.875rem;
-            font-weight: 600;
-            margin-bottom: 1rem;
-        }
-
-        .dev-card p {
-            color: var(--text-muted);
-            line-height: 1.6;
-        }
-        
-        .development-section .section-header h2 {
-            background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-        
-        /* Technology Stack */
-        .tech-stack-section {
-            background: var(--dark-bg);
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        .tech-grid {
-            max-width: 1200px;
-            margin: 3rem auto 0;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 2rem;
-            justify-content: center;
-        }
-
-        .tech-item {
-            background: rgba(74, 144, 226, 0.05);
-            border: 1px solid rgba(74, 144, 226, 0.2);
-            padding: 1rem 2rem;
-            border-radius: 50px;
-            font-weight: 600;
             transition: all 0.3s ease;
         }
 
-        .tech-item:hover {
-            background: rgba(74, 144, 226, 0.2);
-            border-color: var(--primary-blue);
+        .pricing-card:hover {
             transform: translateY(-5px);
+            border-color: var(--primary-purple);
+            box-shadow: 0 15px 30px rgba(124, 58, 237, 0.3);
         }
 
         /* Vision Section */
         .vision-section {
-            background: linear-gradient(135deg, var(--dark-bg) 0%, rgba(74, 144, 226, 0.02) 100%);
+            background: linear-gradient(135deg, var(--deep-black) 0%, rgba(124, 58, 237, 0.05) 100%);
             overflow: hidden;
             flex-direction: column;
             justify-content: center;
-        }
-
-        .vision-section::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            right: -30%;
-            width: 100%;
-            height: 100%;
-            background: radial-gradient(circle, rgba(74, 144, 226, 0.1) 0%, transparent 70%);
-            animation: vision-glow 20s ease-in-out infinite;
-        }
-
-        @keyframes vision-glow {
-            0%, 100% { opacity: 0.3; transform: scale(1); }
-            50% { opacity: 0.6; transform: scale(1.2); }
         }
 
         .vision-content {
             max-width: 1200px;
             margin: 0 auto;
-            position: relative;
-            z-index: 1;
+            width: 100%;
         }
 
         .vision-main {
             text-align: center;
-            margin-bottom: 3rem;
+            margin-bottom: 4rem;
         }
 
         .vision-main h2 {
-            font-size: 3rem;
-            margin-bottom: 1.5rem;
+            font-size: 3.5rem;
+            margin-bottom: 2rem;
             font-weight: 800;
-            letter-spacing: -1px;
-            background: var(--gradient-blue);
+            background: var(--gradient-purple);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
 
-        .vision-statement-box {
+        .vision-statement {
             max-width: 900px;
-            margin: 0 auto;
-            background: rgba(74, 144, 226, 0.05);
-            border: 1px solid rgba(74, 144, 226, 0.2);
-            border-radius: 25px;
-            padding: 2rem;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .vision-statement-box::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 3px;
-            background: var(--gradient-blue);
+            margin: 0 auto 4rem;
+            padding: 2.5rem;
+            background: rgba(124, 58, 237, 0.05);
+            border: 1px solid rgba(124, 58, 237, 0.2);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
         }
 
         .vision-text {
             font-size: 1.25rem;
-            line-height: 1.6;
-            color: var(--text-light);
+            line-height: 1.8;
+            color: var(--off-white);
             font-weight: 300;
         }
 
-        .vision-metrics {
+        .vision-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 2rem;
-            margin-top: 3rem;
+            gap: 2.5rem;
+            margin-bottom: 4rem;
         }
 
-        .vision-metric {
+        .vision-card {
+            background: var(--dark-gray);
+            border-radius: 20px;
+            padding: 2.5rem;
+            border: 1px solid rgba(124, 58, 237, 0.2);
             text-align: center;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
         }
 
-        .metric-icon {
-            width: 60px;
-            height: 60px;
-            margin: 0 auto 1rem;
-            background: var(--gradient-blue);
-            border-radius: 50%;
+        .vision-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(124, 58, 237, 0.1) 0%, transparent 70%);
+            animation: rotate 10s linear infinite;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .vision-card:hover::before {
+            opacity: 1;
+        }
+
+        .vision-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary-purple);
+            box-shadow: 0 20px 40px rgba(124, 58, 237, 0.3);
+        }
+
+        .vision-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 1.5rem;
+            background: var(--gradient-purple);
+            border-radius: 20px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 2rem;
-            color: white;
-            box-shadow: 0 10px 30px rgba(74, 144, 226, 0.3);
+            font-size: 2.5rem;
+            box-shadow: 0 10px 25px rgba(124, 58, 237, 0.3);
         }
 
-        .metric-title {
+        .vision-title {
             font-size: 1.5rem;
             font-weight: 700;
-            color: var(--text-light);
-            margin-bottom: 0.5rem;
+            color: var(--pure-white);
+            margin-bottom: 1rem;
         }
 
-        .metric-description {
-            color: var(--text-muted);
-            font-size: 1.125rem;
+        .vision-description {
+            color: var(--text-gray);
             line-height: 1.6;
         }
 
-        .vision-impact {
-            margin-top: 2rem;
-            background: var(--card-bg);
-            border-radius: 25px;
-            padding: 2rem;
-            border: 1px solid rgba(74, 144, 226, 0.1);
-        }
-
-        .vision-impact h3 {
-            font-size: 1.75rem;
-            text-align: center;
-            margin-bottom: 1.5rem;
-            color: var(--primary-blue);
-        }
-
-        .impact-grid {
+        .impact-metrics {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 1.5rem;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            padding: 3rem;
+            background: var(--medium-gray);
+            border-radius: 25px;
+            border: 1px solid rgba(124, 58, 237, 0.2);
         }
 
         .impact-item {
-            display: flex;
-            gap: 1rem;
-            align-items: start;
+            text-align: center;
         }
 
         .impact-number {
-            font-size: 2rem;
+            font-size: 3rem;
             font-weight: 800;
-            background: var(--gradient-blue);
+            background: var(--gradient-purple);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            line-height: 1;
+            margin-bottom: 0.5rem;
         }
 
-        .impact-content h4 {
-            font-size: 1.125rem;
-            color: var(--text-light);
-            margin-bottom: 0.25rem;
+        .impact-label {
+            color: var(--text-gray);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
-        .impact-content p {
-            color: var(--text-muted);
-            line-height: 1.4;
-            font-size: 0.85rem;
+        /* Data Security Section */
+        .data-security-section {
+            background: var(--deep-black);
         }
 
-        /* Contact CTA */
+        .security-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+        }
+
+        .security-card {
+            background: var(--dark-gray);
+            padding: 2.5rem;
+            border-radius: 20px;
+            border: 1px solid rgba(218, 41, 28, 0.2);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .security-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--swiss-red);
+            box-shadow: 0 10px 30px rgba(218, 41, 28, 0.2);
+        }
+
+        .security-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .security-card h3 {
+            color: var(--pure-white);
+            margin-bottom: 1rem;
+            font-size: 1.25rem;
+        }
+
+        .security-card p {
+            color: var(--text-gray);
+            line-height: 1.5;
+        }
+
+        /* Contact Section */
         .contact-cta {
-            background: var(--dark-bg);
+            background: linear-gradient(180deg, var(--deep-black) 0%, var(--dark-gray) 100%);
             flex-direction: column;
             justify-content: center;
-            padding: 4rem 2rem;
         }
 
         .contact-container {
-            max-width: 1000px;
+            max-width: 900px;
             margin: 0 auto;
             width: 100%;
         }
@@ -1176,7 +855,7 @@
         .contact-header h2 {
             font-size: 3rem;
             margin-bottom: 1rem;
-            background: var(--gradient-blue);
+            background: var(--gradient-purple);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -1184,15 +863,15 @@
 
         .contact-header p {
             font-size: 1.25rem;
-            color: var(--text-muted);
+            color: var(--text-gray);
         }
 
         .contact-form {
-            background: var(--card-bg);
-            border: 1px solid rgba(74, 144, 226, 0.2);
+            background: var(--medium-gray);
+            border: 1px solid rgba(124, 58, 237, 0.2);
             border-radius: 25px;
             padding: 3rem;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
         }
 
         .form-grid {
@@ -1214,7 +893,7 @@
         .form-group label {
             font-weight: 600;
             margin-bottom: 0.5rem;
-            color: var(--text-light);
+            color: var(--pure-white);
             font-size: 0.9rem;
         }
 
@@ -1222,10 +901,10 @@
         .form-group select,
         .form-group textarea {
             padding: 0.75rem 1rem;
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(74, 144, 226, 0.2);
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(124, 58, 237, 0.2);
             border-radius: 10px;
-            color: var(--text-light);
+            color: var(--pure-white);
             font-size: 1rem;
             transition: all 0.3s ease;
         }
@@ -1234,76 +913,14 @@
         .form-group select:focus,
         .form-group textarea:focus {
             outline: none;
-            border-color: var(--primary-blue);
-            background: rgba(255, 255, 255, 0.08);
-            box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1);
-        }
-
-        .form-group input::placeholder,
-        .form-group textarea::placeholder {
-            color: var(--text-muted);
-            opacity: 0.6;
-        }
-
-        .form-group select {
-            cursor: pointer;
-            background-color: rgba(10, 14, 26, 0.8);
-            color: var(--text-light);
-            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='rgba(255,255,255,0.5)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
-            background-repeat: no-repeat;
-            background-position: right 1rem center;
-            background-size: 1.5em;
-            padding-right: 3rem;
-            appearance: none;
-            -webkit-appearance: none;
-            -moz-appearance: none;
-        }
-
-        .form-group select option {
-            background-color: var(--card-bg);
-            color: var(--text-light);
-            padding: 0.5rem;
-        }
-
-        .form-group select:hover {
-            border-color: var(--primary-blue);
+            border-color: var(--primary-purple);
+            background: rgba(124, 58, 237, 0.05);
+            box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.1);
         }
 
         .form-group textarea {
             resize: vertical;
             min-height: 100px;
-        }
-
-        .form-group small {
-            color: var(--text-muted);
-            font-size: 0.8rem;
-            margin-top: 0.25rem;
-            display: block;
-        }
-
-        .form-options {
-            margin-bottom: 2rem;
-        }
-
-        .checkbox-label {
-            display: flex;
-            align-items: center;
-            margin-bottom: 1rem;
-            cursor: pointer;
-            color: var(--text-muted);
-            transition: color 0.3s ease;
-        }
-
-        .checkbox-label:hover {
-            color: var(--text-light);
-        }
-
-        .checkbox-label input[type="checkbox"] {
-            width: 20px;
-            height: 20px;
-            margin-right: 0.75rem;
-            cursor: pointer;
-            accent-color: var(--primary-blue);
         }
 
         .form-submit {
@@ -1315,18 +932,11 @@
             padding: 1rem 3rem;
         }
 
-        .form-note {
-            margin-top: 1.5rem;
-            font-size: 0.875rem;
-            color: var(--text-muted);
-            line-height: 1.5;
-        }
-
         /* Footer */
         footer {
-            background: var(--darker-bg);
+            background: var(--pure-black);
             padding: 4rem 2rem 2rem;
-            border-top: 1px solid rgba(74, 144, 226, 0.1);
+            border-top: 1px solid rgba(124, 58, 237, 0.1);
         }
 
         .footer-content {
@@ -1340,16 +950,17 @@
         .footer-brand h3 {
             font-size: 1.5rem;
             margin-bottom: 1rem;
+            color: var(--pure-white);
         }
 
         .footer-brand .tagline {
-            color: var(--primary-blue);
+            color: var(--primary-purple);
             font-style: italic;
             margin-bottom: 1.5rem;
         }
 
         .footer-links h4 {
-            color: var(--text-light);
+            color: var(--pure-white);
             margin-bottom: 1.5rem;
         }
 
@@ -1358,61 +969,59 @@
         }
 
         .footer-links a {
-            color: var(--text-muted);
+            color: var(--text-gray);
             text-decoration: none;
             line-height: 2;
             transition: color 0.3s ease;
         }
 
         .footer-links a:hover {
-            color: var(--primary-blue);
-        }
-
-        .footer-trust {
-            text-align: center;
-            padding: 2rem 0;
-            border-top: 1px solid rgba(74, 144, 226, 0.1);
-            margin-top: 2rem;
-        }
-
-        .footer-trust p {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 2rem;
-            flex-wrap: wrap;
+            color: var(--primary-purple);
         }
 
         .footer-bottom {
             margin-top: 3rem;
             padding-top: 2rem;
-            border-top: 1px solid rgba(74, 144, 226, 0.1);
+            border-top: 1px solid rgba(124, 58, 237, 0.1);
             text-align: center;
-            color: var(--text-muted);
+            color: var(--text-gray);
+        }
+
+        /* Trust Badge */
+        .trust-badge {
+            position: fixed;
+            top: 100px;
+            right: 40px;
+            background: rgba(0, 0, 0, 0.9);
+            backdrop-filter: blur(10px);
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            border: 1px solid rgba(218, 41, 28, 0.3);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+            color: var(--pure-white);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            z-index: 10;
         }
 
         /* Responsive */
         @media (max-width: 1200px) {
+            .features-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
             .industry-showcase {
                 grid-template-columns: repeat(2, 1fr);
             }
             
-            .ai-brain-animation {
-                width: 400px;
-                height: 400px;
-            }
-
-            .vision-metrics {
-                grid-template-columns: 1fr;
-                gap: 2rem;
-            }
-
-            .impact-grid {
+            .vision-grid {
                 grid-template-columns: 1fr;
             }
-
-            .features-grid {
-                grid-template-columns: repeat(3, 1fr);
+            
+            .impact-metrics {
+                grid-template-columns: repeat(2, 1fr);
             }
         }
 
@@ -1440,37 +1049,11 @@
                 align-items: center;
             }
 
-            .trust-indicators {
-                flex-direction: column;
-                align-items: center;
+            .features-grid {
+                grid-template-columns: 1fr;
             }
 
             .industry-showcase {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .footer-content {
-                grid-template-columns: 1fr;
-                text-align: center;
-            }
-
-            .ultra-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .development-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .vision-main h2 {
-                font-size: 2rem;
-            }
-
-            .vision-text {
-                font-size: 1rem;
-            }
-
-            .features-grid {
                 grid-template-columns: 1fr;
             }
 
@@ -1478,19 +1061,34 @@
                 grid-template-columns: 1fr;
             }
 
-            .contact-header h2 {
-                font-size: 2rem;
-            }
-
-            .contact-form {
-                padding: 2rem;
+            .footer-content {
+                grid-template-columns: 1fr;
+                text-align: center;
             }
 
             .pricing-options {
                 grid-template-columns: 1fr;
             }
 
-            .process-timeline {
+            .security-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .trust-badge {
+                position: static;
+                margin: 1rem auto;
+                width: fit-content;
+            }
+
+            .process-step {
+                flex-direction: column !important;
+            }
+
+            .step-content {
+                width: 100%;
+            }
+
+            .impact-metrics {
                 grid-template-columns: 1fr;
             }
         }
@@ -1502,7 +1100,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: var(--darker-bg);
+            background: var(--pure-black);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -1525,7 +1123,6 @@
             0%, 100% { transform: scale(1); opacity: 0.5; }
             50% { transform: scale(1.1); opacity: 1; }
         }
-        
     </style>
 </head>
 <body>
@@ -1540,711 +1137,510 @@
     <div class="neural-network"></div>
 </div>
 
-    <!-- Navigation -->
-    <nav>
-        <div class="nav-container">
-            <div class="logo-container">
-                <div class="logo-brain">
-                    <img src="IconOnly.png" alt="Logo" class="brain-icon" style="width: 100%; height: 100%;">
-                </div>
-                <div class="company-name">INSTINCT SYSTEMS<span class="ai">AI</span></div>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#start">Start</a></li>
-                <li><a href="#loesungen">Lösungen</a></li>
-                <li><a href="#branchen">Branchen</a></li>
-                <li><a href="#angebot">Angebot</a></li>
-                <li><a href="#ultra-instinct">Ultra Instinct</a></li>
-                <li><a href="#roadmap">Roadmap</a></li>
-                <li><a href="#vision">Vision</a></li>
-                <li><a href="#datenschutz">Datenschutz</a></li>
-                <li><a href="#contact" class="nav-cta">Kostenlose Beratung</a></li>
-            </ul>
-        </div>
-    </nav>
+<!-- Trust Badge -->
+<div class="trust-badge">
+    🇨🇭 100% Schweizer Datenhaltung
+</div>
 
-    <!-- 1. Hero Section (Start) -->
-    <section class="hero" id="start">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1>KI-Revolution für Ihr Unternehmen</h1>
-                <p class="tagline">"Where Intelligence Meets Instinct"</p>
-                
-                <p class="hero-description">
-                    Transformieren Sie Ihr Unternehmen mit massgeschneiderten KI-Lösungen. 
-                    Von Finance über HR bis zum Vertrieb - wir automatisieren und optimieren 
-                    Ihre Geschäftsprozesse mit 100% Schweizer Datenhaltung 
-                    und höchsten Sicherheitsstandards. <strong>Starten Sie mit einem kostenlosen Proof of Concept.</strong>
-                </p>
-                <div class="cta-buttons">
-                    <a href="#contact" class="btn btn-primary">
-                        Kostenlose Beratung
-                        <span>→</span>
-                    </a>
-                    <a href="#angebot" class="btn btn-secondary">
-                        So funktioniert's
-                    </a>
-                </div>
+<!-- Navigation -->
+<nav>
+    <div class="nav-container">
+        <div class="logo-container">
+            <div class="logo-brain">
+                <img src="IconOnly.png" alt="Logo" class="brain-icon">
             </div>
-            <div class="hero-visual">
-                <div class="ai-brain-animation">
-                    <img src="FullLogo_Transparent.png" alt="Instinct Systems AI" class="brain-large">
-                </div>
+            <div class="company-name">INSTINCT SYSTEMS<span class="ai">AI</span></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#start">Start</a></li>
+            <li><a href="#loesungen">Lösungen</a></li>
+            <li><a href="#branchen">Branchen</a></li>
+            <li><a href="#angebot">Angebot</a></li>
+            <li><a href="#vision">Vision</a></li>
+            <li><a href="#datenschutz">Datenschutz</a></li>
+            <li><a href="#contact" class="nav-cta">Kostenlose Beratung</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero" id="start">
+    <div class="hero-content">
+        <div class="hero-text">
+            <h1>KI-Revolution für Ihr Unternehmen</h1>
+            <p class="tagline">"Where Intelligence Meets Instinct"</p>
+            
+            <p class="hero-description">
+                Transformieren Sie Ihr Unternehmen mit massgeschneiderten KI-Lösungen. 
+                Von Finance über HR bis zum Vertrieb - wir automatisieren und optimieren 
+                Ihre Geschäftsprozesse mit 100% Schweizer Datenhaltung. 
+                <strong>Starten Sie mit einem kostenlosen Proof of Concept.</strong>
+            </p>
+            <div class="cta-buttons">
+                <a href="#contact" class="btn btn-primary">
+                    Kostenlose Beratung
+                    <span>→</span>
+                </a>
+                <a href="#angebot" class="btn btn-secondary">
+                    So funktioniert's
+                </a>
             </div>
         </div>
-    </section>
+        <div class="hero-visual">
+            <div class="ai-brain-animation">
+                <img src="FullLogo_Transparent.png" alt="Instinct Systems AI" class="brain-large">
+            </div>
+        </div>
+    </div>
+</section>
 
-    <!-- 2. Lösungen Section -->
-    <section class="ai-features" id="loesungen">
+<!-- Lösungen Section -->
+<section class="ai-features" id="loesungen">
+    <div class="section-header">
+        <h2>Intelligente Lösungen für jede Abteilung</h2>
+        <p>Entdecken Sie, wie KI Ihre Geschäftsprozesse revolutioniert - einfach, effizient und messbar.</p>
+    </div>
+    <div class="features-grid">
+        <div class="feature-card">
+            <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&h=200&fit=crop" alt="Finance KI" class="feature-image">
+            <div class="feature-content">
+                <h3>Finance & Controlling</h3>
+                <p>Echtzeitanalyse Ihrer Finanzdaten mit automatischen Prognosen. Identifiziert Optimierungspotenziale und reduziert manuelle Reportings um 80%.</p>
+            </div>
+        </div>
+        <div class="feature-card">
+            <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=400&h=200&fit=crop" alt="HR KI" class="feature-image">
+            <div class="feature-content">
+                <h3>HR & Personalwesen</h3>
+                <p>Optimale Personalplanung und automatisierte Bewerbungsprozesse. Steigert die Mitarbeiterzufriedenheit und reduziert Verwaltungsaufwand.</p>
+            </div>
+        </div>
+        <div class="feature-card">
+            <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=400&h=200&fit=crop" alt="Lager KI" class="feature-image">
+            <div class="feature-content">
+                <h3>Lager & Logistik</h3>
+                <p>Intelligente Bestandsoptimierung verhindert Engpässe und reduziert Lagerkosten. Präzise Vorhersagen für optimale Bestellmengen.</p>
+            </div>
+        </div>
+        <div class="feature-card">
+            <img src="https://images.unsplash.com/photo-1568992687947-868a62a9f521?w=400&h=200&fit=crop" alt="Dokumente KI" class="feature-image">
+            <div class="feature-content">
+                <h3>Dokumentenverarbeitung</h3>
+                <p>Automatische Erfassung und Verarbeitung aller Dokumente. Von Rechnungen bis zu Verträgen - 95% schnellere Bearbeitung.</p>
+            </div>
+        </div>
+        <div class="feature-card">
+            <img src="https://images.unsplash.com/photo-1577563908411-5077b6dc7624?w=400&h=200&fit=crop" alt="Kundensupport KI" class="feature-image">
+            <div class="feature-content">
+                <h3>Kundensupport</h3>
+                <p>24/7 intelligenter Support, der Kundenanfragen sofort löst. Entlastet Ihr Team und steigert die Kundenzufriedenheit messbar.</p>
+            </div>
+        </div>
+        <div class="feature-card">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=200&fit=crop" alt="Management KI" class="feature-image">
+            <div class="feature-content">
+                <h3>Management Dashboard</h3>
+                <p>Alle wichtigen KPIs auf einen Blick mit KI-gestützten Handlungsempfehlungen für strategische Entscheidungen.</p>
+            </div>
+        </div>
+        <div class="feature-card">
+            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400&h=200&fit=crop" alt="Mobile KI" class="feature-image">
+            <div class="feature-content">
+                <h3>Mobile Solutions</h3>
+                <p>Ihre KI-Lösung immer dabei - native Apps für iOS und Android mit Offline-Funktionalität für maximale Flexibilität.</p>
+            </div>
+        </div>
+        <div class="feature-card">
+            <img src="https://images.unsplash.com/photo-1535378917042-10a22c95931a?w=400&h=200&fit=crop" alt="Custom KI" class="feature-image">
+            <div class="feature-content">
+                <h3>Individuelle Lösungen</h3>
+                <p>Massgeschneiderte KI für Ihre spezifischen Herausforderungen. In nur 4-8 Wochen vom Problem zur funktionierenden Lösung.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Branchen Section -->
+<section class="industries" id="branchen">
+    <div class="section-header">
+        <h2>Für jede Branche die passende Lösung</h2>
+        <p>Unsere KI-Technologie passt sich flexibel an die Anforderungen Ihrer Branche an.</p>
+    </div>
+    <div class="industry-showcase">
+        <div class="industry-item">
+            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=300&h=150&fit=crop" alt="Industrie" class="industry-image">
+            <div class="industry-label">Industrie & Produktion</div>
+        </div>
+        <div class="industry-item">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=150&fit=crop" alt="Finanzwesen" class="industry-image">
+            <div class="industry-label">Banken & Versicherungen</div>
+        </div>
+        <div class="industry-item">
+            <img src="https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=300&h=150&fit=crop" alt="Gesundheit" class="industry-image">
+            <div class="industry-label">Gesundheitswesen</div>
+        </div>
+        <div class="industry-item">
+            <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=300&h=150&fit=crop" alt="Einzelhandel" class="industry-image">
+            <div class="industry-label">Einzelhandel</div>
+        </div>
+        <div class="industry-item">
+            <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=300&h=150&fit=crop" alt="Logistik" class="industry-image">
+            <div class="industry-label">Logistik & Transport</div>
+        </div>
+        <div class="industry-item">
+            <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=300&h=150&fit=crop" alt="Hospitality" class="industry-image">
+            <div class="industry-label">Hotels & Gastronomie</div>
+        </div>
+        <div class="industry-item">
+            <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=300&h=150&fit=crop" alt="Bildung" class="industry-image">
+            <div class="industry-label">Bildung & Forschung</div>
+        </div>
+        <div class="industry-item">
+            <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=300&h=150&fit=crop" alt="Öffentlicher Sektor" class="industry-image">
+            <div class="industry-label">Öffentlicher Sektor</div>
+        </div>
+    </div>
+</section>
+
+<!-- Angebot Section -->
+<section class="pricing-section" id="angebot">
+    <div class="pricing-container">
         <div class="section-header">
-            <h2>Intelligente Lösungen für jede Abteilung</h2>
-            <p>Eine KI-Lösung für jede Direktion - optimiert für Ihre spezifischen Herausforderungen.</p>
+            <h2>Ihr Weg zur KI-Lösung</h2>
+            <p>Transparent, fair und ohne versteckte Kosten</p>
         </div>
-        <div class="features-grid">
-            <div class="feature-card">
-                <div class="feature-icon">📊</div>
-                <h3>CONTROLLING INSTINCT AI</h3>
-                <p>Alle Unternehmenszahlen in Echtzeit mit automatischen Handlungsempfehlungen. Erkennt Abweichungen sofort und schlägt konkrete Massnahmen vor.</p>
+        
+        <div class="process-timeline">
+            <div class="timeline-line"></div>
+            
+            <div class="process-step">
+                <div class="step-content">
+                    <h4>Erstberatung</h4>
+                    <p>Kostenlose Analyse Ihrer Anforderungen</p>
+                </div>
+                <div class="step-number">1</div>
+                <div style="width: 45%;"></div>
             </div>
-            <div class="feature-card">
-                <div class="feature-icon">🤝</div>
-                <h3>WORKFORCE INSTINCT AI</h3>
-                <p>Intelligente Personalplanung für optimale Auslastung. Erstellt automatisch effiziente Schichtpläne basierend auf Bedarf und Ressourcen.</p>
+            
+            <div class="process-step">
+                <div style="width: 45%;"></div>
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h4>Proof of Concept</h4>
+                    <p><strong>Kostenlos</strong> - Funktionierender Prototyp</p>
+                </div>
             </div>
-            <div class="feature-card">
-                <div class="feature-icon">📦</div>
-                <h3>INVENTORY INSTINCT AI</h3>
-                <p>Berechnet optimale Bestellmengen und Mindestbestände. Reduziert Lagerkosten und verhindert Out-of-Stock Situationen.</p>
+            
+            <div class="process-step">
+                <div class="step-content">
+                    <h4>Pilot-Projekt</h4>
+                    <p>4-8 Wochen Entwicklung</p>
+                </div>
+                <div class="step-number">3</div>
+                <div style="width: 45%;"></div>
             </div>
-            <div class="feature-card">
-                <div class="feature-icon">📄</div>
-                <h3>DOCUMENT INSTINCT AI</h3>
-                <p>Verarbeitet Rechnungen, Verträge und E-Mails automatisch. Eliminiert manuelle Dateneingabe und beschleunigt Dokumentenprozesse.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">💬</div>
-                <h3>CUSTOMER INSTINCT AI</h3>
-                <p>24/7 Chatbot der Kundenanfragen intelligent beantwortet. Entlastet den Support und steigert die Kundenzufriedenheit.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">💡</div>
-                <h3>EXECUTIVE INSTINCT AI</h3>
-                <p>Das Cockpit für die Geschäftsleitung - alle KPIs auf einen Blick mit Prognosen und Entscheidungshilfen für strategische Weichenstellungen.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">📱</div>
-                <h3>MOBILE INSTINCT AI</h3>
-                <p>Alle unsere KI-Lösungen auch als native iOS/Android App. Ihre Mitarbeiter haben die KI-Power direkt in der Hosentasche - online und offline verfügbar.</p>
-            </div>
-            <div class="feature-card custom-solution">
-                <div class="feature-icon">✨</div>
-                <h3>CUSTOM INSTINCT AI</h3>
-                <p>Ihre individuelle Herausforderung als massgeschneiderte KI-Lösung. In 4-8 Wochen vom Problem zum funktionierenden Prototyp.</p>
+            
+            <div class="process-step">
+                <div style="width: 45%;"></div>
+                <div class="step-number">4</div>
+                <div class="step-content">
+                    <h4>Rollout</h4>
+                    <p>Vollständige Implementierung</p>
+                </div>
             </div>
         </div>
-    </section>
+        
+        <div class="pricing-highlight">
+            <h3>Kostenloser Proof of Concept</h3>
+            <p>Wir entwickeln einen funktionierenden Prototyp für Ihre spezifische Herausforderung - völlig kostenlos und unverbindlich.</p>
+        </div>
+        
+        <div class="pricing-options">
+            <div class="pricing-card">
+                <h4>Pilot-Projekt</h4>
+                <p>4-8 Wochen Entwicklung<br>Individuelles Angebot</p>
+            </div>
+            <div class="pricing-card">
+                <h4>Enterprise</h4>
+                <p>Massgeschneiderte Lösung<br>Für komplexe Anforderungen</p>
+            </div>
+            <div class="pricing-card">
+                <h4>Support</h4>
+                <p>Kontinuierliche Betreuung<br>Updates & Optimierungen</p>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <!-- 3. Branchen Section -->
-    <section class="industries" id="branchen">
-        <div class="section-header">
-            <h2>Für jede Branche</h2>
-            <p>Unsere KI-Lösungen sind branchenübergreifend einsetzbar und an Ihre spezifischen Bedürfnisse anpassbar.</p>
-        </div>
-        <div class="industry-showcase">
-            <div class="industry-item">
-                <div class="industry-icon">🏢</div>
-                <h4>Industrie</h4>
-            </div>
-            <div class="industry-item">
-                <div class="industry-icon">🏦</div>
-                <h4>Finanzwesen</h4>
-            </div>
-            <div class="industry-item">
-                <div class="industry-icon">🏥</div>
-                <h4>Gesundheit</h4>
-            </div>
-            <div class="industry-item">
-                <div class="industry-icon">🛍️</div>
-                <h4>Einzelhandel</h4>
-            </div>
-            <div class="industry-item">
-                <div class="industry-icon">🚚</div>
-                <h4>Logistik</h4>
-            </div>
-            <div class="industry-item">
-                <div class="industry-icon">🏨</div>
-                <h4>Hospitality</h4>
-            </div>
-            <div class="industry-item">
-                <div class="industry-icon">🎓</div>
-                <h4>Bildung</h4>
-            </div>
-            <div class="industry-item">
-                <div class="industry-icon">🏛️</div>
-                <h4>Öffentlicher Sektor</h4>
-            </div>
-        </div>
-    </section>
-
-    <!-- 4. Angebot Section -->
-    <section class="pricing-section" id="angebot">
-        <div style="width: 100%; max-width: 1200px; margin: 0 auto;">
-            <div style="text-align: center; margin-bottom: 2rem;">
-                <h2 style="font-size: 2.5rem; margin-bottom: 0.75rem; background: var(--gradient-blue); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
-                    Ihr Weg zur KI-Lösung
-                </h2>
-                <p style="font-size: 1.125rem; color: var(--text-muted);">
-                    Transparent, fair und ohne versteckte Kosten
+<!-- Vision Section -->
+<section class="vision-section" id="vision">
+    <div class="vision-content">
+        <div class="vision-main">
+            <h2>Unsere Vision für die Zukunft</h2>
+            <div class="vision-statement">
+                <p class="vision-text">
+                    Wir schaffen eine Zukunft, in der künstliche Intelligenz nahtlos in alle Geschäftsprozesse 
+                    integriert ist. Mitarbeiter werden von repetitiven Aufgaben befreit und können sich auf 
+                    strategische und kreative Tätigkeiten konzentrieren, die echten Mehrwert schaffen.
                 </p>
             </div>
+        </div>
         
-            <div style="background: linear-gradient(135deg, rgba(74, 144, 226, 0.05) 0%, rgba(120, 185, 242, 0.05) 100%); border-radius: 25px; padding: 2rem; margin-bottom: 2rem; border: 1px solid rgba(74, 144, 226, 0.2);">
-                <div class="process-timeline" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; position: relative;">
-                    <div style="position: absolute; top: 30px; left: 10%; right: 10%; height: 2px; background: linear-gradient(90deg, var(--primary-blue) 0%, var(--light-blue) 100%); z-index: 0;"></div>
-                
-                    <div class="process-step" style="position: relative; z-index: 1;">
-                        <div class="step-number">1</div>
-                        <h4 style="color: var(--primary-blue); font-size: 1rem; margin-bottom: 0.25rem;">Erstberatung</h4>
-                        <p style="color: var(--text-muted); font-size: 0.85rem;">Kostenlos</p>
-                    </div>
-                
-                    <div class="process-step" style="position: relative; z-index: 1;">
-                        <div class="step-number">2</div>
-                        <h4 style="color: var(--primary-blue); font-size: 1rem; margin-bottom: 0.25rem;">Proof of Concept</h4>
-                        <p style="color: var(--text-light); font-size: 0.85rem; font-weight: 600;">Kostenlos</p>
-                    </div>
-                
-                    <div class="process-step" style="position: relative; z-index: 1;">
-                        <div class="step-number">3</div>
-                        <h4 style="color: var(--primary-blue); font-size: 1rem; margin-bottom: 0.25rem;">Pilot-Projekt</h4>
-                        <p style="color: var(--text-muted); font-size: 0.85rem;">4-8 Wochen</p>
-                    </div>
-                
-                    <div class="process-step" style="position: relative; z-index: 1;">
-                        <div class="step-number">4</div>
-                        <h4 style="color: var(--primary-blue); font-size: 1rem; margin-bottom: 0.25rem;">Rollout</h4>
-                        <p style="color: var(--text-muted); font-size: 0.85rem;">Implementierung</p>
-                    </div>
-                </div>
-            </div>
-        
-            <div style="background: var(--gradient-blue); border-radius: 20px; padding: 2rem; text-align: center; color: white; box-shadow: 0 15px 30px rgba(74, 144, 226, 0.3); margin-bottom: 2rem;">
-                <div style="display: flex; align-items: center; justify-content: center; gap: 2rem;">
-                    <div>
-                        <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem; color: white;">Kostenloser Proof of Concept</h3>
-                        <p style="font-size: 1.125rem; opacity: 0.95;">
-                            Wir entwickeln einen funktionierenden Prototyp für Ihre spezifische Herausforderung - völlig kostenlos.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        
-            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;">
-                <div style="background: var(--card-bg); border-radius: 15px; padding: 1.75rem; border: 1px solid rgba(74, 144, 226, 0.2); text-align: center; transition: all 0.3s ease;">
-                    <h4 style="color: var(--primary-blue); margin-bottom: 0.75rem; font-size: 1.125rem;">Pilot-Projekt</h4>
-                    <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.4;">
-                        4-8 Wochen Entwicklung<br>
-                        Individuelles Angebot
-                    </p>
-                </div>
-            
-                <div style="background: var(--card-bg); border-radius: 15px; padding: 1.75rem; border: 1px solid rgba(74, 144, 226, 0.2); text-align: center; transition: all 0.3s ease;">
-                    <h4 style="color: var(--primary-blue); margin-bottom: 0.75rem; font-size: 1.125rem;">Enterprise</h4>
-                    <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.4;">
-                        Massgeschneiderte Lösung<br>
-                        Für komplexe Anforderungen
-                    </p>
-                </div>
-            
-                <div style="background: var(--card-bg); border-radius: 15px; padding: 1.75rem; border: 1px solid rgba(74, 144, 226, 0.2); text-align: center; transition: all 0.3s ease;">
-                    <h4 style="color: var(--primary-blue); margin-bottom: 0.75rem; font-size: 1.125rem;">Support</h4>
-                    <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.4;">
-                        Kontinuierliche Betreuung<br>
-                        Updates & Optimierungen
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 5. Ultra Instinct Section -->
-    <section class="ultra-instinct-section" id="ultra-instinct">
-        <div style="width: 100%; max-width: 1400px; margin: 0 auto;">
-            <div class="section-header" style="text-align: center; margin-bottom: 2rem;">
-                <h2 style="font-size: 2.5rem; margin-bottom: 0.75rem;">Ultra Instinct - Die Revolution beginnt</h2>
-                <p style="font-size: 1.125rem; color: var(--text-muted);">Ultra Instinct ist der erste Schritt auf unserem Weg, Geschäftsprozesse zu revolutionieren</p>
-            </div>
-            <div class="ultra-content">
-                <div class="ultra-grid" style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 2rem; align-items: start;">
-                    <div class="ultra-features" style="background: var(--card-bg); border-radius: 20px; padding: 1.5rem; border: 1px solid rgba(74, 144, 226, 0.2);">
-                        <h3 style="font-size: 1.5rem; color: var(--primary-blue); margin-bottom: 1rem;">Was Ultra Instinct kann</h3>
-                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
-                            <div class="ultra-feature-item" style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
-                                <h4 style="color: var(--text-light); margin-bottom: 0.25rem; font-size: 1rem;">Intelligente Algorithmen</h4>
-                                <p style="color: var(--text-muted); line-height: 1.4; font-size: 0.8rem;">Selbstlernende KI-Modelle für präzise Mustererkennung</p>
-                            </div>
-                            <div class="ultra-feature-item" style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
-                                <h4 style="color: var(--text-light); margin-bottom: 0.25rem; font-size: 1rem;">Machine Learning Engine</h4>
-                                <p style="color: var(--text-muted); line-height: 1.4; font-size: 0.8rem;">Deep Learning analysiert Millionen von Datenpunkten</p>
-                            </div>
-                            <div class="ultra-feature-item" style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
-                                <h4 style="color: var(--text-light); margin-bottom: 0.25rem; font-size: 1rem;">Neural Network</h4>
-                                <p style="color: var(--text-muted); line-height: 1.4; font-size: 0.8rem;">Adaptives Netz für dynamische Prognosen</p>
-                            </div>
-                            <div class="ultra-feature-item" style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
-                                <h4 style="color: var(--text-light); margin-bottom: 0.25rem; font-size: 1rem;">Out-of-Stock Erkennung</h4>
-                                <p style="color: var(--text-muted); line-height: 1.4; font-size: 0.8rem;">Selbstlernende Mengenoptimierung</p>
-                            </div>
-                            <div class="ultra-feature-item" style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
-                                <h4 style="color: var(--text-light); margin-bottom: 0.25rem; font-size: 1rem;">Präzise Mengenprognose</h4>
-                                <p style="color: var(--text-muted); line-height: 1.4; font-size: 0.8rem;">Optimale Bestellmenge berechnen</p>
-                            </div>
-                            <div class="ultra-feature-item" style="margin-bottom: 0.75rem; padding-left: 1.5rem; position: relative;">
-                                <h4 style="color: var(--text-light); margin-bottom: 0.25rem; font-size: 1rem;">Automatische Steuerung</h4>
-                                <p style="color: var(--text-muted); line-height: 1.4; font-size: 0.8rem;">Vollautomatische Verteilung pro Filiale</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ultra-visual">
-                        <div class="ai-diagram" style="width: 100%; background: var(--card-bg); border-radius: 20px; padding: 1.5rem; border: 1px solid rgba(74, 144, 226, 0.2); text-align: center;">
-                            <div style="font-size: 3rem; margin-bottom: 1rem;">🧠</div>
-                            <h3 style="color: var(--primary-blue); margin-bottom: 0.5rem; font-size: 1.25rem;">Neural Network</h3>
-                            <p style="color: var(--text-muted); margin-bottom: 1rem; font-size: 0.85rem;">Kontinuierliches Lernen</p>
-                            
-                            <div style="display: flex; justify-content: space-around; margin-top: 1rem;">
-                                <div>
-                                    <div style="font-size: 1.5rem; color: var(--primary-blue);">24/7</div>
-                                    <div style="font-size: 0.75rem; color: var(--text-muted);">Aktiv</div>
-                                </div>
-                                <div>
-                                    <div style="font-size: 1.5rem; color: var(--primary-blue);">∞</div>
-                                    <div style="font-size: 0.75rem; color: var(--text-muted);">Lernend</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="pilot-note" style="margin-top: 1.5rem; padding: 0.75rem; background: rgba(74, 144, 226, 0.1); border-radius: 10px; text-align: center; font-size: 0.9rem; color: var(--primary-blue); font-style: italic;">
-                    Ultra Instinct wird aktuell bei einem der grössten Detailhändler der Schweiz erfolgreich pilotiert
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 6. Roadmap Section -->
-    <section class="development-section" id="roadmap">
-        <div class="section-header">
-            <h2>Roadmap</h2>
-            <p>Unsere Vision für die Zukunft der Business-Automatisierung</p>
-        </div>
-        <div class="development-grid">
-            <div class="dev-card">
-                <h3>CONTROLLING INSTINCT AI</h3>
-                <span class="status">Q3 2025</span>
-                <p>Vollautomatische Finanzanalyse mit KI-gestützten Handlungsempfehlungen und Prognosen</p>
-            </div>
-            <div class="dev-card">
-                <h3>WORKFORCE INSTINCT AI</h3>
-                <span class="status">Q4 2025</span>
-                <p>Intelligente Personalverwaltung mit optimaler Ressourcenplanung und Schichtoptimierung</p>
-            </div>
-            <div class="dev-card">
-                <h3>CUSTOMER INSTINCT AI</h3>
-                <span class="status">Q1 2026</span>
-                <p>Multichannel-Chatbot mit Natural Language Processing für erstklassigen Kundensupport</p>
-            </div>
-            <div class="dev-card">
-                <h3>DOCUMENT INSTINCT AI</h3>
-                <span class="status">Q2 2026</span>
-                <p>Intelligente Dokumentenverarbeitung für papierlose und effiziente Büroprozesse</p>
-            </div>
-            <div class="dev-card">
-                <h3>MOBILE INSTINCT AI</h3>
-                <span class="status">Q3 2026</span>
-                <p>Native Apps für iOS und Android - KI-Power für unterwegs mit Offline-Funktionalität</p>
-            </div>
-            <div class="dev-card">
-                <h3>INSTINCT AI PLATFORM</h3>
-                <span class="status">2027</span>
-                <p>Zentrale KI-Plattform zur Integration aller Module mit einheitlichem Dashboard</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- 7. Vision Section -->
-    <section class="vision-section" id="vision">
-        <div class="vision-content" style="max-width: 1200px; margin: 0 auto; position: relative; z-index: 1;">
-            <div class="vision-main" style="text-align: center; margin-bottom: 3rem;">
-                <h2 style="font-size: 3rem; margin-bottom: 1.5rem; font-weight: 800; background: var(--gradient-blue); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Unsere Vision für die Zukunft</h2>
-                <div class="vision-statement-box" style="max-width: 900px; margin: 0 auto; background: rgba(74, 144, 226, 0.05); border: 1px solid rgba(74, 144, 226, 0.2); border-radius: 25px; padding: 2rem;">
-                    <p class="vision-text" style="font-size: 1.25rem; line-height: 1.6; color: var(--text-light); font-weight: 300;">
-                        Wir schaffen eine Zukunft, in der künstliche Intelligenz nahtlos in alle Geschäftsprozesse 
-                        integriert ist. Mitarbeiter werden von repetitiven Aufgaben befreit und können sich auf 
-                        strategische und kreative Tätigkeiten konzentrieren, die echten Mehrwert schaffen.
-                    </p>
+        <div class="vision-grid">
+            <div class="vision-card">
+                <div class="vision-icon">🎯</div>
+                <div class="vision-title">Fokussierung</div>
+                <div class="vision-description">
+                    Mitarbeiter konzentrieren sich auf wertschöpfende Tätigkeiten statt auf repetitive Aufgaben.
                 </div>
             </div>
             
-            <div class="vision-metrics" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-bottom: 3rem;">
-                <div class="vision-metric" style="text-align: center;">
-                    <div class="metric-icon" style="width: 80px; height: 80px; font-size: 2.5rem;">🎯</div>
-                    <div class="metric-title" style="font-size: 1.5rem; font-weight: 700; color: var(--text-light); margin-bottom: 0.5rem;">Fokussierung</div>
-                    <div class="metric-description" style="color: var(--text-muted); font-size: 1rem; line-height: 1.5;">
-                        Mitarbeiter konzentrieren sich auf wertschöpfende Tätigkeiten
-                    </div>
+            <div class="vision-card">
+                <div class="vision-icon">⚡</div>
+                <div class="vision-title">Effizienz</div>
+                <div class="vision-description">
+                    KI-gestützte Automatisierung maximiert die Produktivität und reduziert Fehlerquoten.
                 </div>
-                <div class="vision-metric" style="text-align: center;">
-                    <div class="metric-icon" style="width: 80px; height: 80px; font-size: 2.5rem;">⚡</div>
-                    <div class="metric-title" style="font-size: 1.5rem; font-weight: 700; color: var(--text-light); margin-bottom: 0.5rem;">Effizienz</div>
-                    <div class="metric-description" style="color: var(--text-muted); font-size: 1rem; line-height: 1.5;">
-                        KI-gestützte Automatisierung maximiert die Produktivität
-                    </div>
-                </div>
-                <div class="vision-metric" style="text-align: center;">
-                    <div class="metric-icon" style="width: 80px; height: 80px; font-size: 2.5rem;">🚀</div>
-                    <div class="metric-title" style="font-size: 1.5rem; font-weight: 700; color: var(--text-light); margin-bottom: 0.5rem;">Innovation</div>
-                    <div class="metric-description" style="color: var(--text-muted); font-size: 1rem; line-height: 1.5;">
-                        Kontinuierliche Weiterentwicklung durch selbstlernende Systeme
-                    </div>
-                </div>
-            </div>
-
-            <div class="vision-impact" style="background: linear-gradient(135deg, rgba(74, 144, 226, 0.02) 0%, rgba(120, 185, 242, 0.05) 100%); border-radius: 20px; padding: 1.5rem; border: 1px solid rgba(74, 144, 226, 0.1);">
-                <h3 style="font-size: 1.25rem; text-align: center; margin-bottom: 1.5rem; color: var(--primary-blue); font-weight: 600;">Unser Impact bis 2030</h3>
-                <div class="impact-grid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem;">
-                    <div style="text-align: center;">
-                        <div style="background: var(--gradient-blue); width: 50px; height: 50px; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin: 0 auto 0.75rem; box-shadow: 0 8px 20px rgba(43, 92, 230, 0.3);">
-                            <span style="color: white; font-size: 1.25rem; font-weight: 700;">01</span>
-                        </div>
-                        <h4 style="font-size: 0.9rem; color: var(--primary-blue); margin-bottom: 0.25rem; font-weight: 600;">Marktführerschaft</h4>
-                        <p style="color: var(--text-muted); line-height: 1.3; font-size: 0.75rem;">
-                            Führender KI-Anbieter<br>für Schweizer Unternehmen
-                        </p>
-                    </div>
-                    
-                    <div style="text-align: center;">
-                        <div style="background: var(--gradient-blue); width: 50px; height: 50px; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin: 0 auto 0.75rem; box-shadow: 0 8px 20px rgba(74, 144, 226, 0.3);">
-                            <span style="color: white; font-size: 1.25rem; font-weight: 700;">02</span>
-                        </div>
-                        <h4 style="font-size: 0.9rem; color: var(--primary-blue); margin-bottom: 0.25rem; font-weight: 600;">Flächendeckend</h4>
-                        <p style="color: var(--text-muted); line-height: 1.3; font-size: 0.75rem;">
-                            KI-Lösungen in über<br>
-                            <span style="color: var(--primary-blue); font-size: 1.125rem; font-weight: 700;">1000+</span> Unternehmen
-                        </p>
-                    </div>
-                    
-                    <div style="text-align: center;">
-                        <div style="background: var(--gradient-blue); width: 50px; height: 50px; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin: 0 auto 0.75rem; box-shadow: 0 8px 20px rgba(107, 163, 245, 0.3);">
-                            <span style="color: white; font-size: 1.25rem; font-weight: 700;">03</span>
-                        </div>
-                        <h4 style="font-size: 0.9rem; color: var(--primary-blue); margin-bottom: 0.25rem; font-weight: 600;">Nachhaltigkeit</h4>
-                        <p style="color: var(--text-muted); line-height: 1.3; font-size: 0.75rem;">
-                            <span style="color: var(--primary-blue); font-size: 1.125rem; font-weight: 700;">30%</span> Effizienz<br>
-                            & CO₂-Reduktion
-                        </p>
-                    </div>
-                    
-                    <div style="text-align: center;">
-                        <div style="background: var(--gradient-blue); width: 50px; height: 50px; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin: 0 auto 0.75rem; box-shadow: 0 8px 20px rgba(120, 185, 242, 0.3);">
-                            <span style="color: white; font-size: 1.25rem; font-weight: 700;">04</span>
-                        </div>
-                        <h4 style="font-size: 0.9rem; color: var(--primary-blue); margin-bottom: 0.25rem; font-weight: 600;">Einsparungen</h4>
-                        <p style="color: var(--text-muted); line-height: 1.3; font-size: 0.75rem;">
-                            Über <span style="color: var(--primary-blue); font-size: 1rem; font-weight: 700;">500 Mio. CHF</span><br>
-                            Kosteneinsparungen
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 8. Datenschutz Section -->
-    <section class="data-security-section" id="datenschutz">
-        <div style="width: 100%; max-width: 1200px; margin: 0 auto;">
-            <div class="section-header" style="text-align: center; margin-bottom: 2rem;">
-                <h2 style="font-size: 2.5rem; margin-bottom: 0.75rem;">Ihre Daten bleiben in der Schweiz</h2>
-                <p style="font-size: 1.125rem; color: var(--text-light);">
-                    Höchste Sicherheitsstandards und vollständige Datenkontrolle
-                </p>
             </div>
             
-            <div class="security-grid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem;">
-                <div class="security-card" style="background: var(--card-bg); padding: 1.5rem; border-radius: 15px; border: 1px solid rgba(218, 41, 28, 0.2); text-align: center; transition: all 0.3s ease;">
-                    <div style="font-size: 2.5rem; margin-bottom: 0.75rem;">🏔️</div>
-                    <h3 style="color: var(--text-light); margin-bottom: 0.5rem; font-size: 1.125rem;">100% Swiss Hosting</h3>
-                    <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.4;">Alle Daten werden ausschliesslich in Schweizer Rechenzentren gespeichert</p>
+            <div class="vision-card">
+                <div class="vision-icon">🚀</div>
+                <div class="vision-title">Innovation</div>
+                <div class="vision-description">
+                    Kontinuierliche Weiterentwicklung durch selbstlernende Systeme und neue Technologien.
                 </div>
-                
-                <div class="security-card" style="background: var(--card-bg); padding: 1.5rem; border-radius: 15px; border: 1px solid rgba(218, 41, 28, 0.2); text-align: center; transition: all 0.3s ease;">
-                    <div style="font-size: 2.5rem; margin-bottom: 0.75rem;">🔐</div>
-                    <h3 style="color: var(--text-light); margin-bottom: 0.5rem; font-size: 1.125rem;">On-Premise Option</h3>
-                    <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.4;">Installation direkt in Ihrer IT-Infrastruktur möglich</p>
-                </div>
-                
-                <div class="security-card" style="background: var(--card-bg); padding: 1.5rem; border-radius: 15px; border: 1px solid rgba(218, 41, 28, 0.2); text-align: center; transition: all 0.3s ease;">
-                    <div style="font-size: 2.5rem; margin-bottom: 0.75rem;">🚫</div>
-                    <h3 style="color: var(--text-light); margin-bottom: 0.5rem; font-size: 1.125rem;">Keine externen APIs</h3>
-                    <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.4;">Ihre Daten werden niemals an ChatGPT oder Claude gesendet</p>
-                </div>
-                
-                <div class="security-card" style="background: var(--card-bg); padding: 1.5rem; border-radius: 15px; border: 1px solid rgba(218, 41, 28, 0.2); text-align: center; transition: all 0.3s ease;">
-                    <div style="font-size: 2.5rem; margin-bottom: 0.75rem;">⚖️</div>
-                    <h3 style="color: var(--text-light); margin-bottom: 0.5rem; font-size: 1.125rem;">DSG/DSGVO konform</h3>
-                    <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.4;">Vollständige Compliance mit Datenschutzgesetzen</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 9. Kostenlose Beratung / Contact Section -->
-    <section class="contact-cta" id="contact">
-        <div class="contact-container" style="max-width: 900px; margin: 0 auto; width: 100%;">
-            <div class="contact-header" style="text-align: center; margin-bottom: 2rem;">
-                <h2 style="font-size: 2.5rem; margin-bottom: 0.75rem;">Bereit für die KI-Transformation?</h2>
-                <p style="font-size: 1.125rem; color: var(--text-muted);">Beschreiben Sie uns Ihre Idee - wir bereiten eine massgeschneiderte Lösung vor.</p>
-            </div>
-            
-            <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
-                <!-- Hidden fields for Web3Forms -->
-                <input type="hidden" name="access_key" value="6aba7eb2-91e9-4b83-a73f-373135977a93">
-                <input type="hidden" name="redirect" value="https://instinct-systems.ch/danke">
-                <input type="hidden" name="subject" value="Neue KI-Anfrage von instinct-systems.ch">
-                <input type="hidden" name="from_name" value="Instinct Systems Kontaktformular">
-                
-                <!-- Custom Email Template -->
-                <input type="hidden" name="email_template" value="box">
-                <input type="hidden" name="botcheck" value="">
-                
-                <div class="form-grid">
-                    <!-- Basis Informationen -->
-                    <div class="form-group">
-                        <label for="name">Name *</label>
-                        <input type="text" id="name" name="name" required placeholder="Max Mustermann">
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="company">Unternehmen *</label>
-                        <input type="text" id="company" name="company" required placeholder="Musterfirma AG">
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="email">E-Mail *</label>
-                        <input type="email" id="email" name="email" required placeholder="max@musterfirma.ch">
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="phone">Telefon</label>
-                        <input type="tel" id="phone" name="phone" placeholder="+41 XX XXX XX XX">
-                    </div>
-                    
-                    <!-- KI Interesse -->
-                    <div class="form-group full-width">
-                        <label for="department">Welche Abteilung möchten Sie optimieren? *</label>
-                        <select id="department" name="department" required>
-                            <option value="">Bitte wählen...</option>
-                            <option value="finance">Finance & Controlling</option>
-                            <option value="hr">HR & Personal</option>
-                            <option value="procurement">Einkauf & Beschaffung</option>
-                            <option value="sales">Sales & Marketing</option>
-                            <option value="operations">Operations & Logistik</option>
-                            <option value="it">IT & Digitalisierung</option>
-                            <option value="executive">Geschäftsleitung</option>
-                            <option value="custom">Andere / Mehrere Bereiche</option>
-                        </select>
-                    </div>
-                    
-                    <!-- Projektbeschreibung -->
-                    <div class="form-group full-width">
-                        <label for="project">Beschreiben Sie Ihre KI-Idee oder Herausforderung *</label>
-                        <textarea id="project" name="project" rows="4" required 
-                                  placeholder="Beispiel: Wir möchten unsere monatlichen Finanzberichte automatisieren und KI-gestützte Prognosen erstellen. Aktuell dauert dieser Prozess 3 Tage..."></textarea>
-                    </div>
-                    
-                    <!-- Zusätzliche Details -->
-                    <div class="form-group full-width">
-                        <label for="current-process">Wie läuft dieser Prozess aktuell ab?</label>
-                        <textarea id="current-process" name="current-process" rows="3" 
-                                  placeholder="Beschreiben Sie kurz den aktuellen Ablauf, verwendete Tools, beteiligte Personen..."></textarea>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="timeline">Gewünschter Zeitrahmen</label>
-                        <select id="timeline" name="timeline">
-                            <option value="">Bitte wählen...</option>
-                            <option value="asap">So schnell wie möglich</option>
-                            <option value="1-3months">1-3 Monate</option>
-                            <option value="3-6months">3-6 Monate</option>
-                            <option value="6months+">6+ Monate</option>
-                            <option value="exploring">Noch in Evaluationsphase</option>
-                        </select>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="budget">Budget-Rahmen (optional)</label>
-                        <input type="text" 
-                               id="budget" 
-                               name="budget" 
-                               placeholder="">
-                        <small>Hilft uns, die passende Lösung vorzuschlagen</small>
-                    </div>
-                </div>
-                
-                <!-- Zusätzliche Optionen -->
-                <div class="form-options">
-                    <label class="checkbox-label">
-                        <input type="checkbox" name="demo-interest" value="yes">
-                        <span>Ja, ich möchte eine Demo / Proof of Concept sehen</span>
-                    </label>
-                </div>
-                
-                <!-- Submit -->
-                <div class="form-submit">
-                    <button type="submit" class="btn btn-primary">
-                        Anfrage senden
-                        <span>→</span>
-                    </button>
-                    <p class="form-note">
-                        * Pflichtfelder. Wir analysieren Ihre Anfrage kostenlos und bereiten unverbindlich erste Lösungskonzepte 
-                        und Demos für unser Erstgespräch vor - so sehen Sie sofort, was möglich ist.
-                    </p>
-                </div>
-            </form>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <div class="footer-brand">
-                <h3>INSTINCT SYSTEMS AI</h3>
-                <p class="tagline">"Where Intelligence Meets Instinct"</p>
-                <p style="margin-top: 1rem; color: var(--text-muted);">
-                    100% Remote - Schweiz<br>
-                    <a href="mailto:info@instinct-systems.ch" style="color: var(--primary-blue); text-decoration: none;">info@instinct-systems.ch</a>
-                </p>
-            </div>
-            <div class="footer-links">
-                <h4>KI-Lösungen</h4>
-                <ul>
-                    <li><a href="#loesungen">Controlling Instinct AI</a></li>
-                    <li><a href="#loesungen">Workforce Instinct AI</a></li>
-                    <li><a href="#loesungen">Inventory Instinct AI</a></li>
-                    <li><a href="#loesungen">Mobile Instinct AI</a></li>
-                </ul>
-            </div>
-            <div class="footer-links">
-                <h4>Unternehmen</h4>
-                <ul>
-                    <li><a href="#datenschutz">Datenschutz</a></li>
-                    <li><a href="#roadmap">Roadmap</a></li>
-                    <li><a href="#vision">Vision</a></li>
-                    <li><a href="#contact">Kontakt</a></li>
-                </ul>
             </div>
         </div>
         
-        <!-- Trust Elements im Footer -->
-        <div class="footer-trust">
-            <p>
-                <span>100% Swiss Made</span>
-                <span>🔒 DSGVO/DSG konform</span>
-                <span>🏢 On-Premise verfügbar</span>
-                <span>📱 Web & Mobile Apps</span>
+        <div class="impact-metrics">
+            <div class="impact-item">
+                <div class="impact-number">1000+</div>
+                <div class="impact-label">Unternehmen bis 2030</div>
+            </div>
+            <div class="impact-item">
+                <div class="impact-number">30%</div>
+                <div class="impact-label">Effizienzsteigerung</div>
+            </div>
+            <div class="impact-item">
+                <div class="impact-number">500M</div>
+                <div class="impact-label">CHF Einsparungen</div>
+            </div>
+            <div class="impact-item">
+                <div class="impact-number">#1</div>
+                <div class="impact-label">KI-Anbieter Schweiz</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Datenschutz Section -->
+<section class="data-security-section" id="datenschutz">
+    <div class="section-header">
+        <h2>Ihre Daten bleiben in der Schweiz</h2>
+        <p>Höchste Sicherheitsstandards und vollständige Datenkontrolle</p>
+    </div>
+    
+    <div class="security-grid">
+        <div class="security-card">
+            <div class="security-icon">🏔️</div>
+            <h3>100% Swiss Hosting</h3>
+            <p>Alle Daten werden ausschliesslich in Schweizer Rechenzentren gespeichert</p>
+        </div>
+        
+        <div class="security-card">
+            <div class="security-icon">🔐</div>
+            <h3>On-Premise Option</h3>
+            <p>Installation direkt in Ihrer IT-Infrastruktur möglich</p>
+        </div>
+        
+        <div class="security-card">
+            <div class="security-icon">🚫</div>
+            <h3>Keine externen APIs</h3>
+            <p>Ihre Daten werden niemals an ChatGPT oder Claude gesendet</p>
+        </div>
+        
+        <div class="security-card">
+            <div class="security-icon">⚖️</div>
+            <h3>DSG/DSGVO konform</h3>
+            <p>Vollständige Compliance mit allen Datenschutzgesetzen</p>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact-cta" id="contact">
+    <div class="contact-container">
+        <div class="contact-header">
+            <h2>Bereit für die KI-Transformation?</h2>
+            <p>Beschreiben Sie uns Ihre Idee - wir bereiten eine massgeschneiderte Lösung vor.</p>
+        </div>
+        
+        <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="6aba7eb2-91e9-4b83-a73f-373135977a93">
+            <input type="hidden" name="redirect" value="https://instinct-systems.ch/danke">
+            <input type="hidden" name="subject" value="Neue KI-Anfrage von instinct-systems.ch">
+            
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="name">Name *</label>
+                    <input type="text" id="name" name="name" required placeholder="Max Mustermann">
+                </div>
+                
+                <div class="form-group">
+                    <label for="company">Unternehmen *</label>
+                    <input type="text" id="company" name="company" required placeholder="Musterfirma AG">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">E-Mail *</label>
+                    <input type="email" id="email" name="email" required placeholder="max@musterfirma.ch">
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Telefon</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+41 XX XXX XX XX">
+                </div>
+                
+                <div class="form-group full-width">
+                    <label for="department">Welche Abteilung möchten Sie optimieren? *</label>
+                    <select id="department" name="department" required>
+                        <option value="">Bitte wählen...</option>
+                        <option value="finance">Finance & Controlling</option>
+                        <option value="hr">HR & Personal</option>
+                        <option value="procurement">Einkauf & Beschaffung</option>
+                        <option value="sales">Sales & Marketing</option>
+                        <option value="operations">Operations & Logistik</option>
+                        <option value="it">IT & Digitalisierung</option>
+                        <option value="executive">Geschäftsleitung</option>
+                        <option value="custom">Andere / Mehrere Bereiche</option>
+                    </select>
+                </div>
+                
+                <div class="form-group full-width">
+                    <label for="project">Beschreiben Sie Ihre KI-Idee oder Herausforderung *</label>
+                    <textarea id="project" name="project" rows="4" required 
+                              placeholder="Beispiel: Wir möchten unsere monatlichen Finanzberichte automatisieren..."></textarea>
+                </div>
+                
+                <div class="form-group full-width">
+                    <label for="current-process">Wie läuft dieser Prozess aktuell ab?</label>
+                    <textarea id="current-process" name="current-process" rows="3" 
+                              placeholder="Beschreiben Sie kurz den aktuellen Ablauf..."></textarea>
+                </div>
+            </div>
+            
+            <div class="form-submit">
+                <button type="submit" class="btn btn-primary">
+                    Anfrage senden
+                    <span>→</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-content">
+        <div class="footer-brand">
+            <h3>INSTINCT SYSTEMS AI</h3>
+            <p class="tagline">"Where Intelligence Meets Instinct"</p>
+            <p style="margin-top: 1rem; color: var(--text-gray);">
+                100% Remote - Schweiz<br>
+                <a href="mailto:info@instinct-systems.ch" style="color: var(--primary-purple); text-decoration: none;">info@instinct-systems.ch</a>
             </p>
         </div>
-        
-        <div class="footer-bottom">
-            <p>&copy; 2025 Instinct Systems AI | 100% Remote - Schweiz | <a href="mailto:info@instinct-systems.ch" style="color: var(--text-muted);">info@instinct-systems.ch</a></p>
+        <div class="footer-links">
+            <h4>Lösungen</h4>
+            <ul>
+                <li><a href="#loesungen">Finance & Controlling</a></li>
+                <li><a href="#loesungen">HR & Personal</a></li>
+                <li><a href="#loesungen">Lager & Logistik</a></li>
+                <li><a href="#loesungen">Mobile Solutions</a></li>
+            </ul>
         </div>
-    </footer>
+        <div class="footer-links">
+            <h4>Unternehmen</h4>
+            <ul>
+                <li><a href="#datenschutz">Datenschutz</a></li>
+                <li><a href="#vision">Vision</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <p>&copy; 2025 Instinct Systems AI | 100% Remote - Schweiz | info@instinct-systems.ch</p>
+    </div>
+</footer>
 
-    <script>
-        // Hide loader after page load
-        window.addEventListener('load', () => {
-            setTimeout(() => {
-                document.getElementById('loader').classList.add('hidden');
-            }, 1000);
-        });
+<script>
+    // Hide loader after page load
+    window.addEventListener('load', () => {
+        setTimeout(() => {
+            document.getElementById('loader').classList.add('hidden');
+        }, 1000);
+    });
 
-        // Smooth scrolling
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        // Navbar scroll effect
-        let lastScroll = 0;
-        window.addEventListener('scroll', () => {
-            const nav = document.querySelector('nav');
-            const currentScroll = window.pageYOffset;
-            
-            if (currentScroll <= 0) {
-                nav.style.boxShadow = 'none';
-            } else {
-                nav.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
-            }
-            
-            lastScroll = currentScroll;
-        });
-
-        // Animate elements on scroll
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -100px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '0';
-                    entry.target.style.transform = 'translateY(30px)';
-                    
-                    setTimeout(() => {
-                        entry.target.style.transition = 'all 0.6s ease';
-                        entry.target.style.opacity = '1';
-                        entry.target.style.transform = 'translateY(0)';
-                    }, 100);
-                    
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, observerOptions);
-
-        // Observe all cards and sections
-        document.querySelectorAll('.feature-card, .industry-item, .tech-item, .dev-card, .vision-metric, .impact-item, .security-card, .process-step').forEach(el => {
-            observer.observe(el);
-        });
-
-        // Parallax effect for hero section
-        window.addEventListener('scroll', () => {
-            const scrolled = window.pageYOffset;
-            const parallax = document.querySelector('.hero-visual');
-            if (parallax) {
-                parallax.style.transform = `translateY(${scrolled * 0.5}px)`;
+    // Smooth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
             }
         });
+    });
 
-        // Vision section animation
-        const visionObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('animated');
-                }
-            });
-        }, { threshold: 0.3 });
+    // Navbar scroll effect
+    window.addEventListener('scroll', () => {
+        const nav = document.querySelector('nav');
+        const currentScroll = window.pageYOffset;
+        
+        if (currentScroll <= 0) {
+            nav.style.boxShadow = 'none';
+        } else {
+            nav.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.3)';
+        }
+    });
 
-        document.querySelectorAll('.vision-metric, .impact-item').forEach(el => {
-            visionObserver.observe(el);
+    // Animate elements on scroll
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -100px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '0';
+                entry.target.style.transform = 'translateY(30px)';
+                
+                setTimeout(() => {
+                    entry.target.style.transition = 'all 0.6s ease';
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }, 100);
+                
+                observer.unobserve(entry.target);
+            }
         });
-    </script>
-</body>
-</html>
+    }, observerOptions);
+
+    // Observe all cards and sections
+    document.querySelectorAll('.feature-card, .industry-item, .vision-card, .impact-item, .security-card, .process-step, .pricing-card').forEach(el => {
+        observer.observe(el);
+    });
+
+    // Parallax effect for hero section
+    window.addEventListener('scroll', () => {
+        const scrolled = window.pageYOffset;
+        const parallax = document.querySelector('.hero-visual');
+        if (parallax) {
+            parallax.style.transform = `translateY(${scrolled * 0.5}px)`;
+        }
+    });
