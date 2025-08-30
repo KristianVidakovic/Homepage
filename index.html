@@ -1064,19 +1064,38 @@
             .security-grid {
                 grid-template-columns: 1fr;
                 padding: 0 1rem;
+                gap: 1.5rem;
             }
 
             /* Fix für Security Cards auf Mobile */
             .security-card {
                 padding: 1.5rem;
+                width: 100%;
+            }
+
+            .security-icon {
+                font-size: 2.5rem;
             }
 
             .security-card h3 {
                 font-size: 1.1rem;
+                word-wrap: break-word;
             }
 
             .security-card p {
                 font-size: 0.85rem;
+                word-wrap: break-word;
+                line-height: 1.4;
+            }
+
+            /* Data Security Section Mobile */
+            .data-security-section {
+                padding: 60px 1rem 2rem;
+                min-height: auto;
+            }
+
+            .data-security-section .section-header {
+                margin-bottom: 2rem;
             }
 
             /* Fix für Timeline auf Mobile */
@@ -1091,11 +1110,16 @@
             .process-step {
                 flex-direction: column !important;
                 margin-bottom: 2rem;
+                align-items: center;
+            }
+
+            .process-step:nth-child(even) {
+                flex-direction: column !important;
             }
 
             .step-content {
                 width: 100%;
-                margin-top: 1rem;
+                order: 2;
             }
 
             .step-number {
@@ -1103,6 +1127,12 @@
                 left: auto;
                 transform: none;
                 margin-bottom: 1rem;
+                order: 1;
+            }
+
+            /* Entferne die leeren divs auf Mobile */
+            .process-step > div:empty {
+                display: none;
             }
 
             .impact-metrics {
