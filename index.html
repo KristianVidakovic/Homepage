@@ -1,6 +1,4 @@
-</script>
-</body>
-</html><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="de">
 <head>
     <meta charset="UTF-8">
@@ -1006,6 +1004,18 @@
             z-index: 10;
         }
 
+        /* Scroll Animation Classes */
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+
+        .fade-in-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
         /* Responsive */
         @media (max-width: 1200px) {
             .features-grid {
@@ -1201,56 +1211,56 @@
         <p>Entdecken Sie, wie KI Ihre Geschäftsprozesse revolutioniert - einfach, effizient und messbar.</p>
     </div>
     <div class="features-grid">
-        <div class="feature-card">
+        <div class="feature-card fade-in-up">
             <img src="images/finance.jpg" alt="Finance KI" class="feature-image">
             <div class="feature-content">
                 <h3>Finance & Controlling</h3>
                 <p>Echtzeitanalyse Ihrer Finanzdaten mit automatischen Prognosen. Identifiziert Optimierungspotenziale und reduziert manuelle Reportings um 80%.</p>
             </div>
         </div>
-        <div class="feature-card">
+        <div class="feature-card fade-in-up">
             <img src="images/hr-ai.jpg" alt="HR KI" class="feature-image">
             <div class="feature-content">
                 <h3>HR & Personalwesen</h3>
                 <p>Optimale Personalplanung und automatisierte Bewerbungsprozesse. Steigert die Mitarbeiterzufriedenheit und reduziert Verwaltungsaufwand.</p>
             </div>
         </div>
-        <div class="feature-card">
+        <div class="feature-card fade-in-up">
             <img src="images/logistics-ai.jpg" alt="Lager KI" class="feature-image">
             <div class="feature-content">
                 <h3>Lager & Logistik</h3>
                 <p>Intelligente Bestandsoptimierung verhindert Engpässe und reduziert Lagerkosten. Präzise Vorhersagen für optimale Bestellmengen.</p>
             </div>
         </div>
-        <div class="feature-card">
+        <div class="feature-card fade-in-up">
             <img src="images/documents-ai.jpg" alt="Dokumente KI" class="feature-image">
             <div class="feature-content">
                 <h3>Dokumentenverarbeitung</h3>
                 <p>Automatische Erfassung und Verarbeitung aller Dokumente. Von Rechnungen bis zu Verträgen - 95% schnellere Bearbeitung.</p>
             </div>
         </div>
-        <div class="feature-card">
+        <div class="feature-card fade-in-up">
             <img src="images/support-ai.jpg" alt="Kundensupport KI" class="feature-image">
             <div class="feature-content">
                 <h3>Kundensupport</h3>
                 <p>24/7 intelligenter Support, der Kundenanfragen sofort löst. Entlastet Ihr Team und steigert die Kundenzufriedenheit messbar.</p>
             </div>
         </div>
-        <div class="feature-card">
+        <div class="feature-card fade-in-up">
             <img src="images/dashboard-ai.jpg" alt="Management KI" class="feature-image">
             <div class="feature-content">
                 <h3>Management Dashboard</h3>
                 <p>Alle wichtigen KPIs auf einen Blick mit KI-gestützten Handlungsempfehlungen für strategische Entscheidungen.</p>
             </div>
         </div>
-        <div class="feature-card">
+        <div class="feature-card fade-in-up">
             <img src="images/mobile-ai.jpg" alt="Mobile KI" class="feature-image">
             <div class="feature-content">
                 <h3>Mobile Solutions</h3>
                 <p>Ihre KI-Lösung immer dabei - native Apps für iOS und Android mit Offline-Funktionalität für maximale Flexibilität.</p>
             </div>
         </div>
-        <div class="feature-card">
+        <div class="feature-card fade-in-up">
             <img src="images/custom-ai.jpg" alt="Custom KI" class="feature-image">
             <div class="feature-content">
                 <h3>Individuelle Lösungen</h3>
@@ -1267,41 +1277,42 @@
         <p>Unsere KI-Technologie passt sich flexibel an die Anforderungen Ihrer Branche an.</p>
     </div>
     <div class="industry-showcase">
-        <div class="industry-item">
+        <div class="industry-item fade-in-up">
             <img src="images/industry-production.jpg" alt="Industrie" class="industry-image">
             <div class="industry-label">Industrie & Produktion</div>
         </div>
-        <div class="industry-item">
+        <div class="industry-item fade-in-up">
             <img src="images/industry-finance.jpg" alt="Finanzwesen" class="industry-image">
             <div class="industry-label">Banken & Versicherungen</div>
         </div>
-        <div class="industry-item">
+        <div class="industry-item fade-in-up">
             <img src="images/industry-health.jpg" alt="Gesundheit" class="industry-image">
             <div class="industry-label">Gesundheitswesen</div>
         </div>
-        <div class="industry-item">
+        <div class="industry-item fade-in-up">
             <img src="images/industry-retail.jpg" alt="Einzelhandel" class="industry-image">
             <div class="industry-label">Einzelhandel</div>
         </div>
-        <div class="industry-item">
+        <div class="industry-item fade-in-up">
             <img src="images/industry-logistics.jpg" alt="Logistik" class="industry-image">
             <div class="industry-label">Logistik & Transport</div>
         </div>
-        <div class="industry-item">
+        <div class="industry-item fade-in-up">
             <img src="images/industry-hospitality.jpg" alt="Hospitality" class="industry-image">
             <div class="industry-label">Hotels & Gastronomie</div>
         </div>
-        <div class="industry-item">
+        <div class="industry-item fade-in-up">
             <img src="images/industry-education.jpg" alt="Bildung" class="industry-image">
             <div class="industry-label">Bildung & Forschung</div>
         </div>
-        <div class="industry-item">
+        <div class="industry-item fade-in-up">
             <img src="images/industry-public.jpg" alt="Öffentlicher Sektor" class="industry-image">
             <div class="industry-label">Öffentlicher Sektor</div>
         </div>
     </div>
 </section>
 
+<!-- Rest of sections remain the same... -->
 <!-- Angebot Section -->
 <section class="pricing-section" id="angebot">
     <div class="pricing-container">
@@ -1313,7 +1324,7 @@
         <div class="process-timeline">
             <div class="timeline-line"></div>
             
-            <div class="process-step">
+            <div class="process-step fade-in-up">
                 <div class="step-content">
                     <h4>Erstberatung</h4>
                     <p>Kostenlose Analyse Ihrer Anforderungen</p>
@@ -1322,7 +1333,7 @@
                 <div style="width: 45%;"></div>
             </div>
             
-            <div class="process-step">
+            <div class="process-step fade-in-up">
                 <div style="width: 45%;"></div>
                 <div class="step-number">2</div>
                 <div class="step-content">
@@ -1331,7 +1342,7 @@
                 </div>
             </div>
             
-            <div class="process-step">
+            <div class="process-step fade-in-up">
                 <div class="step-content">
                     <h4>Pilot-Projekt</h4>
                     <p>4-8 Wochen Entwicklung</p>
@@ -1340,7 +1351,7 @@
                 <div style="width: 45%;"></div>
             </div>
             
-            <div class="process-step">
+            <div class="process-step fade-in-up">
                 <div style="width: 45%;"></div>
                 <div class="step-number">4</div>
                 <div class="step-content">
@@ -1356,15 +1367,15 @@
         </div>
         
         <div class="pricing-options">
-            <div class="pricing-card">
+            <div class="pricing-card fade-in-up">
                 <h4>Pilot-Projekt</h4>
                 <p>4-8 Wochen Entwicklung<br>Individuelles Angebot</p>
             </div>
-            <div class="pricing-card">
+            <div class="pricing-card fade-in-up">
                 <h4>Enterprise</h4>
                 <p>Massgeschneiderte Lösung<br>Für komplexe Anforderungen</p>
             </div>
-            <div class="pricing-card">
+            <div class="pricing-card fade-in-up">
                 <h4>Support</h4>
                 <p>Kontinuierliche Betreuung<br>Updates & Optimierungen</p>
             </div>
@@ -1387,7 +1398,7 @@
         </div>
         
         <div class="vision-grid">
-            <div class="vision-card">
+            <div class="vision-card fade-in-up">
                 <div class="vision-icon">🎯</div>
                 <div class="vision-title">Fokussierung</div>
                 <div class="vision-description">
@@ -1395,7 +1406,7 @@
                 </div>
             </div>
             
-            <div class="vision-card">
+            <div class="vision-card fade-in-up">
                 <div class="vision-icon">⚡</div>
                 <div class="vision-title">Effizienz</div>
                 <div class="vision-description">
@@ -1403,7 +1414,7 @@
                 </div>
             </div>
             
-            <div class="vision-card">
+            <div class="vision-card fade-in-up">
                 <div class="vision-icon">🚀</div>
                 <div class="vision-title">Innovation</div>
                 <div class="vision-description">
@@ -1413,19 +1424,19 @@
         </div>
         
         <div class="impact-metrics">
-            <div class="impact-item">
+            <div class="impact-item fade-in-up">
                 <div class="impact-number">1000+</div>
                 <div class="impact-label">Unternehmen bis 2030</div>
             </div>
-            <div class="impact-item">
+            <div class="impact-item fade-in-up">
                 <div class="impact-number">30%</div>
                 <div class="impact-label">Effizienzsteigerung</div>
             </div>
-            <div class="impact-item">
+            <div class="impact-item fade-in-up">
                 <div class="impact-number">500M</div>
                 <div class="impact-label">CHF Einsparungen</div>
             </div>
-            <div class="impact-item">
+            <div class="impact-item fade-in-up">
                 <div class="impact-number">#1</div>
                 <div class="impact-label">KI-Anbieter Schweiz</div>
             </div>
@@ -1441,25 +1452,25 @@
     </div>
     
     <div class="security-grid">
-        <div class="security-card">
+        <div class="security-card fade-in-up">
             <div class="security-icon">🏔️</div>
             <h3>100% Swiss Hosting</h3>
             <p>Alle Daten werden ausschliesslich in Schweizer Rechenzentren gespeichert</p>
         </div>
         
-        <div class="security-card">
+        <div class="security-card fade-in-up">
             <div class="security-icon">🔐</div>
             <h3>On-Premise Option</h3>
             <p>Installation direkt in Ihrer IT-Infrastruktur möglich</p>
         </div>
         
-        <div class="security-card">
+        <div class="security-card fade-in-up">
             <div class="security-icon">🚫</div>
             <h3>Keine externen APIs</h3>
             <p>Ihre Daten werden niemals an ChatGPT oder Claude gesendet</p>
         </div>
         
-        <div class="security-card">
+        <div class="security-card fade-in-up">
             <div class="security-icon">⚖️</div>
             <h3>DSG/DSGVO konform</h3>
             <p>Vollständige Compliance mit allen Datenschutzgesetzen</p>
@@ -1608,40 +1619,44 @@
         }
     });
 
-    // Animate elements on scroll
+    // Optimized scroll animation
     const observerOptions = {
         threshold: 0.1,
-        rootMargin: '0px 0px -100px 0px'
+        rootMargin: '0px 0px -50px 0px'
     };
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.style.opacity = '0';
-                entry.target.style.transform = 'translateY(30px)';
-                
-                setTimeout(() => {
-                    entry.target.style.transition = 'all 0.6s ease';
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }, 100);
-                
+                entry.target.classList.add('visible');
                 observer.unobserve(entry.target);
             }
         });
     }, observerOptions);
 
-    // Observe all cards and sections
-    document.querySelectorAll('.feature-card, .industry-item, .vision-card, .impact-item, .security-card, .process-step, .pricing-card').forEach(el => {
-        observer.observe(el);
+    // Add fade-in-up class to elements and observe them
+    document.addEventListener('DOMContentLoaded', () => {
+        const animatedElements = document.querySelectorAll('.fade-in-up');
+        animatedElements.forEach(el => {
+            observer.observe(el);
+        });
     });
 
-    // Parallax effect for hero section
-    window.addEventListener('scroll', () => {
+    // Smoother parallax effect for hero section
+    let ticking = false;
+    function updateParallax() {
         const scrolled = window.pageYOffset;
         const parallax = document.querySelector('.hero-visual');
-        if (parallax) {
-            parallax.style.transform = `translateY(${scrolled * 0.5}px)`;
+        if (parallax && scrolled < window.innerHeight) {
+            parallax.style.transform = `translateY(${scrolled * 0.3}px)`;
+        }
+        ticking = false;
+    }
+
+    window.addEventListener('scroll', () => {
+        if (!ticking) {
+            window.requestAnimationFrame(updateParallax);
+            ticking = true;
         }
     });
 </script>
