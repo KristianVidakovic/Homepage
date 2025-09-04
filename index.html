@@ -234,7 +234,6 @@
         /* Full Page Sections */
         .hero,
         .ai-features,
-        .data-security-section,
         .industries,
         .pricing-section,
         .vision-section,
@@ -788,50 +787,6 @@
             letter-spacing: 1px;
         }
 
-        /* Data Security Section */
-        .data-security-section {
-            background: var(--deep-black);
-        }
-
-        .security-grid {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 2rem;
-        }
-
-        .security-card {
-            background: var(--dark-gray);
-            padding: 2.5rem;
-            border-radius: 20px;
-            border: 1px solid rgba(218, 41, 28, 0.2);
-            text-align: center;
-            transition: all 0.3s ease;
-        }
-
-        .security-card:hover {
-            transform: translateY(-5px);
-            border-color: var(--swiss-red);
-            box-shadow: 0 10px 30px rgba(218, 41, 28, 0.2);
-        }
-
-        .security-icon {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-
-        .security-card h3 {
-            color: var(--pure-white);
-            margin-bottom: 1rem;
-            font-size: 1.25rem;
-        }
-
-        .security-card p {
-            color: var(--text-gray);
-            line-height: 1.5;
-        }
-
         /* Contact Section */
         .contact-cta {
             background: linear-gradient(180deg, var(--deep-black) 0%, var(--dark-gray) 100%);
@@ -930,7 +885,7 @@
             padding: 1rem 3rem;
         }
 
-        /* Footer */
+        /* Footer mit integriertem Datenschutz */
         footer {
             background: var(--pure-black);
             padding: 4rem 2rem 2rem;
@@ -941,7 +896,7 @@
             max-width: 1400px;
             margin: 0 auto;
             display: grid;
-            grid-template-columns: 2fr 1fr 1fr;
+            grid-template-columns: 2fr 1fr 1fr 2fr;
             gap: 4rem;
         }
 
@@ -975,6 +930,51 @@
 
         .footer-links a:hover {
             color: var(--primary-purple);
+        }
+
+        /* Neue Datenschutz-Section im Footer */
+        .footer-security {
+            background: var(--dark-gray);
+            border-radius: 15px;
+            padding: 1.5rem;
+            border: 1px solid rgba(218, 41, 28, 0.2);
+        }
+
+        .footer-security h4 {
+            color: var(--pure-white);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .swiss-flag {
+            width: 24px;
+            height: 24px;
+            background: linear-gradient(to bottom, #DA291C 0%, #DA291C 40%, white 40%, white 60%, #DA291C 60%, #DA291C 100%),
+                        linear-gradient(to right, #DA291C 0%, #DA291C 40%, white 40%, white 60%, #DA291C 60%, #DA291C 100%);
+            background-size: 100% 100%, 100% 100%;
+            background-position: center;
+            border-radius: 3px;
+        }
+
+        .security-badges {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .security-badge {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-gray);
+            font-size: 0.9rem;
+        }
+
+        .security-badge .badge-icon {
+            color: var(--swiss-red);
+            font-size: 1.1rem;
         }
 
         .footer-bottom {
@@ -1012,6 +1012,10 @@
             }
             
             .impact-metrics {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .footer-content {
                 grid-template-columns: repeat(2, 1fr);
             }
         }
@@ -1055,47 +1059,15 @@
             .footer-content {
                 grid-template-columns: 1fr;
                 text-align: center;
+                gap: 2rem;
+            }
+
+            .footer-security {
+                order: -1;
             }
 
             .pricing-options {
                 grid-template-columns: 1fr;
-            }
-
-            .security-grid {
-                grid-template-columns: 1fr;
-                padding: 0 1rem;
-                gap: 1.5rem;
-            }
-
-            /* Fix für Security Cards auf Mobile */
-            .security-card {
-                padding: 1.5rem;
-                width: 100%;
-            }
-
-            .security-icon {
-                font-size: 2.5rem;
-            }
-
-            .security-card h3 {
-                font-size: 1.1rem;
-                word-wrap: break-word;
-            }
-
-            .security-card p {
-                font-size: 0.85rem;
-                word-wrap: break-word;
-                line-height: 1.4;
-            }
-
-            /* Data Security Section Mobile */
-            .data-security-section {
-                padding: 60px 1rem 2rem;
-                min-height: auto;
-            }
-
-            .data-security-section .section-header {
-                margin-bottom: 2rem;
             }
 
             /* Fix für Timeline auf Mobile */
@@ -1184,11 +1156,6 @@
             .hero-description {
                 font-size: 1rem;
             }
-
-            /* Data Security Mobile */
-            .data-security-section {
-                padding: 60px 1rem 2rem;
-            }
         }
 
         /* Loading Animation */
@@ -1250,7 +1217,6 @@
             <li><a href="#branchen">Branchen</a></li>
             <li><a href="#angebot">Angebot</a></li>
             <li><a href="#vision">Vision</a></li>
-            <li><a href="#datenschutz">Datenschutz</a></li>
             <li><a href="#contact" class="nav-cta">Kostenlose Beratung</a></li>
         </ul>
     </div>
@@ -1361,41 +1327,40 @@
     </div>
     <div class="industry-showcase">
         <div class="industry-item fade-in-up">
-            <img src="images/industry-production.jpg" alt="Industrie" class="industry-image">
+            <img src="images/industry-production.jpg" alt="Industrie" class="industry-image" loading="lazy">
             <div class="industry-label">Industrie & Produktion</div>
         </div>
         <div class="industry-item fade-in-up">
-            <img src="images/industry-finance.jpg" alt="Finanzwesen" class="industry-image">
+            <img src="images/industry-finance.jpg" alt="Finanzwesen" class="industry-image" loading="lazy">
             <div class="industry-label">Banken & Versicherungen</div>
         </div>
         <div class="industry-item fade-in-up">
-            <img src="images/industry-health.jpg" alt="Gesundheit" class="industry-image">
+            <img src="images/industry-health.jpg" alt="Gesundheit" class="industry-image" loading="lazy">
             <div class="industry-label">Gesundheitswesen</div>
         </div>
         <div class="industry-item fade-in-up">
-            <img src="images/industry-retail.jpg" alt="Einzelhandel" class="industry-image">
+            <img src="images/industry-retail.jpg" alt="Einzelhandel" class="industry-image" loading="lazy">
             <div class="industry-label">Einzelhandel</div>
         </div>
         <div class="industry-item fade-in-up">
-            <img src="images/industry-logistics.jpg" alt="Logistik" class="industry-image">
+            <img src="images/industry-logistics.jpg" alt="Logistik" class="industry-image" loading="lazy">
             <div class="industry-label">Logistik & Transport</div>
         </div>
         <div class="industry-item fade-in-up">
-            <img src="images/industry-hospitality.jpg" alt="Hospitality" class="industry-image">
+            <img src="images/industry-hospitality.jpg" alt="Hospitality" class="industry-image" loading="lazy">
             <div class="industry-label">Hotels & Gastronomie</div>
         </div>
         <div class="industry-item fade-in-up">
-            <img src="images/industry-education.jpg" alt="Bildung" class="industry-image">
+            <img src="images/industry-education.jpg" alt="Bildung" class="industry-image" loading="lazy">
             <div class="industry-label">Bildung & Forschung</div>
         </div>
         <div class="industry-item fade-in-up">
-            <img src="images/industry-public.jpg" alt="Öffentlicher Sektor" class="industry-image">
+            <img src="images/industry-public.jpg" alt="Öffentlicher Sektor" class="industry-image" loading="lazy">
             <div class="industry-label">Öffentlicher Sektor</div>
         </div>
     </div>
 </section>
 
-<!-- Rest of sections remain the same... -->
 <!-- Angebot Section -->
 <section class="pricing-section" id="angebot">
     <div class="pricing-container">
@@ -1527,40 +1492,6 @@
     </div>
 </section>
 
-<!-- Datenschutz Section -->
-<section class="data-security-section" id="datenschutz">
-    <div class="section-header">
-        <h2>Ihre Daten bleiben in der Schweiz</h2>
-        <p>Höchste Sicherheitsstandards und vollständige Datenkontrolle</p>
-    </div>
-    
-    <div class="security-grid">
-        <div class="security-card fade-in-up">
-            <div class="security-icon">🏔️</div>
-            <h3>100% Swiss Hosting</h3>
-            <p>Alle Daten werden ausschliesslich in Schweizer Rechenzentren gespeichert</p>
-        </div>
-        
-        <div class="security-card fade-in-up">
-            <div class="security-icon">🔐</div>
-            <h3>On-Premise Option</h3>
-            <p>Installation direkt in Ihrer IT-Infrastruktur möglich</p>
-        </div>
-        
-        <div class="security-card fade-in-up">
-            <div class="security-icon">🚫</div>
-            <h3>Keine externen APIs</h3>
-            <p>Ihre Daten werden niemals an ChatGPT oder Claude gesendet</p>
-        </div>
-        
-        <div class="security-card fade-in-up">
-            <div class="security-icon">⚖️</div>
-            <h3>DSG/DSGVO konform</h3>
-            <p>Vollständige Compliance mit allen Datenschutzgesetzen</p>
-        </div>
-    </div>
-</section>
-
 <!-- Contact Section -->
 <section class="contact-cta" id="contact">
     <div class="contact-container">
@@ -1633,7 +1564,7 @@
     </div>
 </section>
 
-<!-- Footer -->
+<!-- Footer mit integriertem Datenschutz -->
 <footer>
     <div class="footer-content">
         <div class="footer-brand">
@@ -1644,6 +1575,7 @@
                 <a href="mailto:info@instinct-systems.ch" style="color: var(--primary-purple); text-decoration: none;">info@instinct-systems.ch</a>
             </p>
         </div>
+        
         <div class="footer-links">
             <h4>Lösungen</h4>
             <ul>
@@ -1651,24 +1583,48 @@
                 <li><a href="#loesungen">HR & Personal</a></li>
                 <li><a href="#loesungen">Lager & Logistik</a></li>
                 <li><a href="#loesungen">Dokumentenverarbeitung</a></li>
-                <li><a href="#loesungen">Kundensupport</a></li>
-                <li><a href="#loesungen">Management Dashboard</a></li>
-                <li><a href="#loesungen">Mobile Solutions</a></li>
-                <li><a href="#loesungen">Individuelle Lösungen</a></li>
             </ul>
         </div>
+        
         <div class="footer-links">
             <h4>Unternehmen</h4>
             <ul>
-                <li><a href="#datenschutz">Datenschutz</a></li>
                 <li><a href="#vision">Vision</a></li>
+                <li><a href="#angebot">Angebot</a></li>
+                <li><a href="#branchen">Branchen</a></li>
                 <li><a href="#contact">Kontakt</a></li>
             </ul>
+        </div>
+        
+        <!-- Neue Datenschutz-Box im Footer -->
+        <div class="footer-security">
+            <h4>
+                <span class="swiss-flag"></span>
+                Schweizer Datenschutz
+            </h4>
+            <div class="security-badges">
+                <div class="security-badge">
+                    <span class="badge-icon">🏔️</span>
+                    <span>100% Swiss Hosting</span>
+                </div>
+                <div class="security-badge">
+                    <span class="badge-icon">🔐</span>
+                    <span>On-Premise verfügbar</span>
+                </div>
+                <div class="security-badge">
+                    <span class="badge-icon">🚫</span>
+                    <span>Keine externen APIs</span>
+                </div>
+                <div class="security-badge">
+                    <span class="badge-icon">⚖️</span>
+                    <span>DSG/DSGVO konform</span>
+                </div>
+            </div>
         </div>
     </div>
     
     <div class="footer-bottom">
-        <p>&copy; 2025 Instinct Systems AI | 100% Remote - Schweiz | info@instinct-systems.ch</p>
+        <p>&copy; 2025 Instinct Systems AI | 100% Remote - Schweiz | Alle Daten bleiben in der Schweiz</p>
     </div>
 </footer>
 
@@ -1745,6 +1701,18 @@
             window.requestAnimationFrame(updateParallax);
             ticking = true;
         }
+    });
+
+    // Handle missing images with placeholder
+    document.addEventListener('DOMContentLoaded', () => {
+        const images = document.querySelectorAll('img');
+        images.forEach(img => {
+            img.onerror = function() {
+                // Create a placeholder SVG
+                this.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="400" height="300"%3E%3Crect fill="%237C3AED" width="400" height="300"/%3E%3Ctext fill="white" x="50%25" y="50%25" text-anchor="middle" dy=".3em" font-family="sans-serif"%3EBild wird geladen%3C/text%3E%3C/svg%3E';
+                this.onerror = null; // Prevent infinite loop
+            };
+        });
     });
 </script>
 </body>
