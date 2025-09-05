@@ -872,6 +872,19 @@
             transition: all 0.3s ease;
         }
 
+        /* Bessere Lesbarkeit für Dropdown-Optionen */
+        .form-group select option {
+            background: var(--dark-gray);
+            color: var(--pure-white);
+            padding: 0.5rem;
+        }
+
+        .form-group select option:hover,
+        .form-group select option:checked {
+            background: var(--primary-purple);
+            color: var(--pure-white);
+        }
+
         .form-group input:focus,
         .form-group select:focus,
         .form-group textarea:focus {
